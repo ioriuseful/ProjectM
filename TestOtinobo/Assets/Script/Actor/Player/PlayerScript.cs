@@ -42,6 +42,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     AudioSource audioSource;
+    private Animator _animator;
 
     //プレイヤーの画像変更に必要なもの
     SpriteRenderer MainSpriteRenderer;
@@ -50,7 +51,10 @@ public class PlayerScript : MonoBehaviour
     public Sprite Green;
     public Sprite Red;
     public Sprite Blue;
-    [SerializeField, Header("")]
+    [SerializeField, Header("地面にぶつかったときのエフェクト")]
+    public GameObject GreenEffect;
+    public GameObject RedEffect;
+    public GameObject BlueEffect;
     //取得した蒸気の数
     public float SteamPoint;
 
@@ -84,9 +88,13 @@ public class PlayerScript : MonoBehaviour
     private float IJumpH = 20;
     private float xSpeed = 1;
 
+    private bool on_ground = false;
     private bool hiptime = false;
     private bool hip=false;
     private bool stop = false;
+    public bool anim1 = false;//animetion
+    public bool anim2 = false;//animation
+
     #region//FoldOut
     //public static bool FoldOut(string title, bool display)
     //{
@@ -129,7 +137,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
-        //MainSpriteRenderer = GetComponent<SpriteRenderer>();
+        MainSpriteRenderer = GetComponent<SpriteRenderer>();
         rig2D = GetComponent<Rigidbody2D>();
         capcol = GetComponent<BoxCollider2D>();
         FadeManager.FadeIn();
@@ -137,7 +145,10 @@ public class PlayerScript : MonoBehaviour
         jumpText.text = string.Format("ジャンプ残り "+ IJumpC + " 回");
         CS = ColorState.White;
     }
-
+    private void Awake()//追加
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -167,13 +178,18 @@ public class PlayerScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
+            anim1 = true; //animのtrue追加
             audioSource.PlayOneShot(HipDropSE);
             hip = true;
             stop = true;
             xSpeed = 1;
             Invoke("Hip", HipLimitTime);
         }
-      
+        if (on_ground)
+        {
+            float level = Mathf.Abs(Mathf.Sin(Time.time * 10));
+            MainSpriteRenderer.color = new Color(1f, 1f, 1f, level);
+        }
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
         if (IJump && Input.GetButtonDown("Jump"))
         {
@@ -221,6 +237,25 @@ public class PlayerScript : MonoBehaviour
                 Color = "Blue";
                 break;
         }
+        //アニメーションの条件取得
+        if (anim1 == true)
+        {
+            _animator.SetBool("OnceAnim", true);
+            Invoke("StopAnim", 0.5f);
+        }
+        if (anim1 == false)
+        {
+            _animator.SetBool("OnceAnim", false);
+        }
+        if (anim2 == true)
+        {
+            _animator.SetBool("HipAnim", true);
+            Invoke("StopAnim", 1f);
+        }
+        if (anim2 == false)
+        {
+            _animator.SetBool("HipAnim", false);
+        }
         ////ダメージを受けたら一定時間無敵にして点滅させる(ダメージ関連を追加することは無いと思うけど念のため残してます)
         //if (damageFlag)
         //{
@@ -241,10 +276,14 @@ public class PlayerScript : MonoBehaviour
             GetisDeadFlag = true;
         }
     }
-
+    private void StopAnim()
+    {
+        anim1 = false;
+        anim2 = false;
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground")
         {
             if (CS == 0)
             {
@@ -256,7 +295,6 @@ public class PlayerScript : MonoBehaviour
             }
             else
             {
-                CS = ColorState.White;
                 audioSource.PlayOneShot(JumpSE);
                 otherJumpHeight = Recovery;    //踏んづけたものから跳ねる高さを取得する
                 jumpPos = transform.position.y; //ジャンプした位置を記録する 
@@ -265,6 +303,22 @@ public class PlayerScript : MonoBehaviour
                 isJump = false;
                 hip = false;
                 jumpTime = 0.0f;
+                on_ground = true;
+                StartCoroutine("WaitForit");
+                //着地時のエフェクト
+                switch (CS)
+                {
+                    case ColorState.Blue:
+                        Instantiate(BlueEffect, transform.position, Quaternion.identity);
+                        break;
+                    case ColorState.Green:
+                        Instantiate(GreenEffect, transform.position, Quaternion.identity);
+                        break;
+                    case ColorState.Red:
+                        Instantiate(RedEffect, transform.position, Quaternion.identity);
+                        break;
+                }
+                CS = ColorState.White;
                 return;
             }
         }
@@ -278,25 +332,25 @@ public class PlayerScript : MonoBehaviour
         {
             hip = false;
         }
-            //if (other.collider.tag == "item")
-            //{
-            //    ItemJump o = other.gameObject.GetComponent<ItemJump>();
-            //    if (o != null)
-            //    {
-            //        audioSource.PlayOneShot(ItemSE);
-            //        IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-            //        IJumpC += o.boundCount;
-            //        IJump = true;
-            //        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-            //        jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
-            //    }
-            //    else
-            //    {
-            //        Debug.Log("ObjectCollisionが付いてないよ!");
-            //    }
-            //}
+        //if (other.collider.tag == "item")
+        //{
+        //    ItemJump o = other.gameObject.GetComponent<ItemJump>();
+        //    if (o != null)
+        //    {
+        //        audioSource.PlayOneShot(ItemSE);
+        //        IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
+        //        IJumpC += o.boundCount;
+        //        IJump = true;
+        //        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
+        //        jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("ObjectCollisionが付いてないよ!");
+        //    }
+        //}
 
-            if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
+        if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
             float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
@@ -310,6 +364,7 @@ public class PlayerScript : MonoBehaviour
                     EnemyJump o = other.gameObject.GetComponent<EnemyJump>();
                     if (o != null)
                     {
+                        anim1 = true;//animのtrue
                         audioSource.PlayOneShot(EnemyDeadSE);
                         audioSource.PlayOneShot(JumpSE);
                         otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
@@ -400,27 +455,28 @@ public class PlayerScript : MonoBehaviour
 
     }
 
-    #region　ダメージの時に点滅させる処理(今は使ってない)
-    ///// <summary>
-    ///// ダメージを受けた時に呼び出す処理
-    ///// </summary>
-    //void OnDamegeEffect()
-    //{
-    //    damageFlag = true;
+    #region　ダメージの時に点滅させる処理(使用中)
+    /// <summary>
+    /// ダメージを受けた時に呼び出す処理
+    /// </summary>
+    void OnDamegeEffect()
+    {
+        //damageFlag = true;
+        on_ground = true;
+        StartCoroutine(WaitForit());//WaitForitで指定した秒分待ってから呼び出す
+    }
 
-    //    StartCoroutine(WaitForit());//WaitForitで指定した秒分待ってから呼び出す
-    //}
 
+    IEnumerator WaitForit()
+    {
+        yield return new WaitForSeconds(1);//1秒間処理を止める
 
-    //IEnumerator WaitForit()
-    //{
-    //    yield return new WaitForSeconds(1);//1秒間処理を止める
+        //ダメージを受けてないと判断し、点滅をやめる
+        //damageFlag = false;
+        on_ground = false;
+        MainSpriteRenderer.color = new Color(1f, 1f, 1f, 1f);
 
-    //    //ダメージを受けてないと判断し、点滅をやめる
-    //    damageFlag = false;
-    //    MainSpriteRenderer.color = new Color(1f, 1f, 1f, 1f);
-
-    //}
+    }
     #endregion
 
     /// <summary>
