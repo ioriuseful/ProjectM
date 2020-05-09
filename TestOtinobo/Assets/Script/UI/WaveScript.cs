@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class WaveScript : MonoBehaviour
 {
     public PlayerScript player;
-    public int number;
+    [Header("何本通ったらWaveを更新するか")]public int number = 10;
     private int score;
+    [Header("この値は基本いじらない")]
     public int wave;
     public int max;//Waveの最大値
     Text text;

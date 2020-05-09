@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3977168066030091532}
   - component: {fileID: 3977168066030091530}
   m_Layer: 0
-  m_Name: EnemyRespawn
+  m_Name: ObjRespawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,17 +47,16 @@ MonoBehaviour:
   enemyBoxes:
   - {fileID: 3394205166927199167, guid: cffad16fbb4694744be1ee8b112bd55c, type: 3}
   - {fileID: 662339871802683833, guid: d783b9c2884f0cd4a8cb71a4c5c5187c, type: 3}
-  - {fileID: 8040750728552387531, guid: fc1d9afdbb3e99145b08f361f997eb7b, type: 3}
+  - {fileID: 6500378855208816136, guid: bf59e0ca610b5454dbfceed8b995d4d2, type: 3}
   - {fileID: 8362624917456776651, guid: 9821bb6cb1b9d4a4a90e87cba44992b0, type: 3}
+  groundBoxes:
+  - {fileID: 4123188264756906717, guid: 00be10a57dfdf914ba05f7bd054f14f9, type: 3}
+  - {fileID: 63873826252549283, guid: a4705b548b42ff64991379c5d6464389, type: 3}
+  - {fileID: 3176040529530589080, guid: 929d2cb254abf654db579dba5a842346, type: 3}
   player: {fileID: 0}
-  minRespawnTime: 2
-  maxRespawnTime: 4
   InstantiateDistance: 30
+  groundRespawnWave: 3
   Wscript: {fileID: 0}
-  MaxTimeUp: 0.5
-  MaxTimeDown: 0
-  MinTimeUp: 0.5
-  MinTimeDown: 0
 --- !u!61 &3977168066030091530
 BoxCollider2D:
   m_ObjectHideFlags: 0

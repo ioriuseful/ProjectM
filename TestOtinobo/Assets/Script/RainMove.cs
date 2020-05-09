@@ -8,12 +8,12 @@ public class RainMove : MonoBehaviour
     [SerializeField, Header("プレイヤーのx軸を取得するため")] GameObject player;
     [SerializeField]
     private float seconds;
-    public float speed;//速さ
-    [Header("加速量")] public float acceleration;//加速量
+    public float speed = 0.1f;//速さ
+    [Header("加速量")] public float acceleration = 10;//加速量
     public bool flag1 = false;//距離が遠くなった時のフラグ
     public bool flag2 = true;//距離が近くなった時のフラグ
-    public float MaxDistance;//遠い距離
-    public float MinDistance;//近い距離
+    //public float MaxDistance;//遠い距離
+    //public float MinDistance;//近い距離
     // Start is called before the first frame update
     void Start()
     {
@@ -37,16 +37,16 @@ public class RainMove : MonoBehaviour
         float b = Ppos.x;//プレイヤーのx座標
         float c = pos.x;//雨のx座標
         float d = b - c;//プレイヤーのxと雨のxを引いた値
-        if (d > MaxDistance)
-        {
-            flag1 = true;
-            flag2 = false;
-        }
-        if (d < MinDistance)
-        {
-            flag1 = false;
-            flag2 = true;
-        }
+        //if (d > MaxDistance)
+        //{
+        //    flag1 = true;
+        //    flag2 = false;
+        //}
+        //if (d < MinDistance)
+        //{
+        //    flag1 = false;
+        //    flag2 = true;
+        //}
         if (flag1 == true)
         {
             pos.x = c + speed * acceleration * 0.1f;
@@ -61,5 +61,24 @@ public class RainMove : MonoBehaviour
         }
 
         myTransform.position = pos;
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "MainCamera")
+        {
+            flag1 = false;
+            flag2 = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "MainCamera")
+        {
+            flag1 = true;
+            flag2 = false;
+        }
     }
 }

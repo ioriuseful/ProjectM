@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4727442476876301298}
   - component: {fileID: 4727442476876301308}
   - component: {fileID: 4727442476876301309}
-  - component: {fileID: 1403065411}
+  - component: {fileID: 4056316132638141475}
   m_Layer: 0
   m_Name: Rain
   m_TagString: Rain
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4727442476876301299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -20, y: -2.77, z: 0}
-  m_LocalScale: {x: 5, y: 5.5, z: 1}
+  m_LocalScale: {x: 5, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 4727442477102090699}
   m_RootOrder: 0
@@ -108,7 +108,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.47}
   m_EdgeRadius: 0
---- !u!114 &1403065411
+--- !u!114 &4056316132638141475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,9 +125,7 @@ MonoBehaviour:
   speed: 0.1
   acceleration: 10
   flag1: 0
-  flag2: 0
-  MaxDistance: 50
-  MinDistance: 10
+  flag2: 1
 --- !u!1 &4727442477102090696
 GameObject:
   m_ObjectHideFlags: 0

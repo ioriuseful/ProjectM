@@ -91,11 +91,11 @@ public class EnemyJump : MonoBehaviour
             isDeadFlag = true;
             //Debug.Log("rain");
         }
-        if (other.gameObject.tag == "Ground")
-        {
-            isDeadFlag = true;
-            //Debug.Log("a");
-        }
+        //if (other.gameObject.tag == "Ground")
+        //{
+        //    isDeadFlag = true;
+        //    //Debug.Log("a");
+        //}
     }
 
     public int GetColor()

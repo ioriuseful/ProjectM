@@ -6,15 +6,20 @@ public class EnemyRespawnScript : MonoBehaviour
 {
 
     [SerializeField, Header("EnemyBoxを入れるリスト")] List<GameObject> enemyBoxes;
+    [SerializeField, Header("GroundBoxを入れるリスト")] List<GameObject> groundBoxes;
+
     [SerializeField, Header("Player")] GameObject player;//Ｙ軸を参照するため
 
-    [Header("再配置するまでの最小時間と最大時間")] public float minRespawnTime;
-    public float maxRespawnTime;
+    /*[Header("再配置するまでの最小時間と最大時間")]*/
+    private float minRespawnTime;
+    private float maxRespawnTime;
 
 
-    float NowxPosition,BeforexPosition; //生成した時点でのX座標と以前生成した時のX座標の取得
-    [SerializeField,Header("前回生成した位置とどれだけ離れたら生成するか")]
+    float NowxPosition, BeforexPosition; //生成した時点でのX座標と以前生成した時のX座標の取得
+    [SerializeField, Header("前回生成した位置とどれだけ離れたら生成するか")]
     public float InstantiateDistance;
+    [SerializeField, Header("何Wave目から地面をランダム生成するか")]
+    public int groundRespawnWave;
 
     //ランダム値を書くのするための値
     float rndRespawnTime;
@@ -27,10 +32,10 @@ public class EnemyRespawnScript : MonoBehaviour
     private int Enemywave;
     int rnd;//保管用
     [Header("Wave毎のリスポーン頻度の上昇、減少の設定")]
-    public float MaxTimeUp = 0.5f;
-    public float MaxTimeDown = 0;
-    public float MinTimeUp = 0.5f;
-    public float MinTimeDown = 0;
+    private float MaxTimeUp = 0.5f;
+    private float MaxTimeDown = 0;
+    private float MinTimeUp = 0.5f;
+    private float MinTimeDown = 0;
     private float MaxTime;
     private float MinTime;
 
@@ -69,7 +74,12 @@ public class EnemyRespawnScript : MonoBehaviour
         //    isRespawnFlag = false;
         //}
 
-        switch(Enemywave)
+        if (Wscript.wave >= groundRespawnWave)
+        {
+            GroundRespawn();
+        }
+
+        switch (Enemywave)
         {
             case 1:
                 MaxTime = maxRespawnTime + MaxTimeUp - MaxTimeDown;
@@ -91,24 +101,24 @@ public class EnemyRespawnScript : MonoBehaviour
                 rnd = Random.Range(0, 4);
                 Respawn();
                 break;
-            
+
             case 4:
                 MaxTime = maxRespawnTime + MaxTimeUp * Enemywave - MaxTimeDown * Enemywave;
                 MinTime = minRespawnTime + MinTimeUp * Enemywave - MinTimeDown * Enemywave;
                 rnd = Random.Range(0, 2);
                 Respawn();
                 break;
-            
+
             case 5:
                 MaxTime = maxRespawnTime + MaxTimeUp * Enemywave - MaxTimeDown * Enemywave;
                 MinTime = minRespawnTime + MinTimeUp * Enemywave - MinTimeDown * Enemywave;
                 rnd = Random.Range(0, 3);
                 Respawn();
                 break;
-                
+
             default:
                 MaxTime = maxRespawnTime + MaxTimeUp * 6 - MaxTimeDown * 6;
-                MinTime = minRespawnTime + MinTimeUp * 6  - MinTimeDown * 6;
+                MinTime = minRespawnTime + MinTimeUp * 6 - MinTimeDown * 6;
                 rnd = Random.Range(1, 3);
                 Respawn();
                 break;
@@ -134,4 +144,16 @@ public class EnemyRespawnScript : MonoBehaviour
             isRespawnFlag = false;
         }
     }
+
+    void GroundRespawn()
+    {
+        int rnd = Random.Range(0, groundBoxes.Count);
+        if (isRespawnFlag)
+        {
+            Instantiate(groundBoxes[rnd], transform.position, Quaternion.identity);
+        }
+
+    }
+
+
 }
