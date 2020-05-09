@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8394191245007427658}
   - component: {fileID: 8394191245007427659}
   - component: {fileID: 8394191245007429557}
-  - component: {fileID: 2942426517372725736}
+  - component: {fileID: -574627993761059742}
   m_Layer: 0
   m_Name: HColorBlock(Green)
   m_TagString: ColorBlock
@@ -91,13 +91,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8394191245007429558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd328c445db54894188980ef7111a348, type: 3}
+  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CS: 3
   player: {fileID: 0}
---- !u!70 &2942426517372725736
-CapsuleCollider2D:
+--- !u!61 &-574627993761059742
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110,5 +110,15 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.15}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
