@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6257602291938200260}
   - component: {fileID: 5034389116136640491}
   - component: {fileID: 6563831468495767696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 8709038381722140605}
   - component: {fileID: 2645811224091783029}
   - component: {fileID: 534713784822891939}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 1672507034048202219}
   - component: {fileID: 1210862496757967865}
   - component: {fileID: 6041655493580874398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Red)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 3138370878488370459}
   - component: {fileID: 3138370878488369893}
   - component: {fileID: 7693793664663541323}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Green)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1045,7 +1045,7 @@ GameObject:
   - component: {fileID: 374762091509440201}
   - component: {fileID: 6705925797260924540}
   - component: {fileID: 7332672723345717028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Green) (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 3646895080517001142}
   - component: {fileID: 5033199010216500448}
   - component: {fileID: 3399139246186980128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (4)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1497,7 +1497,7 @@ GameObject:
   - component: {fileID: 320532789834790018}
   - component: {fileID: 2083983411156299066}
   - component: {fileID: 4134905904235366711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1821,7 +1821,7 @@ GameObject:
   - component: {fileID: 2554592535441098329}
   - component: {fileID: 554518026652272011}
   - component: {fileID: 9139392399398459717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (6)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2188,7 +2188,7 @@ GameObject:
   - component: {fileID: 6563284577083696500}
   - component: {fileID: 3319009965160953785}
   - component: {fileID: 6599179614979399384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (5)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2626,7 +2626,7 @@ GameObject:
   - component: {fileID: 8012988994232070748}
   - component: {fileID: 8976808361963922095}
   - component: {fileID: 9103057298528737816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2999,6 +2999,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038479187529208863, guid: 929d2cb254abf654db579dba5a842346,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607778286954101328, guid: 929d2cb254abf654db579dba5a842346,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 929d2cb254abf654db579dba5a842346, type: 3}

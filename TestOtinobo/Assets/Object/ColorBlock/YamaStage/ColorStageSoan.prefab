@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5849156627319604154}
   - component: {fileID: 7465256781338345041}
   - component: {fileID: 4802679297404538013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GreenBox (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 5050014869038684068}
   - component: {fileID: 6133770611089117835}
   - component: {fileID: 5464361772177741296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 2552816051671863518}
   - component: {fileID: 2552816051671865120}
   - component: {fileID: 9207290068790501757}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlueBox
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 6931389500159714550}
   - component: {fileID: 1626702102690630433}
   - component: {fileID: 8787802955806724794}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GreenBox
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 5140662692592996711}
   - component: {fileID: 8139299157844506874}
   - component: {fileID: 3653695740242093874}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RedBox (2)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1055,7 +1055,7 @@ GameObject:
   - component: {fileID: 7816432299274401756}
   - component: {fileID: 3408621341995476822}
   - component: {fileID: 2878666477884444125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedEnemy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1488,7 +1488,7 @@ GameObject:
   - component: {fileID: 7420194592373820047}
   - component: {fileID: 1997504753191214816}
   - component: {fileID: 5427178030419340669}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlueBox (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 4663473656495627506}
   - component: {fileID: 1332177074912824211}
   - component: {fileID: 2713644219856282653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Green
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1925,7 +1925,7 @@ GameObject:
   - component: {fileID: 3044707138327463738}
   - component: {fileID: 5045834201091960355}
   - component: {fileID: 7115430380899610177}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RedBox (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -2037,7 +2037,7 @@ GameObject:
   - component: {fileID: 6274434411260139870}
   - component: {fileID: 6274434411260139871}
   - component: {fileID: 6274434411260139868}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RedBox
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -2155,7 +2155,7 @@ GameObject:
   - component: {fileID: 6274434411281445642}
   - component: {fileID: 6274434411281445643}
   - component: {fileID: 6274434411281445640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlueEnemy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2473,7 +2473,7 @@ GameObject:
   - component: {fileID: 4242884747711650104}
   - component: {fileID: 8259433087954073766}
   - component: {fileID: 2432088343081206063}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlueBox (2)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -2591,7 +2591,7 @@ GameObject:
   - component: {fileID: 2439118944049711127}
   - component: {fileID: 6047383447918964116}
   - component: {fileID: 8328347690336620684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlueEnemy (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2909,7 +2909,7 @@ GameObject:
   - component: {fileID: 2386433893094281369}
   - component: {fileID: 8544398936039707101}
   - component: {fileID: 4221383123837423814}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GreenBox (2)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -3216,7 +3216,7 @@ GameObject:
   - component: {fileID: 8682328164288406502}
   - component: {fileID: 7170900753107688055}
   - component: {fileID: 8818051300750153417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Green (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}

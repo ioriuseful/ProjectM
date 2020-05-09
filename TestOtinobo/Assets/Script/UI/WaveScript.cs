@@ -10,6 +10,8 @@ public class WaveScript : MonoBehaviour
     public int number;
     [SerializeField, Header("移動する高さ限界")] public float hight;
     [SerializeField, Header("移動速度")] public float speed;
+    [SerializeField, Header("Wave変更時のSE")] public AudioClip WaveSE;
+    AudioSource audioSource;
     private Vector3 pos;
     private int score;
     public int wave;
@@ -22,6 +24,7 @@ public class WaveScript : MonoBehaviour
     void Start()
     {
         text = GameObject.Find("WaveText").GetComponent<Text>();//テキストを探す
+        audioSource = gameObject.GetComponent<AudioSource>();
         pos = transform.position;
         maxwave = false;
         animator = GetComponent<Animator>();
@@ -58,6 +61,7 @@ public class WaveScript : MonoBehaviour
 
     void StartAnime()
     {
+        audioSource.PlayOneShot(WaveSE);
         animator.SetBool("ChangeWave", true);
         Invoke("StopAnime", 1.05f);
     }
