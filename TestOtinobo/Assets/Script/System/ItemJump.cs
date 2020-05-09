@@ -6,7 +6,7 @@ public class ItemJump : MonoBehaviour
 {
     [SerializeField, Header("アイテムを入手したときの飛ぶ高さ")] public float boundHeight;
     [SerializeField, Header("アイテムを入手したときの飛ぶ回数")] public float boundCount;
-    AudioSource audioSource;
+   // AudioSource audioSource;
     [SerializeField, Header("アイテムをとるSE")] public AudioClip ItemSE;
     private float time;
     private bool death;
@@ -15,7 +15,7 @@ public class ItemJump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = gameObject.GetComponent<AudioSource>();
+      //  audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class ItemJump : MonoBehaviour
         if (playerjump == true)
         {
             time += Time.deltaTime;
-            audioSource.PlayOneShot(ItemSE);
+        //    audioSource.PlayOneShot(ItemSE);
             Destroy(gameObject);
         }
         if(time>0.01f)
