@@ -372,6 +372,18 @@ PrefabInstance:
       propertyPath: Wscript
       value: 
       objectReference: {fileID: 1495752276}
+    - target: {fileID: 3977168066030091532, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5,
+        type: 3}
+      propertyPath: enemyBoxes.Array.data[0]
+      value: 
+      objectReference: {fileID: 662339871802683833, guid: d783b9c2884f0cd4a8cb71a4c5c5187c,
+        type: 3}
+    - target: {fileID: 3977168066030091532, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5,
+        type: 3}
+      propertyPath: enemyBoxes.Array.data[1]
+      value: 
+      objectReference: {fileID: 3394205166927199167, guid: cffad16fbb4694744be1ee8b112bd55c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5, type: 3}
 --- !u!1 &745606977
