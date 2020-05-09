@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 0.7372549}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -125,5 +125,5 @@ MonoBehaviour:
   Blue: 0
   Alpha: 1
   player: {fileID: 6382301148395647402, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
-  interval: 300
-  LineScore: 0
+  count: 5
+  Pscript: {fileID: 0}

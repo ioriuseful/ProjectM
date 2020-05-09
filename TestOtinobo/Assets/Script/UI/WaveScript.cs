@@ -8,17 +8,17 @@ public class WaveScript : MonoBehaviour
 {
     public PlayerScript player;
 
-    [Header("何本通ったらWaveを更新するか")]public int number = 10;
-    public int number;
+    [Header("何本通ったらWaveを更新するか")] public int number = 10;
     [SerializeField, Header("移動する高さ限界")] public float hight;
     [SerializeField, Header("移動速度")] public float speed;
     [SerializeField, Header("Wave変更時のSE")] public AudioClip WaveSE;
     AudioSource audioSource;
     private Vector3 pos;
     private int score;
+    public int changewave;
     [Header("この値は基本いじらない")]
     public int wave;
-    public int changewave;
+    [Header("最大Wave")]
     public int max;//Waveの最大値
     Text text;
     private Animator animator;
@@ -41,7 +41,7 @@ public class WaveScript : MonoBehaviour
         if (wave >= max)
         {
             text.text = "Wave Max!";
-            if(wave == max && maxwave == false)
+            if (wave == max && maxwave == false)
             {
                 StartAnime();
                 maxwave = true;

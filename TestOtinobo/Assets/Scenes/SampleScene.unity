@@ -704,11 +704,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2873580388081674473, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy(1)
-      objectReference: {fileID: 0}
     - target: {fileID: 2873580388081674472, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -763,6 +758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873580388081674473, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy(1)
       objectReference: {fileID: 0}
     - target: {fileID: 2873580388081674388, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
         type: 3}
@@ -1303,6 +1303,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1495752276, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1642768534}
+    - target: {fileID: 1495752276, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: number
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7306492238411814785, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1418,10 +1426,6 @@ PrefabInstance:
       objectReference: {fileID: 1642768534}
     - target: {fileID: 2747871219962801857, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
         type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1642768534}
-    - target: {fileID: 1495752276, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1642768534}
