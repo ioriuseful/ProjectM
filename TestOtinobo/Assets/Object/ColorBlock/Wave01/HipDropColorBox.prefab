@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 424932751}
   - component: {fileID: 424932750}
   - component: {fileID: 424932749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Green) (2)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 438099931}
   - component: {fileID: 438099930}
   - component: {fileID: 438099929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlueEnemy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 1206582968}
   - component: {fileID: 1206582967}
   - component: {fileID: 1206582966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Green) (3)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 1425638829}
   - component: {fileID: 1425638828}
   - component: {fileID: 1425638827}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Green) (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 1703689210812592163}
   - component: {fileID: 5003379507834332994}
   - component: {fileID: 8267353070831487180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedEnemy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1371142157988382105, guid: ac1940b9d839550479bdcee334468a64,
+  m_Sprite: {fileID: -6621319459219587883, guid: 7f234fc8d74bdd54fa789102de58b91f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -783,7 +783,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.18, y: 0.18}
     newSize: {x: 0.18, y: 0.18}
     adaptiveTilingThreshold: 0.5
@@ -859,7 +859,7 @@ Animator:
   m_GameObject: {fileID: 530699381510619759}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2285cb50288c3f441aaf92484abfda74, type: 2}
+  m_Controller: {fileID: 9100000, guid: c039bc9f083cd9d43aaac19288082340, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 1226673579132451701}
   - component: {fileID: 147707318187114074}
   - component: {fileID: 2073367553481570593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1476,7 +1476,7 @@ GameObject:
   - component: {fileID: 3972872907344988199}
   - component: {fileID: 4719895739649992688}
   - component: {fileID: 3379890910032232043}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Green) (4)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1588,7 +1588,7 @@ GameObject:
   - component: {fileID: 8394191246497102863}
   - component: {fileID: 8394191246497102833}
   - component: {fileID: 2942426515847728556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Green)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1764,6 +1764,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505022012837174357, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 522393386024124961, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821443064086017893, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280265449985865731, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295262599609198199, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218821151342678835, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00be10a57dfdf914ba05f7bd054f14f9, type: 3}

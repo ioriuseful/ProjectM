@@ -1637,7 +1637,7 @@ GameObject:
   - component: {fileID: 6071648092680211031}
   - component: {fileID: 6071648092680211881}
   - component: {fileID: 642153136148823028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(White)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1716,7 +1716,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6071648092680211882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd328c445db54894188980ef7111a348, type: 3}
+  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CS: 0
@@ -2399,7 +2399,7 @@ GameObject:
   - component: {fileID: 8362624917132407031}
   - component: {fileID: 8362624917132407030}
   - component: {fileID: 8362624917132407029}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WColorBlock(green) (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -2478,7 +2478,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8362624917132406987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd328c445db54894188980ef7111a348, type: 3}
+  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CS: 3
@@ -3205,7 +3205,7 @@ GameObject:
   - component: {fileID: 8362624918294598348}
   - component: {fileID: 8362624918294598339}
   - component: {fileID: 8362624918294598338}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WColorBlock(green) (2)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -3284,10 +3284,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8362624918294598336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd328c445db54894188980ef7111a348, type: 3}
+  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CS: 0
+  CS: 3
   player: {fileID: 0}
 --- !u!70 &8362624918294598338
 CapsuleCollider2D:
@@ -3317,7 +3317,7 @@ GameObject:
   - component: {fileID: 8362624918329012444}
   - component: {fileID: 8362624918329012435}
   - component: {fileID: 8362624918329012434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(White) (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -3396,7 +3396,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8362624918329012432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd328c445db54894188980ef7111a348, type: 3}
+  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CS: 0
@@ -3429,7 +3429,7 @@ GameObject:
   - component: {fileID: 9169259846583353463}
   - component: {fileID: 9169259846583355273}
   - component: {fileID: 1070828810405833262}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WColorBlock(green)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -3508,7 +3508,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9169259846583355274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd328c445db54894188980ef7111a348, type: 3}
+  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CS: 3
