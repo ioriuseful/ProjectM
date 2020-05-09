@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 280125180765975679}
   - component: {fileID: 280125180765975425}
   - component: {fileID: 8214755115087060518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WColorBlock(Blue)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 1133097952178286968}
   - component: {fileID: 7825064785539065961}
   - component: {fileID: 7320437408324735538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 2583150940828293463}
   - component: {fileID: 3973343907736404573}
   - component: {fileID: 1528117020309624389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 2068108313020893211}
   - component: {fileID: 4242890251422187294}
   - component: {fileID: 4027391800792484150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WColorBlock(Blue) (1)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -1044,7 +1044,7 @@ GameObject:
   - component: {fileID: 547915952505088561}
   - component: {fileID: 3510144995066576706}
   - component: {fileID: 6229163188504138359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (4)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1368,7 +1368,7 @@ GameObject:
   - component: {fileID: 4044720164379795150}
   - component: {fileID: 3037555516066193814}
   - component: {fileID: 5003290065071765059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1692,7 +1692,7 @@ GameObject:
   - component: {fileID: 4158641870889356020}
   - component: {fileID: 3079530465961594843}
   - component: {fileID: 3780322665809578144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2010,7 +2010,7 @@ GameObject:
   - component: {fileID: 8394191246085998538}
   - component: {fileID: 8394191246085996596}
   - component: {fileID: 8394191246085996600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HColorBlock(Red)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -2186,6 +2186,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7884997742815795261, guid: a4705b548b42ff64991379c5d6464389,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2575643560771282187, guid: a4705b548b42ff64991379c5d6464389,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911352451588668523, guid: a4705b548b42ff64991379c5d6464389,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853073918973575517, guid: a4705b548b42ff64991379c5d6464389,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4705b548b42ff64991379c5d6464389, type: 3}

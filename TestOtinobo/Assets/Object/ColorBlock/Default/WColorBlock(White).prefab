@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1116866050855446745}
   - component: {fileID: 1116866050855446744}
   - component: {fileID: 1116866050855448358}
-  - component: {fileID: -3462757610025535278}
-  m_Layer: 0
+  - component: {fileID: 9123307544075977345}
+  m_Layer: 9
   m_Name: WColorBlock(White)
   m_TagString: ColorBlock
   m_Icon: {fileID: 0}
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 0
   player: {fileID: 0}
---- !u!61 &-3462757610025535278
-BoxCollider2D:
+--- !u!70 &9123307544075977345
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110,15 +110,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.13, y: 0.16}
+  m_Direction: 1
