@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class ScoreLineSprict : MonoBehaviour
 {
-    private bool ChangeEnd;
-    private SpriteRenderer sprite;
     [SerializeField, Header("変更後の赤の濃度(0～1.0f)")] float Red = 1.0f;
     [SerializeField, Header("変更後の緑の濃度(0～1.0f)")] float Green = 1.0f;
     [SerializeField, Header("変更後の青の濃度(0～1.0f)")] float Blue = 1.0f;
     [SerializeField, Header("変更後の透明度(0～1.0f)")] float Alpha = 1.0f;
-    [SerializeField, Header("Playerオブジェクト")] GameObject player;
     [SerializeField, Header("消えるまでの距離")] int count = 5;
 
-    public PlayerScript Pscript;//プレイヤースクリプト取得
+    private SpriteRenderer sprite;
+    private GameObject player;
+    private PlayerScript Pscript;//プレイヤースクリプト取得
     private int score;//生成時のスコア
     private int scorenow;//現在のスコア
 
