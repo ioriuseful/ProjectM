@@ -176,7 +176,7 @@ public class PlayerScript : MonoBehaviour
             rig2D.velocity = new Vector2(0,0);
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S))
         {
             anim1 = true; //animのtrue追加
             audioSource.PlayOneShot(HipDropSE);
