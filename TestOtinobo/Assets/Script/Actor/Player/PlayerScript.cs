@@ -94,36 +94,10 @@ public class PlayerScript : MonoBehaviour
     private bool stop = false;
     public bool anim1 = false;//animetion
     public bool anim2 = false;//animation
+    public bool ColorWallRight = false;
+    public bool ColorWallLeft = false;
+    public bool ColorWallBottom = false;
 
-    #region//FoldOut
-    //public static bool FoldOut(string title, bool display)
-    //{
-    //    var style = new GUIStyle("ShurikenModuleTitle");
-    //    style.font = new GUIStyle(EditorStyles.label).font;
-    //    style.border = new RectOffset(15, 7, 4, 4);
-    //    style.fixedHeight = 22;
-    //    style.contentOffset = new Vector2(20f, -2f);
-
-    //    var rect = GUILayoutUtility.GetRect(16f, 22f, style);
-    //    GUI.Box(rect, title, style);
-
-    //    var e = Event.current;
-
-    //    var toggleRect = new Rect(rect.x + 4f, rect.y + 2f, 13f, 13f);
-    //    if (e.type == EventType.Repaint)
-    //    {
-    //        EditorStyles.foldout.Draw(toggleRect, false, false, display, false);
-    //    }
-
-    //    if (e.type == EventType.MouseDown && rect.Contains(e.mousePosition))
-    //    {
-    //        display = !display;
-    //        e.Use();
-    //    }
-
-    //    return display;
-    //}
-    #endregion
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -159,10 +133,31 @@ public class PlayerScript : MonoBehaviour
 
         float ySpeed = GetYSpeed();
         //プレイヤーが動いていたらaxisの値に5かけて動かす
-        if (axis != 0&&!hiptime&&!hip)
+        if (axis > 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true)
         {
             velocity.x = axis * 5;
         }
+        if (axis < 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false)
+        {
+            velocity.x = axis * 5;
+        }
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true && ColorWallBottom == true)
+        {
+            velocity.x = axis * 5;
+        }
+        if (axis !=0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false && ColorWallBottom == true)
+        {
+            velocity.x = axis * 5;
+        }
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == true)
+        {
+            velocity.x = axis * 5;
+        }
+        if (axis != 0&&!hiptime&&!hip&&ColorWallRight==false&&ColorWallLeft==false)
+        {
+            velocity.x = axis * 5;
+        }
+     
         else if (axis != 0 && hiptime&&!hip)
         {
             velocity.x = axis *5* HipJump;
@@ -257,6 +252,10 @@ public class PlayerScript : MonoBehaviour
         {
             _animator.SetBool("HipAnim", false);
         }
+        //if(ColorWall==true)
+        //{
+        //    velocity.x =  0;           
+        //}
         ////ダメージを受けたら一定時間無敵にして点滅させる(ダメージ関連を追加することは無いと思うけど念のため残してます)
         //if (damageFlag)
         //{
@@ -332,6 +331,15 @@ public class PlayerScript : MonoBehaviour
         if (other.gameObject.tag == "ColorBlock")
         {
             hip = false;
+
+            foreach (ContactPoint2D point in other.contacts)
+            {
+               if (point.point.y - transform.position.y < -0.2)
+               {
+                 ColorWallRight = false;
+                 ColorWallLeft = false;
+               }
+            }
         }
         //if (other.collider.tag == "item")
         //{
@@ -410,7 +418,53 @@ public class PlayerScript : MonoBehaviour
             jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
         }
     }
-
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "ColorBlock")
+        {
+            //foreach (ContactPoint2D point in other.contacts)
+            //{
+            //    if (point.point.x - transform.position.x > 0.1)
+            //    {
+            //        Debug.Log("right");
+            //        ColorWallRight = false;
+            //    }
+            //    else if (point.point.x - transform.position.x < -0.1)
+            //    {
+            //        Debug.Log("hitting");
+            //        ColorWallLeft = false;
+            //    }
+            //    else if (point.point.y - transform.position.y < -0.2)
+            //    {
+            //        ColorWallBottom = false;
+            //    }
+            //}
+            ColorWallRight = false;
+            ColorWallLeft = false;
+            ColorWallBottom = false;
+        }
+    }
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "ColorBlock")
+        {
+            foreach (ContactPoint2D point in other.contacts)
+            {
+                if (point.point.x - transform.position.x > 0.1)
+                {
+                    ColorWallRight = true;
+                }
+                else if (point.point.x - transform.position.x < -0.1)
+                {
+                    ColorWallLeft = true;
+                }
+                else if(point.point.y - transform.position.y < -0.1)
+                {
+                    ColorWallBottom = true;
+                }
+            }
+        }
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //OnDamegeEffect();
