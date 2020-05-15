@@ -38,6 +38,12 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("SampleTitle");
     }
 
+    public void ButtonClickedTutorialScene()
+    {
+        audioSource.PlayOneShot(selectse);
+        SceneManager.LoadScene("TutorialScene");
+    }
+
     public void ButtonClickedGameScene()
     {
         audioSource.PlayOneShot(selectse);
