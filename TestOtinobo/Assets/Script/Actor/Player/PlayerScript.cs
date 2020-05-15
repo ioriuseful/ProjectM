@@ -332,7 +332,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.tag == "ColorBlock")
         {
-<<<<<<< HEAD
+
 
                 otherJumpHeight = 0.001f;    //踏んづけたものから跳ねる高さを取得する          
                 jumpPos = transform.position.y; //ジャンプした位置を記録する 
@@ -343,18 +343,10 @@ public class PlayerScript : MonoBehaviour
                 Parasol = hinan;
                 hiptime = false;
             
-=======
+
             hip = false;
 
-            foreach (ContactPoint2D point in other.contacts)
-            {
-               if (point.point.y - transform.position.y < -0.2)
-               {
-                 ColorWallRight = false;
-                 ColorWallLeft = false;
-               }
-            }
->>>>>>> origin/ueda
+        
         }
         //if (other.collider.tag == "item")
         //{
