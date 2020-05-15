@@ -911,6 +911,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6578501399638367460, guid: 743d2ed144e458f4ca94ed5e6b76859e,
         type: 3}
+    - target: {fileID: 8242538305806346176, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2285cb50288c3f441aaf92484abfda74, type: 2}
     - target: {fileID: 2873580388081674389, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
         type: 3}
       propertyPath: m_Sprite
