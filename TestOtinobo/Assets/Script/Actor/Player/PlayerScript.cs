@@ -152,6 +152,8 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(stop);
+        Debug.Log(hip);
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, transform.rotation.w);
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;
@@ -331,7 +333,16 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.tag == "ColorBlock")
         {
-            hip = false;
+
+                otherJumpHeight = 0.001f;    //踏んづけたものから跳ねる高さを取得する          
+                jumpPos = transform.position.y; //ジャンプした位置を記録する 
+                isOtherJump = true;
+                hip = false;
+                isJump = false;
+                jumpTime = 0.0f;
+                Parasol = hinan;
+                hiptime = false;
+            
         }
         //if (other.collider.tag == "item")
         //{
@@ -452,6 +463,11 @@ public class PlayerScript : MonoBehaviour
 
             //プレイヤー死亡
             isDeadFlag = true;
+        }
+        if (other.gameObject.tag == "ColorBlock")
+        {
+            hip = false;
+            stop = false;
         }
 
     }
