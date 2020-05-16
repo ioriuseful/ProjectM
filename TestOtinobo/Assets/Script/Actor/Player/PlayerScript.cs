@@ -23,7 +23,7 @@ public class PlayerScript : MonoBehaviour
     [Header("ジャンプの速さ表現")] public AnimationCurve jumpCurve;
     [Header("踏みつけ判定の高さの割合")] public float stepOnRate;
     [Header("ヒップドロップジャンプの距離")] public float HipJump;
-    [Header("パラソルのバランス5.0～9.6の範囲で設定すること")] public float Parasol; 
+    [Header("パラソルのバランス5.0～9.6の範囲で設定すること")] public float Parasol;
     [Header("リカバリージャンプの高さ")] public float Recovery;
     [Header("リカバリージャンプの長さ")] public float jumpLimitTime2;
     [Header("ヒップドロップタイム")] public float HipLimitTime;
@@ -72,10 +72,10 @@ public class PlayerScript : MonoBehaviour
 
     private bool damageFlag; //ダメージを受けているか判定
     private bool isDeadFlag; //死亡フラグ
-    public bool GetisDeadFlag=false;//死亡フラグを取得する
+    public bool GetisDeadFlag = false;//死亡フラグを取得する
     private bool isJump = false;
     private float jumpPos = 0.0f;
-    private bool isOtherJump=false;
+    private bool isOtherJump = false;
     private float jumpTime;
     private float otherJumpHeight = 0.0f;
     private bool isDown = false;
@@ -90,7 +90,7 @@ public class PlayerScript : MonoBehaviour
 
     private bool on_ground = false;
     private bool hiptime = false;
-    private bool hip=false;
+    private bool hip = false;
     private bool stop = false;
     public bool anim1 = false;//animetion
     public bool anim2 = false;//animation
@@ -116,7 +116,7 @@ public class PlayerScript : MonoBehaviour
         capcol = GetComponent<BoxCollider2D>();
         FadeManager.FadeIn();
         hinan = Parasol;
-        jumpText.text = string.Format("ジャンプ残り "+ IJumpC + " 回");
+        jumpText.text = string.Format("ジャンプ残り " + IJumpC + " 回");
         CS = ColorState.White;
     }
     private void Awake()//追加
@@ -126,6 +126,8 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(stop);
+        Debug.Log(hip);
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, transform.rotation.w);
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;
@@ -145,7 +147,7 @@ public class PlayerScript : MonoBehaviour
         {
             velocity.x = axis * 5;
         }
-        if (axis !=0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false && ColorWallBottom == true)
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false && ColorWallBottom == true)
         {
             velocity.x = axis * 5;
         }
@@ -153,14 +155,14 @@ public class PlayerScript : MonoBehaviour
         {
             velocity.x = axis * 5;
         }
-        if (axis != 0&&!hiptime&&!hip&&ColorWallRight==false&&ColorWallLeft==false)
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == false)
         {
             velocity.x = axis * 5;
         }
-     
-        else if (axis != 0 && hiptime&&!hip)
+
+        else if (axis != 0 && hiptime && !hip)
         {
-            velocity.x = axis *5* HipJump;
+            velocity.x = axis * 5 * HipJump;
         }
         if (!stop)
         {
@@ -168,11 +170,11 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            rig2D.velocity = new Vector2(0,0);
+            rig2D.velocity = new Vector2(0, 0);
             xSpeed = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             anim1 = true; //animのtrue追加
             audioSource.PlayOneShot(HipDropSE);
@@ -330,35 +332,16 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.tag == "ColorBlock")
         {
+            otherJumpHeight = 0.001f;    //踏んづけたものから跳ねる高さを取得する          
+            jumpPos = transform.position.y; //ジャンプした位置を記録する 
+            isOtherJump = true;
             hip = false;
-
-            foreach (ContactPoint2D point in other.contacts)
-            {
-               if (point.point.y - transform.position.y < -0.2)
-               {
-                 ColorWallRight = false;
-                 ColorWallLeft = false;
-               }
-            }
+            isJump = false;
+            jumpTime = 0.0f;
+            Parasol = hinan;
+            hiptime = false;
         }
-        //if (other.collider.tag == "item")
-        //{
-        //    ItemJump o = other.gameObject.GetComponent<ItemJump>();
-        //    if (o != null)
-        //    {
-        //        audioSource.PlayOneShot(ItemSE);
-        //        IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-        //        IJumpC += o.boundCount;
-        //        IJump = true;
-        //        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-        //        jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("ObjectCollisionが付いてないよ!");
-        //    }
-        //}
-
+            
         if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
@@ -378,7 +361,7 @@ public class PlayerScript : MonoBehaviour
                         audioSource.PlayOneShot(JumpSE);
                         otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                         o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor()); 
+                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor());
                         jumpPos = transform.position.y; //ジャンプした位置を記録する 
                         isOtherJump = true;
                         isJump = false;
@@ -407,10 +390,10 @@ public class PlayerScript : MonoBehaviour
                     break;
                 }
             }
-           
+
         }
         //300点取る度にジャンプを一回増やす
-        if(numScore >= 300)
+        if (numScore >= 300)
         {
             IJumpC += 1;
             numScore = 0;
@@ -458,7 +441,7 @@ public class PlayerScript : MonoBehaviour
                 {
                     ColorWallLeft = true;
                 }
-                else if(point.point.y - transform.position.y < -0.1)
+                else if (point.point.y - transform.position.y < -0.1)
                 {
                     ColorWallBottom = true;
                 }
@@ -507,6 +490,11 @@ public class PlayerScript : MonoBehaviour
             //プレイヤー死亡
             isDeadFlag = true;
         }
+        if (other.gameObject.tag == "ColorBlock")
+        {
+            hip = false;
+            stop = false;
+        }
 
     }
 
@@ -549,13 +537,13 @@ public class PlayerScript : MonoBehaviour
         if (isOtherJump)
         {
             Parasol = hinan;
-            if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && !hip &&!Rcv)
+            if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && !hip && !Rcv)
             {
                 ySpeed = jumpSpeed;
                 jumpTime += Time.deltaTime;
                 xSpeed = 1;
-            }       
-            else if(jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && hip && !Rcv)
+            }
+            else if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && hip && !Rcv)
             {
                 ySpeed = jumpSpeed;
                 jumpTime += Time.deltaTime;
@@ -563,12 +551,12 @@ public class PlayerScript : MonoBehaviour
                 hiptime = true;
                 hip = false;
             }
-            else  if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime2 && !isHead && Rcv)
+            else if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime2 && !isHead && Rcv)
             {
                 ySpeed = jumpSpeed;
                 jumpTime += Time.deltaTime;
                 xSpeed = 1;
-               // Debug.Log("ksk");
+                // Debug.Log("ksk");
             }
             else
             {
