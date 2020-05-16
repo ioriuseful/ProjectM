@@ -43,7 +43,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     AudioSource audioSource;
     private Animator _animator;
-
+    public RetryGame retryGame;
     //プレイヤーの画像変更に必要なもの
     SpriteRenderer MainSpriteRenderer;
 
@@ -97,7 +97,7 @@ public class PlayerScript : MonoBehaviour
     public bool ColorWallRight = false;
     public bool ColorWallLeft = false;
     public bool ColorWallBottom = false;
-
+    public bool Pause = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -132,7 +132,7 @@ public class PlayerScript : MonoBehaviour
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;
         gravity = new Vector2(0.0f, -9.81f + Parasol);
-
+        Pause = retryGame.pauseGame;
         float ySpeed = GetYSpeed();
         //プレイヤーが動いていたらaxisの値に5かけて動かす
         if (axis > 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true)
@@ -173,15 +173,17 @@ public class PlayerScript : MonoBehaviour
             rig2D.velocity = new Vector2(0, 0);
             xSpeed = 0;
         }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        if (Pause == false)
         {
-            anim1 = true; //animのtrue追加
-            audioSource.PlayOneShot(HipDropSE);
-            hip = true;
-            stop = true;
-            xSpeed = 1;
-            Invoke("Hip", HipLimitTime);
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            {
+                anim1 = true; //animのtrue追加
+                audioSource.PlayOneShot(HipDropSE);
+                hip = true;
+                stop = true;
+                xSpeed = 1;
+                Invoke("Hip", HipLimitTime);
+            }
         }
         if (on_ground)
         {
@@ -189,28 +191,31 @@ public class PlayerScript : MonoBehaviour
             MainSpriteRenderer.color = new Color(1f, 1f, 1f, level);
         }
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
-        if (IJump && Input.GetButtonDown("Jump"))
+        if (Pause == false)
         {
-            if (IJumpC > 0)
+            if (IJump && Input.GetButtonDown("Jump"))
             {
-                IJumpC--;
-                jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
-                audioSource.PlayOneShot(JumpSE);
+                if (IJumpC > 0)
+                {
+                    IJumpC--;
+                    jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
+                    audioSource.PlayOneShot(JumpSE);
+                }
+                else
+                {
+                    IJump = false;
+                    return;
+                }
+                otherJumpHeight = IJumpH;    //踏んづけたものから跳ねる高さを取得する          
+                jumpPos = transform.position.y; //ジャンプした位置を記録する 
+                isOtherJump = true;
+                hip = false;
+                isJump = false;
+                jumpTime = 0.0f;
+                Parasol = hinan;
+                hiptime = false;
+                //Debug.Log("ジャンプしたよ");       
             }
-            else
-            {
-                IJump = false;
-                return;
-            }
-            otherJumpHeight = IJumpH;    //踏んづけたものから跳ねる高さを取得する          
-            jumpPos = transform.position.y; //ジャンプした位置を記録する 
-            isOtherJump = true;
-            hip = false;
-            isJump = false;
-            jumpTime = 0.0f;
-            Parasol = hinan;
-            hiptime = false;
-            //Debug.Log("ジャンプしたよ");       
         }
         switch (CS)
         {

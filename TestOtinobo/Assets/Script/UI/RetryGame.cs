@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class RetryGame : MonoBehaviour
 {
     public PlayerScript player;
-    public AudioClip selectse;
+    public AudioClip selectse,enterse;
     AudioSource audioSource;
     public GameObject OnPanel, OnUnPanel,Panel,canvasObject;
-    private bool pauseGame = false;
-    GameObject prefab, prefab2;
+    public bool pauseGame = false;
+    private GameObject prefab, prefab2;
     public bool setGround=false;
     public bool setGround2 = false;
-    void Start()
+    public void Start()
     {
         OnUnPause();
         audioSource = GetComponent<AudioSource>();
@@ -21,28 +21,29 @@ public class RetryGame : MonoBehaviour
 
     public void Update()
     {
-        setGround = player.ColorWallRight;
-        setGround2 = player.ColorWallLeft;
-        if (setGround == true&&setGround2==true)
+        //setGround = player.ColorWallRight;
+        //setGround2 = player.ColorWallLeft;
+        //if (setGround == true&&setGround2==true)
+        //{
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Return))
         {
-            if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Return))
-            {
-                pauseGame = !pauseGame;
+           audioSource.PlayOneShot(enterse);
+           pauseGame = !pauseGame;
 
-                if (pauseGame == true)
-                {
-                    OnPause();
-                }
-                else
-                {
-                    OnUnPause();
-                }
-            }
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                audioSource.PlayOneShot(selectse);
-            }
+           if (pauseGame == true)
+           {
+             OnPause();
+           }
+           else
+           {
+             OnUnPause();
+           }
         }
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            audioSource.PlayOneShot(selectse);
+        }
+        //}
     }
 
     public void OnPause()
