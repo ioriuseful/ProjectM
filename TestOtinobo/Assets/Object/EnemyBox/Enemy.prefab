@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
-  boundHeight: 50
+  boundHeight: 5
   enemyDeathObj: {fileID: 100002, guid: 391ec6f1311384e75b4888fd6fc26b7e, type: 3}
   CS: 0
   playerjump: 0

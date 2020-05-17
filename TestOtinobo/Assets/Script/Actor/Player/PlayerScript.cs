@@ -126,8 +126,6 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(stop);
-        Debug.Log(hip);
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, transform.rotation.w);
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;
@@ -332,9 +330,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.tag == "ColorBlock")
         {
-
-
-                otherJumpHeight = 0.001f;    //踏んづけたものから跳ねる高さを取得する          
+                otherJumpHeight = 0.00001f;    //踏んづけたものから跳ねる高さを取得する          
                 jumpPos = transform.position.y; //ジャンプした位置を記録する 
                 isOtherJump = true;
                 hip = false;
@@ -342,29 +338,9 @@ public class PlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 Parasol = hinan;
                 hiptime = false;
-            
-
-            hip = false;
-
-        
+                hip = false;
         }
-        //if (other.collider.tag == "item")
-        //{
-        //    ItemJump o = other.gameObject.GetComponent<ItemJump>();
-        //    if (o != null)
-        //    {
-        //        audioSource.PlayOneShot(ItemSE);
-        //        IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-        //        IJumpC += o.boundCount;
-        //        IJump = true;
-        //        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-        //        jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("ObjectCollisionが付いてないよ!");
-        //    }
-        //}
+       
 
         if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
         {
