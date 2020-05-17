@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 424932751}
   - component: {fileID: 424932750}
   - component: {fileID: 424932749}
+  - component: {fileID: 4824904291913809067}
   m_Layer: 9
   m_Name: HColorBlock(Green) (2)
   m_TagString: ColorBlock
@@ -103,7 +104,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424932747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -112,6 +113,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.13, y: 0.16}
   m_Direction: 0
+--- !u!61 &4824904291913809067
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424932747}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &438099927
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +587,7 @@ GameObject:
   - component: {fileID: 1425638829}
   - component: {fileID: 1425638828}
   - component: {fileID: 1425638827}
+  - component: {fileID: 3019235168841681602}
   m_Layer: 9
   m_Name: HColorBlock(Green) (1)
   m_TagString: ColorBlock
@@ -658,8 +686,34 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 1.14}
+  m_Size: {x: 0.16, y: 1.14}
   m_Direction: 0
+--- !u!61 &3019235168841681602
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425638825}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 1.14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &530699381510619759
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +769,7 @@ MonoBehaviour:
   boundHeight: 50
   enemyDeathObj: {fileID: 3963455896299686799, guid: e1f8cbc4f89c5fe47bd9c69fce361467,
     type: 3}
-  CS: 3
+  CS: 1
   playerjump: 0
 --- !u!212 &4333992391978039686
 SpriteRenderer:
@@ -1574,7 +1628,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.37}
+  m_Size: {x: 0.13, y: 1.05}
   m_Direction: 0
 --- !u!1 &8394191246497102834
 GameObject:
@@ -1588,6 +1642,7 @@ GameObject:
   - component: {fileID: 8394191246497102863}
   - component: {fileID: 8394191246497102833}
   - component: {fileID: 2942426515847728556}
+  - component: {fileID: 7767274972201352915}
   m_Layer: 9
   m_Name: HColorBlock(Green)
   m_TagString: ColorBlock
@@ -1686,8 +1741,34 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 1.17}
+  m_Size: {x: 0.16, y: 1.17}
   m_Direction: 0
+--- !u!61 &7767274972201352915
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8394191246497102834}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.506}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 1.14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1001 &1876368485514267839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1765,12 +1846,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 505022012837174357, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+    - target: {fileID: 522393386024124961, guid: 00be10a57dfdf914ba05f7bd054f14f9,
         type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 522393386024124961, guid: 00be10a57dfdf914ba05f7bd054f14f9,
+    - target: {fileID: 505022012837174357, guid: 00be10a57dfdf914ba05f7bd054f14f9,
         type: 3}
       propertyPath: m_Layer
       value: 9

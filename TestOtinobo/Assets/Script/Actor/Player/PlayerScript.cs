@@ -23,7 +23,7 @@ public class PlayerScript : MonoBehaviour
     [Header("ジャンプの速さ表現")] public AnimationCurve jumpCurve;
     [Header("踏みつけ判定の高さの割合")] public float stepOnRate;
     [Header("ヒップドロップジャンプの距離")] public float HipJump;
-    [Header("パラソルのバランス5.0～9.6の範囲で設定すること")] public float Parasol; 
+    [Header("パラソルのバランス5.0～9.6の範囲で設定すること")] public float Parasol;
     [Header("リカバリージャンプの高さ")] public float Recovery;
     [Header("リカバリージャンプの長さ")] public float jumpLimitTime2;
     [Header("ヒップドロップタイム")] public float HipLimitTime;
@@ -43,7 +43,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     AudioSource audioSource;
     private Animator _animator;
-
+    public RetryGame retryGame;
     //プレイヤーの画像変更に必要なもの
     SpriteRenderer MainSpriteRenderer;
 
@@ -72,10 +72,10 @@ public class PlayerScript : MonoBehaviour
 
     private bool damageFlag; //ダメージを受けているか判定
     private bool isDeadFlag; //死亡フラグ
-    public bool GetisDeadFlag=false;//死亡フラグを取得する
+    public bool GetisDeadFlag = false;//死亡フラグを取得する
     private bool isJump = false;
     private float jumpPos = 0.0f;
-    private bool isOtherJump=false;
+    private bool isOtherJump = false;
     private float jumpTime;
     private float otherJumpHeight = 0.0f;
     private bool isDown = false;
@@ -90,40 +90,14 @@ public class PlayerScript : MonoBehaviour
 
     private bool on_ground = false;
     private bool hiptime = false;
-    private bool hip=false;
+    private bool hip = false;
     private bool stop = false;
     public bool anim1 = false;//animetion
     public bool anim2 = false;//animation
-
-    #region//FoldOut
-    //public static bool FoldOut(string title, bool display)
-    //{
-    //    var style = new GUIStyle("ShurikenModuleTitle");
-    //    style.font = new GUIStyle(EditorStyles.label).font;
-    //    style.border = new RectOffset(15, 7, 4, 4);
-    //    style.fixedHeight = 22;
-    //    style.contentOffset = new Vector2(20f, -2f);
-
-    //    var rect = GUILayoutUtility.GetRect(16f, 22f, style);
-    //    GUI.Box(rect, title, style);
-
-    //    var e = Event.current;
-
-    //    var toggleRect = new Rect(rect.x + 4f, rect.y + 2f, 13f, 13f);
-    //    if (e.type == EventType.Repaint)
-    //    {
-    //        EditorStyles.foldout.Draw(toggleRect, false, false, display, false);
-    //    }
-
-    //    if (e.type == EventType.MouseDown && rect.Contains(e.mousePosition))
-    //    {
-    //        display = !display;
-    //        e.Use();
-    //    }
-
-    //    return display;
-    //}
-    #endregion
+    public bool ColorWallRight = false;
+    public bool ColorWallLeft = false;
+    public bool ColorWallBottom = false;
+    public bool Pause = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -142,7 +116,7 @@ public class PlayerScript : MonoBehaviour
         capcol = GetComponent<BoxCollider2D>();
         FadeManager.FadeIn();
         hinan = Parasol;
-        jumpText.text = string.Format("ジャンプ残り "+ IJumpC + " 回");
+        jumpText.text = string.Format("ジャンプ残り " + IJumpC + " 回");
         CS = ColorState.White;
     }
     private void Awake()//追加
@@ -156,16 +130,37 @@ public class PlayerScript : MonoBehaviour
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;
         gravity = new Vector2(0.0f, -9.81f + Parasol);
-
+        Pause = retryGame.pauseGame;
         float ySpeed = GetYSpeed();
         //プレイヤーが動いていたらaxisの値に5かけて動かす
-        if (axis != 0&&!hiptime&&!hip)
+        if (axis > 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true)
         {
             velocity.x = axis * 5;
         }
-        else if (axis != 0 && hiptime&&!hip)
+        if (axis < 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false)
         {
-            velocity.x = axis *5* HipJump;
+            velocity.x = axis * 5;
+        }
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true && ColorWallBottom == true)
+        {
+            velocity.x = axis * 5;
+        }
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false && ColorWallBottom == true)
+        {
+            velocity.x = axis * 5;
+        }
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == true)
+        {
+            velocity.x = axis * 5;
+        }
+        if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == false)
+        {
+            velocity.x = axis * 5;
+        }
+
+        else if (axis != 0 && hiptime && !hip)
+        {
+            velocity.x = axis * 5 * HipJump;
         }
         if (!stop)
         {
@@ -173,18 +168,20 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            rig2D.velocity = new Vector2(0,0);
+            rig2D.velocity = new Vector2(0, 0);
             xSpeed = 0;
         }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S))
+        if (Pause == false)
         {
-            anim1 = true; //animのtrue追加
-            audioSource.PlayOneShot(HipDropSE);
-            hip = true;
-            stop = true;
-            xSpeed = 1;
-            Invoke("Hip", HipLimitTime);
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            {
+                anim1 = true; //animのtrue追加
+                audioSource.PlayOneShot(HipDropSE);
+                hip = true;
+                stop = true;
+                xSpeed = 1;
+                Invoke("Hip", HipLimitTime);
+            }
         }
         if (on_ground)
         {
@@ -192,28 +189,31 @@ public class PlayerScript : MonoBehaviour
             MainSpriteRenderer.color = new Color(1f, 1f, 1f, level);
         }
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
-        if (IJump && Input.GetButtonDown("Jump"))
+        if (Pause == false)
         {
-            if (IJumpC > 0)
+            if (IJump && Input.GetButtonDown("Jump"))
             {
-                IJumpC--;
-                jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
-                audioSource.PlayOneShot(JumpSE);
+                if (IJumpC > 0)
+                {
+                    IJumpC--;
+                    jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
+                    audioSource.PlayOneShot(JumpSE);
+                }
+                else
+                {
+                    IJump = false;
+                    return;
+                }
+                otherJumpHeight = IJumpH;    //踏んづけたものから跳ねる高さを取得する          
+                jumpPos = transform.position.y; //ジャンプした位置を記録する 
+                isOtherJump = true;
+                hip = false;
+                isJump = false;
+                jumpTime = 0.0f;
+                Parasol = hinan;
+                hiptime = false;
+                //Debug.Log("ジャンプしたよ");       
             }
-            else
-            {
-                IJump = false;
-                return;
-            }
-            otherJumpHeight = IJumpH;    //踏んづけたものから跳ねる高さを取得する          
-            jumpPos = transform.position.y; //ジャンプした位置を記録する 
-            isOtherJump = true;
-            hip = false;
-            isJump = false;
-            jumpTime = 0.0f;
-            Parasol = hinan;
-            hiptime = false;
-            //Debug.Log("ジャンプしたよ");       
         }
         switch (CS)
         {
@@ -257,6 +257,10 @@ public class PlayerScript : MonoBehaviour
         {
             _animator.SetBool("HipAnim", false);
         }
+        //if(ColorWall==true)
+        //{
+        //    velocity.x =  0;           
+        //}
         ////ダメージを受けたら一定時間無敵にして点滅させる(ダメージ関連を追加することは無いと思うけど念のため残してます)
         //if (damageFlag)
         //{
@@ -331,26 +335,18 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.tag == "ColorBlock")
         {
-            hip = false;
-        }
-        //if (other.collider.tag == "item")
-        //{
-        //    ItemJump o = other.gameObject.GetComponent<ItemJump>();
-        //    if (o != null)
-        //    {
-        //        audioSource.PlayOneShot(ItemSE);
-        //        IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-        //        IJumpC += o.boundCount;
-        //        IJump = true;
-        //        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-        //        jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("ObjectCollisionが付いてないよ!");
-        //    }
-        //}
 
+                otherJumpHeight = 0.00001f;    //踏んづけたものから跳ねる高さを取得する          
+                jumpPos = transform.position.y; //ジャンプした位置を記録する 
+                isOtherJump = true;
+                hip = false;
+                isJump = false;
+                jumpTime = 0.0f;
+                Parasol = hinan;
+                hiptime = false;
+                hip = false;
+        }
+       
         if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
@@ -370,7 +366,7 @@ public class PlayerScript : MonoBehaviour
                         audioSource.PlayOneShot(JumpSE);
                         otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                         o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor()); 
+                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor());
                         jumpPos = transform.position.y; //ジャンプした位置を記録する 
                         isOtherJump = true;
                         isJump = false;
@@ -399,10 +395,10 @@ public class PlayerScript : MonoBehaviour
                     break;
                 }
             }
-           
+
         }
         //300点取る度にジャンプを一回増やす
-        if(numScore >= 300)
+        if (numScore >= 300)
         {
             IJumpC += 1;
             numScore = 0;
@@ -410,7 +406,53 @@ public class PlayerScript : MonoBehaviour
             jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
         }
     }
-
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "ColorBlock")
+        {
+            //foreach (ContactPoint2D point in other.contacts)
+            //{
+            //    if (point.point.x - transform.position.x > 0.1)
+            //    {
+            //        Debug.Log("right");
+            //        ColorWallRight = false;
+            //    }
+            //    else if (point.point.x - transform.position.x < -0.1)
+            //    {
+            //        Debug.Log("hitting");
+            //        ColorWallLeft = false;
+            //    }
+            //    else if (point.point.y - transform.position.y < -0.2)
+            //    {
+            //        ColorWallBottom = false;
+            //    }
+            //}
+            ColorWallRight = false;
+            ColorWallLeft = false;
+            ColorWallBottom = false;
+        }
+    }
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "ColorBlock")
+        {
+            foreach (ContactPoint2D point in other.contacts)
+            {
+                if (point.point.x - transform.position.x > 0.1)
+                {
+                    ColorWallRight = true;
+                }
+                else if (point.point.x - transform.position.x < -0.1)
+                {
+                    ColorWallLeft = true;
+                }
+                else if (point.point.y - transform.position.y < -0.1)
+                {
+                    ColorWallBottom = true;
+                }
+            }
+        }
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //OnDamegeEffect();
@@ -452,6 +494,11 @@ public class PlayerScript : MonoBehaviour
 
             //プレイヤー死亡
             isDeadFlag = true;
+        }
+        if (other.gameObject.tag == "ColorBlock")
+        {
+            hip = false;
+            stop = false;
         }
 
     }
@@ -495,13 +542,13 @@ public class PlayerScript : MonoBehaviour
         if (isOtherJump)
         {
             Parasol = hinan;
-            if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && !hip &&!Rcv)
+            if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && !hip && !Rcv)
             {
                 ySpeed = jumpSpeed;
                 jumpTime += Time.deltaTime;
                 xSpeed = 1;
-            }       
-            else if(jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && hip && !Rcv)
+            }
+            else if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime && !isHead && hip && !Rcv)
             {
                 ySpeed = jumpSpeed;
                 jumpTime += Time.deltaTime;
@@ -509,12 +556,12 @@ public class PlayerScript : MonoBehaviour
                 hiptime = true;
                 hip = false;
             }
-            else  if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime2 && !isHead && Rcv)
+            else if (jumpPos + otherJumpHeight > transform.position.y && jumpTime < jumpLimitTime2 && !isHead && Rcv)
             {
                 ySpeed = jumpSpeed;
                 jumpTime += Time.deltaTime;
                 xSpeed = 1;
-               // Debug.Log("ksk");
+                // Debug.Log("ksk");
             }
             else
             {

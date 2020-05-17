@@ -9,20 +9,23 @@ public class RainMove : MonoBehaviour
     [SerializeField]
     private float seconds;
     public float speed = 0.1f;//速さ
+    public RetryGame retry;
     [Header("加速量")] public float acceleration = 10;//加速量
     public bool flag1 = false;//距離が遠くなった時のフラグ
     public bool flag2 = true;//距離が近くなった時のフラグ
     //public float MaxDistance;//遠い距離
     //public float MinDistance;//近い距離
+    public bool setpause;
     // Start is called before the first frame update
     void Start()
-    {
+    {        
         seconds = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        setpause = retry.pauseGame;
         // seconds += Time.deltaTime;
         Vector3 a;
         //プレイヤーのtransformを取得
@@ -59,7 +62,14 @@ public class RainMove : MonoBehaviour
         {
             pos.x = c + speed * 0.1f;
         }
-
+        if(setpause==true)
+        {
+            speed = 0;
+        }
+        else
+        {
+            speed = 0.1f;
+        }
         myTransform.position = pos;
     }
 
