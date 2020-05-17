@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFallflag: 1
-  fallRainTime: 0
+  fallRainTime: 0.05
   RainObj: {fileID: 2807178357884892141, guid: 6ecfef4156878df42800d0640478b69e, type: 3}
 --- !u!1 &4727442476876301299
 GameObject:
