@@ -157,20 +157,20 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.5
-      value: 0.5
-      inSlope: 3.2873735
-      outSlope: 3.2873735
+      time: 0.97398376
+      value: 0.3066864
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.21666664
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -180,18 +180,34 @@ MonoBehaviour:
   Parasol: 8
   Recovery: 10
   jumpLimitTime2: 1
+  HipLimitTime: 0
   CS: 0
+  Color: 
   jumpText: {fileID: 0}
+  ItemSE: {fileID: 0}
+  JumpSE: {fileID: 0}
+  EnemyDeadSE: {fileID: 0}
+  HipDropSE: {fileID: 0}
+  retryGame: {fileID: 0}
   White: {fileID: 7255854300219104043, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Green: {fileID: -6127215198058392024, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Red: {fileID: 5770437819054901188, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Blue: {fileID: -4906125199742805290, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
+  GreenEffect: {fileID: 0}
+  RedEffect: {fileID: 0}
+  BlueEffect: {fileID: 0}
   SteamPoint: 0
   score: 0
   AddPoint: 100
   HighPoint: 200
   scoreline: 0
   GetisDeadFlag: 0
+  anim1: 0
+  anim2: 0
+  ColorWallRight: 0
+  ColorWallLeft: 0
+  ColorWallBottom: 0
+  Pause: 0
 --- !u!114 &5591409752885910027
 MonoBehaviour:
   m_ObjectHideFlags: 0

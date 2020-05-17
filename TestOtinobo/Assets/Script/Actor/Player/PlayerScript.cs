@@ -335,7 +335,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.tag == "ColorBlock")
         {
-<<<<<<< HEAD
+
                 otherJumpHeight = 0.00001f;    //踏んづけたものから跳ねる高さを取得する          
                 jumpPos = transform.position.y; //ジャンプした位置を記録する 
                 isOtherJump = true;
@@ -347,19 +347,6 @@ public class PlayerScript : MonoBehaviour
                 hip = false;
         }
        
-
-=======
-            otherJumpHeight = 0.001f;    //踏んづけたものから跳ねる高さを取得する          
-            jumpPos = transform.position.y; //ジャンプした位置を記録する 
-            isOtherJump = true;
-            hip = false;
-            isJump = false;
-            jumpTime = 0.0f;
-            Parasol = hinan;
-            hiptime = false;
-        }
-            
->>>>>>> origin/Enemy
         if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
