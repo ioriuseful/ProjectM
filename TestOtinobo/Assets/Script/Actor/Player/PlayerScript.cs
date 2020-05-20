@@ -437,10 +437,21 @@ public class PlayerScript : MonoBehaviour
                     ColorWallBottom = true;
                 }
             }
-            if (hip)
+            //踏みつけ判定になる高さ
+            float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
+            //踏みつけ判定のワールド座標
+            float judgePos = transform.position.y - (capcol.size.y / 2f) + stepOnHeight;
+            //Debug.Log("接触したよ");
+            foreach (ContactPoint2D p in other.contacts)
             {
-                ColorBStep = true;
-                hip = false;
+                if (p.point.y < judgePos)
+                {
+                    if (hip)
+                    {
+                        ColorBStep = true;
+                        hip = false;
+                    }
+                }
             }
         }
     }
