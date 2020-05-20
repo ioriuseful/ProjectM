@@ -98,6 +98,7 @@ public class PlayerScript : MonoBehaviour
     public bool ColorWallLeft = false;
     public bool ColorWallBottom = false;
     public bool Pause = false;
+    private bool ColorBStep = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -188,6 +189,20 @@ public class PlayerScript : MonoBehaviour
             float level = Mathf.Abs(Mathf.Sin(Time.time * 10));
             MainSpriteRenderer.color = new Color(1f, 1f, 1f, level);
         }
+
+        if (ColorBStep)
+        {
+            otherJumpHeight = 0.1f; ;    //踏んづけたものから跳ねる高さを取得する          
+            jumpPos = transform.position.y; //ジャンプした位置を記録する 
+            isOtherJump = true;
+            hip = false;
+            isJump = false;
+            jumpTime = 0.1f;
+            Parasol = hinan;
+            hiptime = false;
+            ColorBStep = false;
+        }//押し上げます。
+
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
         if (Pause == false)
         {
@@ -333,19 +348,6 @@ public class PlayerScript : MonoBehaviour
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             isDeadFlag = true;
         }
-        if (other.gameObject.tag == "ColorBlock")
-        {
-
-                otherJumpHeight = 0.00001f;    //踏んづけたものから跳ねる高さを取得する          
-                jumpPos = transform.position.y; //ジャンプした位置を記録する 
-                isOtherJump = true;
-                hip = false;
-                isJump = false;
-                jumpTime = 0.0f;
-                Parasol = hinan;
-                hiptime = false;
-                hip = false;
-        }
        
         if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
         {
@@ -410,26 +412,10 @@ public class PlayerScript : MonoBehaviour
     {
         if (other.gameObject.tag == "ColorBlock")
         {
-            //foreach (ContactPoint2D point in other.contacts)
-            //{
-            //    if (point.point.x - transform.position.x > 0.1)
-            //    {
-            //        Debug.Log("right");
-            //        ColorWallRight = false;
-            //    }
-            //    else if (point.point.x - transform.position.x < -0.1)
-            //    {
-            //        Debug.Log("hitting");
-            //        ColorWallLeft = false;
-            //    }
-            //    else if (point.point.y - transform.position.y < -0.2)
-            //    {
-            //        ColorWallBottom = false;
-            //    }
-            //}
             ColorWallRight = false;
             ColorWallLeft = false;
             ColorWallBottom = false;
+            ColorBStep = true;
         }
     }
     private void OnCollisionStay2D(Collision2D other)
@@ -451,17 +437,15 @@ public class PlayerScript : MonoBehaviour
                     ColorWallBottom = true;
                 }
             }
+            if (hip)
+            {
+                ColorBStep = true;
+                hip = false;
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //OnDamegeEffect();
-
-        ////ゴールと接触したら
-        //if (other.tag == "Goal")
-        //{
-        //    Invoke("Next", 0f);
-        //}
 
         if (other.gameObject.tag == "ScoreLine")
         {
