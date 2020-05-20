@@ -166,11 +166,13 @@ public class PlayerScript : MonoBehaviour
         if (!stop)
         {
             rig2D.velocity = new Vector2(velocity.x * xSpeed, ySpeed);
+          //  Debug.Log("動けるよ");
         }
         else
         {
             rig2D.velocity = new Vector2(0, 0);
             xSpeed = 0;
+          //  Debug.Log("動けないよ");
         }
         if (Pause == false)
         {
@@ -348,7 +350,13 @@ public class PlayerScript : MonoBehaviour
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             isDeadFlag = true;
         }
-       
+        if (other.collider.tag == "ColorBlock")
+        {
+            if (hip)
+            {
+                ColorBStep = true;
+            }
+        }
         if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
@@ -415,7 +423,6 @@ public class PlayerScript : MonoBehaviour
             ColorWallRight = false;
             ColorWallLeft = false;
             ColorWallBottom = false;
-            ColorBStep = true;
         }
     }
     private void OnCollisionStay2D(Collision2D other)

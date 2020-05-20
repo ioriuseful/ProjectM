@@ -101,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.0024077743}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.16, y: 0.15518445}
   m_EdgeRadius: 0
 --- !u!50 &6382301148395647401
 Rigidbody2D:
@@ -190,6 +190,7 @@ MonoBehaviour:
   JumpSE: {fileID: 8300000, guid: 0cb4162039f571d4e8a93585fc099e39, type: 3}
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   HipDropSE: {fileID: 8300000, guid: 1a4518867a18a7d4e979df04ce1a1056, type: 3}
+  retryGame: {fileID: 0}
   White: {fileID: 7255854300219104043, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Green: {fileID: -6127215198058392024, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Red: {fileID: 5770437819054901188, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
@@ -207,6 +208,10 @@ MonoBehaviour:
   GetisDeadFlag: 0
   anim1: 0
   anim2: 0
+  ColorWallRight: 0
+  ColorWallLeft: 0
+  ColorWallBottom: 0
+  Pause: 0
 --- !u!114 &6382301148395647404
 MonoBehaviour:
   m_ObjectHideFlags: 0
