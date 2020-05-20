@@ -14,6 +14,10 @@ public class RainScript : MonoBehaviour
     [Header("rainオブジェクトを直接入れる")]
     public GameObject RainObj;
 
+    [SerializeField, Header("水しぶきオブジェクトを入れる")]
+    public GameObject Splashes;
+    public float y = -0.2f;
+
     private void Start()
     {
         time = fallRainTime * 60;
@@ -52,6 +56,8 @@ public class RainScript : MonoBehaviour
     {
         if (!isFallflag && (other.gameObject.tag == "Ground" || other.gameObject.tag == "Untagged"))
         {
+            transform.position = new Vector3(transform.position.x, transform.position.y + y, 0);
+            Instantiate(Splashes, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
