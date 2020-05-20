@@ -1925,10 +1925,25 @@ PrefabInstance:
       propertyPath: retry
       value: 
       objectReference: {fileID: 1429338406}
+    - target: {fileID: 4056316132638141475, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: acceleration
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5847415518232812170, guid: f51187adc8e9d3b46a828624dbea23bf,
         type: 3}
       propertyPath: fallRainTime
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727442476876301298, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727442476876301309, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f51187adc8e9d3b46a828624dbea23bf, type: 3}
