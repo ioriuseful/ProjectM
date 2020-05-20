@@ -1636,7 +1636,7 @@ GameObject:
   - component: {fileID: 6071648092680211030}
   - component: {fileID: 6071648092680211031}
   - component: {fileID: 6071648092680211881}
-  - component: {fileID: 642153136148823028}
+  - component: {fileID: 2689148747312615061}
   m_Layer: 9
   m_Name: HColorBlock(White)
   m_TagString: ColorBlock
@@ -1653,7 +1653,7 @@ Transform:
   m_GameObject: {fileID: 6071648092680211882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6, y: 9.7960005, z: 0}
-  m_LocalScale: {x: 10, y: 51.852146, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 8362624917456776692}
   m_RootOrder: 0
@@ -1700,8 +1700,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_DrawMode: 1
+  m_Size: {x: 0.16, y: 0.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1721,8 +1721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 0
   player: {fileID: 0}
---- !u!70 &642153136148823028
-CapsuleCollider2D:
+--- !u!61 &2689148747312615061
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1734,9 +1734,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.15}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.03}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 0.9}
+  m_EdgeRadius: 0
 --- !u!1 &6239701964777201316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2398,7 +2408,7 @@ GameObject:
   - component: {fileID: 8362624917132407028}
   - component: {fileID: 8362624917132407031}
   - component: {fileID: 8362624917132407030}
-  - component: {fileID: 8362624917132407029}
+  - component: {fileID: 2576222658489456046}
   m_Layer: 9
   m_Name: WColorBlock(green) (1)
   m_TagString: ColorBlock
@@ -2414,8 +2424,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8362624917132406987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.65, y: 6.700001, z: 1}
-  m_LocalScale: {x: 84.04795, y: 10, z: 1}
+  m_LocalPosition: {x: 18.65, y: 6.3, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 8362624917456776692}
   m_RootOrder: 3
@@ -2462,8 +2472,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_DrawMode: 1
+  m_Size: {x: 1.2, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2483,8 +2493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 3
   player: {fileID: 0}
---- !u!70 &8362624917132407029
-CapsuleCollider2D:
+--- !u!61 &2576222658489456046
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2496,9 +2506,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.16}
-  m_Direction: 1
+  m_Offset: {x: 0.16, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 1.2, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.1}
+  m_EdgeRadius: 0.2
 --- !u!1 &8362624917456776651
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,7 +3240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8362624918294598336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.3, y: 6.700001, z: 2}
+  m_LocalPosition: {x: 11.3, y: 6.3, z: 2}
   m_LocalScale: {x: 91.17747, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 8362624917456776692}
@@ -3263,7 +3283,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -7
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3303,7 +3323,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.16}
+  m_Size: {x: 0.13, y: 0.14}
   m_Direction: 1
 --- !u!1 &8362624918329012432
 GameObject:
@@ -3316,7 +3336,7 @@ GameObject:
   - component: {fileID: 8362624918329012433}
   - component: {fileID: 8362624918329012444}
   - component: {fileID: 8362624918329012435}
-  - component: {fileID: 8362624918329012434}
+  - component: {fileID: 6482492383479847878}
   m_Layer: 9
   m_Name: HColorBlock(White) (1)
   m_TagString: ColorBlock
@@ -3333,7 +3353,7 @@ Transform:
   m_GameObject: {fileID: 8362624918329012432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 23.9, y: 9.7960005, z: 0}
-  m_LocalScale: {x: 10, y: 51.852146, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 8362624917456776692}
   m_RootOrder: 1
@@ -3380,8 +3400,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_DrawMode: 1
+  m_Size: {x: 0.16, y: 0.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3401,8 +3421,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 0
   player: {fileID: 0}
---- !u!70 &8362624918329012434
-CapsuleCollider2D:
+--- !u!61 &6482492383479847878
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3414,9 +3434,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.15}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.03}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 0.9}
+  m_EdgeRadius: 0
 --- !u!1 &9169259846583355274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,7 +3458,7 @@ GameObject:
   - component: {fileID: 9169259846583353462}
   - component: {fileID: 9169259846583353463}
   - component: {fileID: 9169259846583355273}
-  - component: {fileID: 1070828810405833262}
+  - component: {fileID: 4914915890883537755}
   m_Layer: 9
   m_Name: WColorBlock(green)
   m_TagString: ColorBlock
@@ -3444,8 +3474,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9169259846583355274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.497, y: 6.700001, z: 1}
-  m_LocalScale: {x: 91.17747, y: 10, z: 1}
+  m_LocalPosition: {x: 3.497, y: 6.3, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 8362624917456776692}
   m_RootOrder: 2
@@ -3492,8 +3522,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_DrawMode: 1
+  m_Size: {x: 1.17, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3513,8 +3543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 3
   player: {fileID: 0}
---- !u!70 &1070828810405833262
-CapsuleCollider2D:
+--- !u!61 &4914915890883537755
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3526,6 +3556,16 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.16}
-  m_Direction: 1
+  m_Offset: {x: -0.16, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 1.17, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.1}
+  m_EdgeRadius: 0.2

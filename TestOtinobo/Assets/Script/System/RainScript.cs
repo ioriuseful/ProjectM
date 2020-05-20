@@ -42,6 +42,10 @@ public class RainScript : MonoBehaviour
                 time = fallRainTime * 60;
             }
         }
+        if(transform.position.y <= -1)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
