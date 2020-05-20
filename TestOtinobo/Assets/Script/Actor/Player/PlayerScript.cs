@@ -117,7 +117,7 @@ public class PlayerScript : MonoBehaviour
         capcol = GetComponent<BoxCollider2D>();
         FadeManager.FadeIn();
         hinan = Parasol;
-        jumpText.text = string.Format("ジャンプ残り " + IJumpC + " 回");
+        jumpText.text = string.Format("ジャンプ " + IJumpC + " 回");
         CS = ColorState.White;
     }
     private void Awake()//追加

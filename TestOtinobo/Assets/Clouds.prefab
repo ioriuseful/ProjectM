@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFallflag: 1
-  fallRainTime: 0.05
+  fallRainTime: 0.1
   RainObj: {fileID: 2807178357884892141, guid: 6ecfef4156878df42800d0640478b69e, type: 3}
+  Splashes: {fileID: 0}
+  y: -0.2
 --- !u!1 &4727442476876301299
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +75,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4727442476876301299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.82, y: 3.71, z: 0}
+  m_LocalPosition: {x: -30.82, y: 3.71, z: 0}
   m_LocalScale: {x: -3, y: 3, z: 1}
   m_Children:
   - {fileID: 366598295250152697}
@@ -153,7 +155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.6, y: 4}
+  m_Size: {x: 8, y: 4}
   m_EdgeRadius: 0
 --- !u!114 &4056316132638141475
 MonoBehaviour:
@@ -169,10 +171,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   seconds: 0
-  speed: 0.1
+  speed: 0.15
+  retry: {fileID: 0}
   acceleration: 10
   flag1: 0
   flag2: 1
+  setpause: 0
 --- !u!1 &4727442477102090696
 GameObject:
   m_ObjectHideFlags: 0
