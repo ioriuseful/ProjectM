@@ -15,6 +15,7 @@ TagManager:
   - HighEnemy
   - ColorBlock
   - ScoreLine
+  - Splashes
   layers:
   - Default
   - TransparentFX

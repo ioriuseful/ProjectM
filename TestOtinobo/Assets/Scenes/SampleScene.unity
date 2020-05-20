@@ -1117,7 +1117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1588372691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1130,7 +1130,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eb121c1cd240b2542b6d1711377363e2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1707,6 +1707,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1642768534}
+    - target: {fileID: 2052297936775392366, guid: 86c77060406f28f48ac7f13d99a7ece1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86c77060406f28f48ac7f13d99a7ece1, type: 3}
 --- !u!1001 &2747871219419959654
@@ -1945,6 +1950,7 @@ PrefabInstance:
       propertyPath: fallRainTime
       value: 0.1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4727442476876301298, guid: f51187adc8e9d3b46a828624dbea23bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1954,6 +1960,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 8
+=======
+    - target: {fileID: 5847415518232812170, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727442476876301308, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727442476876301309, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+>>>>>>> origin/ueda
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f51187adc8e9d3b46a828624dbea23bf, type: 3}
