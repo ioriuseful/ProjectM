@@ -1461,6 +1461,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2747871220312188995, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1642768534}
+    - target: {fileID: 1495752276, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1642768534}
     - target: {fileID: 7306492238411814785, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1566,10 +1575,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1495752276, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1642768534}
     - target: {fileID: 382186562, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
       propertyPath: player
       value: 
@@ -1583,11 +1588,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1642768534}
-    - target: {fileID: 2747871220312188995, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
+    - target: {fileID: 1120953413542109423, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
         type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1642768534}
+      propertyPath: m_Name
+      value: ItemUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
 --- !u!1 &2873580386970986388
@@ -1881,66 +1886,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6058566292572666986, guid: 62fc1f5a12d18954cb36ac36984f9c30,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547423, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547488, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: enemyDeathObj
-      value: 
-      objectReference: {fileID: 100002, guid: b2e1927a9cfbd4c03a114b0166c00dce, type: 3}
-    - target: {fileID: 5866255738421547488, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: enemyDeathObj2
-      value: 
-      objectReference: {fileID: 100006, guid: 906ef3748a66347cfb2d72de10092732, type: 3}
-    - target: {fileID: 5866255738421547488, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: enemyDeathObj3
-      value: 
-      objectReference: {fileID: 100006, guid: bcf46e46336114145b09deb1db11d480, type: 3}
-    - target: {fileID: 5866255738421547488, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: CS
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547488, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: GreenR
-      value: 113
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547488, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: GreenG
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547488, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: GreenB
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547489, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547489, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866255738421547489, guid: 3ea3373eaba44784d993592962b381b5,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62fc1f5a12d18954cb36ac36984f9c30, type: 3}
