@@ -15,7 +15,7 @@ public class WaveScript : MonoBehaviour
     AudioSource audioSource;
     private Vector3 pos;
     private int score;
-    public int changewave;
+    private int changewave;
     [Header("この値は基本いじらない")]
     public int wave;
     [Header("最大Wave")]

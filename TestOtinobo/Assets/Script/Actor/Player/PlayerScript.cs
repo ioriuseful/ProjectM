@@ -84,7 +84,7 @@ public class PlayerScript : MonoBehaviour
     private bool isHead = false;
 
     private bool IJump = false;
-    private float IJumpC = 0;
+    public float IJumpC = 0;
     private float IJumpH = 20;
     private float xSpeed = 1;
 
