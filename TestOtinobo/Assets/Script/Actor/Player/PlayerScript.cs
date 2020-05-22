@@ -84,7 +84,7 @@ public class PlayerScript : MonoBehaviour
     private bool isHead = false;
 
     private bool IJump = false;
-    private float IJumpC = 0;
+    public float IJumpC = 0;
     private float IJumpH = 20;
     private float xSpeed = 1;
 
@@ -119,7 +119,7 @@ public class PlayerScript : MonoBehaviour
         capcol = GetComponent<BoxCollider2D>();
         FadeManager.FadeIn();
         hinan = Parasol;
-        jumpText.text = string.Format("ジャンプ残り " + IJumpC + " 回");
+        jumpText.text = string.Format("× " + IJumpC);
         CS = ColorState.White;
     }
     private void Awake()//追加
@@ -215,7 +215,7 @@ public class PlayerScript : MonoBehaviour
                 if (IJumpC > 0)
                 {
                     IJumpC--;
-                    jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
+                    jumpText.text = string.Format("× " + IJumpC);
                     audioSource.PlayOneShot(JumpSE);
                 }
                 else
@@ -415,7 +415,7 @@ public class PlayerScript : MonoBehaviour
             IJumpC += 1;
             numScore = 0;
             IJump = true;
-            jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
+            jumpText.text = string.Format("× " + IJumpC);
         }
     }
     private void OnCollisionExit2D(Collision2D other)
@@ -483,7 +483,7 @@ public class PlayerScript : MonoBehaviour
                 IJump = true;
                 //GenerateEffect();
                 o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-                jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
+                jumpText.text = string.Format("× " + IJumpC);
             }
             else
             {

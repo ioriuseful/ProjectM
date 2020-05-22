@@ -29,7 +29,7 @@ public class RainScript : MonoBehaviour
         //ジェネレータobjの時のみ
         if (isFallflag)
         {
-            float rnd = Random.Range(-4, 4);
+            float rnd = Random.Range(-8, 5);
             
             //時間がゼロになったらtrue
             time--;
