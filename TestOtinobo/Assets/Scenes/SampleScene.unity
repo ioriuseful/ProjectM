@@ -1916,6 +1916,11 @@ PrefabInstance:
       propertyPath: retryGame
       value: 
       objectReference: {fileID: 1429338406}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: HipLimitTime
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x
