@@ -22,7 +22,7 @@ public class ScoreLineCount : MonoBehaviour
         text = GameObject.Find("ScoreLineText").GetComponent<Text>();//テキストを探す
         player = GameObject.Find("Player").GetComponent<PlayerScript>();//プレイヤースクリプトを探す
         animator = GetComponent<Animator>();
-        changescore = 0;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
     
     void Update()
@@ -33,13 +33,12 @@ public class ScoreLineCount : MonoBehaviour
             StartAnime();
         }
         changescore = score;
-        //text.text = score + "本";
         Sstring = score.ToString();
         text.text = Sstring;
     }
     void StartAnime()
     {
-        //audioSource.PlayOneShot(ScoreSE);
+        audioSource.PlayOneShot(ScoreSE);
         animator.SetBool("ChangeScore", true);
         Invoke("StopAnime", 0.1f);
     }
