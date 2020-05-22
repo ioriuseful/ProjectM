@@ -97,8 +97,15 @@ public class EnemyJump : MonoBehaviour
         //    //Debug.Log("a");
         //}
     }
-
-    public int GetColor()
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Rain")
+        {
+            isDeadFlag = true;
+            //Debug.Log("rain");
+        }
+    }
+        public int GetColor()
     {
         int x;
         x = (int)CS;
