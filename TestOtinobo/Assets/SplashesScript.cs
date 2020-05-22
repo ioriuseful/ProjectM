@@ -9,10 +9,12 @@ public class SplashesScript : MonoBehaviour
     [SerializeField, Header("水しぶきの移動速度(Y)")] float Yspeed = 0.01f;
     [SerializeField, Header("水しぶきの移動速度(X)")] float Xspeed = 0.03f;
     private string name;
+    private Object parent;
 
     void Start()
     {
         name = transform.name;
+        parent = transform.root.gameObject;
         
         switch(name)
         {
@@ -60,6 +62,6 @@ public class SplashesScript : MonoBehaviour
 
     void IsDead()
     {
-        Destroy(gameObject);
+        Destroy(parent);
     }
 }

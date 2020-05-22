@@ -1,6 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1101 &-5785635615015119433
+--- !u!1107 &-8506220572094875971
+AnimatorStateMachine:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Base Layer
+  m_ChildStates:
+  - serializedVersion: 1
+    m_State: {fileID: 159684699780343225}
+    m_Position: {x: 360, y: 190, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 6838924941439289907}
+    m_Position: {x: 360, y: 110, z: 0}
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 6838924941439289907}
+--- !u!1101 &-3839449172709662928
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,10 +34,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: ChangeWave
+    m_ConditionEvent: ChangeScore
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 2578288532141207947}
+  m_DstState: {fileID: 159684699780343225}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -31,10 +56,10 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaveText
+  m_Name: ScoreLineText
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: ChangeWave
+  - m_Name: ChangeScore
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -43,7 +68,7 @@ AnimatorController:
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 519012217721623695}
+    m_StateMachine: {fileID: -8506220572094875971}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -53,43 +78,18 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1107 &519012217721623695
-AnimatorStateMachine:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 2578288532141207947}
-    m_Position: {x: 300, y: 190, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 9155909513418148982}
-    m_Position: {x: 300, y: 120, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 9155909513418148982}
---- !u!1102 &2578288532141207947
+--- !u!1102 &159684699780343225
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ChangeWave
+  m_Name: ChangeScore
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 4194693927970586581}
+  - {fileID: 4632938732023939798}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -99,13 +99,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8bde30740d32e6841b66a85cd161bbc5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 65ac119f7b1d99d4e99a0b12f56c4fb9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &4194693927970586581
+--- !u!1101 &4632938732023939798
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,23 +114,23 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: ChangeWave
+    m_ConditionEvent: ChangeScore
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 9155909513418148982}
+  m_DstState: {fileID: 6838924941439289907}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 1
+  m_TransitionDuration: 0.16290405
+  m_TransitionOffset: 0.12432174
+  m_ExitTime: 0.5025569
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &9155909513418148982
+--- !u!1102 &6838924941439289907
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -141,7 +141,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -5785635615015119433}
+  - {fileID: -3839449172709662928}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
