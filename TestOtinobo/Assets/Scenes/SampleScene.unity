@@ -510,13 +510,13 @@ PrefabInstance:
         type: 3}
       propertyPath: enemyBoxes.Array.data[0]
       value: 
-      objectReference: {fileID: 2036833296831497091, guid: 373e78f844004df4899475678f3e6c6f,
+      objectReference: {fileID: 7392012730485897262, guid: 36be1409884eb704e942e63910de5de7,
         type: 3}
     - target: {fileID: 3977168066030091532, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5,
         type: 3}
       propertyPath: enemyBoxes.Array.data[1]
       value: 
-      objectReference: {fileID: 3982795603125897899, guid: 71e6571038a509d4aa8477247886c435,
+      objectReference: {fileID: 5136663961123319327, guid: 54af6a964a3019b4fb2cb4d65c12fb36,
         type: 3}
     - target: {fileID: 3977168066030091530, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5,
         type: 3}
@@ -1835,12 +1835,12 @@ PrefabInstance:
     - target: {fileID: 6058566292572666985, guid: 62fc1f5a12d18954cb36ac36984f9c30,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9
+      value: 9.66
       objectReference: {fileID: 0}
     - target: {fileID: 6058566292572666985, guid: 62fc1f5a12d18954cb36ac36984f9c30,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.41
+      value: 7.4
       objectReference: {fileID: 0}
     - target: {fileID: 6058566292572666985, guid: 62fc1f5a12d18954cb36ac36984f9c30,
         type: 3}
