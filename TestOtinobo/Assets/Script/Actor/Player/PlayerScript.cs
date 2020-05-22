@@ -55,6 +55,8 @@ public class PlayerScript : MonoBehaviour
     public GameObject GreenEffect;
     public GameObject RedEffect;
     public GameObject BlueEffect;
+    public GameObject ItemUp;
+    private GameObject ItemEffect;
     //取得した蒸気の数
     public float SteamPoint;
 
@@ -476,6 +478,8 @@ public class PlayerScript : MonoBehaviour
             if (o != null)
             {
                 audioSource.PlayOneShot(ItemSE);
+                ItemEffect = (GameObject)Instantiate(ItemUp);
+                ItemEffect.transform.SetParent(this.transform, false);
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                 IJumpC += o.boundCount;
                 IJump = true;
