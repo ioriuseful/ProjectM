@@ -352,13 +352,13 @@ public class PlayerScript : MonoBehaviour
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             isDeadFlag = true;
         }
-        if (!stop&&other.collider.tag == "ColorBlock")
-        {
-            if (hip)
-            {
-                ColorBStep = true;
-            }
-        }
+        //if (other.collider.tag == "ColorBlock") 
+        //{ 
+        //    if (hip) 
+        //    {
+        //        ColorBStep = true;
+        //    }
+        //}
         if (!stop && other.collider.tag == "Enemy" ||!stop && other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
@@ -425,6 +425,10 @@ public class PlayerScript : MonoBehaviour
             ColorWallRight = false;
             ColorWallLeft = false;
             ColorWallBottom = false;
+            if(PU)
+            {
+                PU = false;
+            }
         }
     }
     private void OnCollisionStay2D(Collision2D other)
@@ -455,7 +459,11 @@ public class PlayerScript : MonoBehaviour
             {
                 if (p.point.y < judgePos)
                 {
-                    if (hip)
+                    if (stop)
+                    {
+                        PU = true;
+                    }
+                    if (!PU && hip) 
                     {
                         ColorBStep = true;
                         hip = false;
