@@ -10,9 +10,6 @@ public class ItemScript : MonoBehaviour
     private float changeitem;
     private Animator animator;
 
-    AudioSource audioSource;
-    [SerializeField, Header("item取得時のSE")] public AudioClip itemSE;
-
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerScript>();//プレイヤースクリプトを探す
@@ -32,7 +29,6 @@ public class ItemScript : MonoBehaviour
     }
     void StartAnime()
     {
-        //audioSource.PlayOneShot(itemSE);
         animator.SetBool("ChangeItem", true);
         Invoke("StopAnime", 0.1f);
     }
