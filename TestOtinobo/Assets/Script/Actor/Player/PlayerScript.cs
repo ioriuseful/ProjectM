@@ -99,6 +99,8 @@ public class PlayerScript : MonoBehaviour
     public bool ColorWallBottom = false;
     public bool Pause = false;
     private bool ColorBStep = false;
+   // public GameObject PowerUp;
+    public bool PU = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -200,7 +202,7 @@ public class PlayerScript : MonoBehaviour
             hip = false;
             isJump = false;
             jumpTime = 0.1f;
-            Parasol = hinan;
+            //Parasol = hinan;
             hiptime = false;
             ColorBStep = false;
         }//押し上げます。
@@ -350,14 +352,14 @@ public class PlayerScript : MonoBehaviour
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             isDeadFlag = true;
         }
-        if (other.collider.tag == "ColorBlock")
+        if (!stop&&other.collider.tag == "ColorBlock")
         {
             if (hip)
             {
                 ColorBStep = true;
             }
         }
-        if (other.collider.tag == "Enemy" || other.collider.tag == "HighEnemy")
+        if (!stop && other.collider.tag == "Enemy" ||!stop && other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
             float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
@@ -479,6 +481,7 @@ public class PlayerScript : MonoBehaviour
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                 IJumpC += o.boundCount;
                 IJump = true;
+                //GenerateEffect();
                 o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
                 jumpText.text = string.Format("ジャンプ残り {0} 回", IJumpC);
             }
@@ -504,6 +507,12 @@ public class PlayerScript : MonoBehaviour
         }
 
     }
+
+    //private void GenerateEffect()
+    //{
+    //        GameObject effect = Instantiate(PowerUp) as GameObject;
+    //        effect.transform.position = GameObject.Find("Player").transform.position;
+    //}
 
     #region　ダメージの時に点滅させる処理(使用中)
     /// <summary>

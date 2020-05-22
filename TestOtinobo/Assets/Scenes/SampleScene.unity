@@ -2118,6 +2118,12 @@ PrefabInstance:
       propertyPath: retryGame
       value: 
       objectReference: {fileID: 1429338406}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: PowerUp
+      value: 
+      objectReference: {fileID: 5941131695874906945, guid: d979b048b229dbd448a415dbd77ef72f,
+        type: 3}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x

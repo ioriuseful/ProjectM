@@ -212,6 +212,7 @@ MonoBehaviour:
   ColorWallLeft: 0
   ColorWallBottom: 0
   Pause: 0
+  PowerUp: {fileID: 1641846382678081431, guid: d979b048b229dbd448a415dbd77ef72f, type: 3}
 --- !u!114 &6382301148395647404
 MonoBehaviour:
   m_ObjectHideFlags: 0
