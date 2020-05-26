@@ -19,15 +19,15 @@ public class TitleSE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow) && change == true)
-        {
-            audioSource.PlayOneShot(selectse);
-            change = false;
-        }
-        if(Input.GetKeyUp(KeyCode.UpArrow) && change == false)
+        if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && change == false)
         {
             audioSource.PlayOneShot(selectse);
             change = true;
+        }
+        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && change == true)
+        {
+            audioSource.PlayOneShot(selectse);
+            change = false;
         }
     }
 

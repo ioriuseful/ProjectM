@@ -16,6 +16,8 @@ TagManager:
   - ColorBlock
   - ScoreLine
   - Splashes
+  - Tutorial
+  - RTutorial
   layers:
   - Default
   - TransparentFX
