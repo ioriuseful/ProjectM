@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4621309871805539560}
   - component: {fileID: 1642768538}
   - component: {fileID: 1642768537}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -200,19 +200,21 @@ MonoBehaviour:
   RedEffect: {fileID: 5240447221211088345, guid: 6d78b3d27e4c09448b862d5402fa8a81,
     type: 3}
   BlueEffect: {fileID: 100006, guid: 16685c0b5f081124bb602176b402f038, type: 3}
+  ItemUp: {fileID: 0}
   SteamPoint: 0
   score: 0
   AddPoint: 100
   HighPoint: 200
   scoreline: 0
   GetisDeadFlag: 0
+  IJumpC: 0
   anim1: 0
   anim2: 0
   ColorWallRight: 0
   ColorWallLeft: 0
   ColorWallBottom: 0
   Pause: 0
-  PowerUp: {fileID: 1641846382678081431, guid: d979b048b229dbd448a415dbd77ef72f, type: 3}
+  PU: 0
 --- !u!114 &6382301148395647404
 MonoBehaviour:
   m_ObjectHideFlags: 0

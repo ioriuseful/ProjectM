@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-using UnityEditor;
+﻿using UnityEngine;
 
 public class ColorBlockScript : MonoBehaviour
 {
@@ -16,10 +12,18 @@ public class ColorBlockScript : MonoBehaviour
     public PlayerScript player;
     private string Color;
 
+    private GameObject colorobj;
+    private Collider2D collider;
+    [SerializeField, Header("カラーブロック入った時&出た時用パーティクル")]
+    public GameObject RedBlockParticle;
+    public GameObject GreenBlockParticle;
+    public GameObject BlueBlockParticle;
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<PlayerScript>();
+        collider = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -43,38 +47,44 @@ public class ColorBlockScript : MonoBehaviour
                 Color = "Blue";
                 break;
         }
-        if (Color == player.Color)
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Player" && Color == player.Color)
         {
-            if (GetComponent<CapsuleCollider2D>() == null && GetComponent<BoxCollider2D>() == null)
+            collider.isTrigger = true;
+            switch(CS)
             {
-                GetComponent<EdgeCollider2D>().enabled = false;
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
             }
-
-            if (GetComponent<BoxCollider2D>() == null)
-            {
-                GetComponent<CapsuleCollider2D>().enabled = false;
-            }
-            else
-            {
-                GetComponent<BoxCollider2D>().enabled = false;
-            }
-
         }
-        else
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Player")
         {
-            if (GetComponent<CapsuleCollider2D>() == null && GetComponent<BoxCollider2D>() == null)
+            collider.isTrigger = false;
+            switch (CS)
             {
-                GetComponent<EdgeCollider2D>().enabled = true;
-            }
-
-
-            if (GetComponent<BoxCollider2D>() == null)
-            {
-                GetComponent<CapsuleCollider2D>().enabled = true;
-            }
-            else
-            {
-                GetComponent<BoxCollider2D>().enabled = true;
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
             }
         }
     }

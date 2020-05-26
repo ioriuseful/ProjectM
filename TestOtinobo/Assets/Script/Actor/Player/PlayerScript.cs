@@ -57,6 +57,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject BlueEffect;
     public GameObject ItemUp;
     private GameObject ItemEffect;
+
     //取得した蒸気の数
     public float SteamPoint;
 
@@ -113,6 +114,9 @@ public class PlayerScript : MonoBehaviour
     //[Header("blueのRGBA")] public byte BlueR = 87;
     //public byte BlueG = 117, BlueB = 255, BlueA = 255;//ブルー　
     #endregion
+
+    
+
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
