@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 280125180765975678}
   - component: {fileID: 280125180765975679}
   - component: {fileID: 280125180765975425}
-  - component: {fileID: 8214755115087060518}
+  - component: {fileID: 9039501514815699435}
   m_Layer: 9
   m_Name: WColorBlock(Blue)
   m_TagString: ColorBlock
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.047169805, g: 0.8793933, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &8214755115087060518
-CapsuleCollider2D:
+--- !u!61 &9039501514815699435
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116,8 +116,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.25, y: 0.11}
-  m_Direction: 1
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.26, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.23, y: 0.14}
+  m_EdgeRadius: 0
 --- !u!1 &662339871802683833
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   boundHeight: 50
-  enemyDeathObj: {fileID: 100002, guid: 391ec6f1311384e75b4888fd6fc26b7e, type: 3}
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
+    type: 3}
   CS: 2
   playerjump: 0
 --- !u!212 &4159867534644278897
@@ -535,7 +546,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   boundHeight: 50
-  enemyDeathObj: {fileID: 100002, guid: 391ec6f1311384e75b4888fd6fc26b7e, type: 3}
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
+    type: 3}
   CS: 2
   playerjump: 0
 --- !u!212 &7852512770894564251
@@ -931,7 +943,7 @@ GameObject:
   - component: {fileID: 2695024449922236815}
   - component: {fileID: 2068108313020893211}
   - component: {fileID: 4242890251422187294}
-  - component: {fileID: 4027391800792484150}
+  - component: {fileID: 4372236198949098912}
   m_Layer: 9
   m_Name: WColorBlock(Blue) (1)
   m_TagString: ColorBlock
@@ -991,7 +1003,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.047169805, g: 0.8793933, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1022,8 +1034,8 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &4027391800792484150
-CapsuleCollider2D:
+--- !u!61 &4372236198949098912
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1035,9 +1047,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.25, y: 0.16}
-  m_Direction: 1
+  m_Offset: {x: 0, y: -0.02}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.26, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.1}
+  m_EdgeRadius: 0
 --- !u!1 &5377281004272652440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   boundHeight: 50
-  enemyDeathObj: {fileID: 100002, guid: 391ec6f1311384e75b4888fd6fc26b7e, type: 3}
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
+    type: 3}
   CS: 2
   playerjump: 0
 --- !u!212 &8078518071220107077
@@ -1132,8 +1155,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1371142157988382105, guid: ac1940b9d839550479bdcee334468a64,
-    type: 3}
+  m_Sprite: {fileID: 968011450282801046, guid: bcfe021fb94c49345b60927283ae6f5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1157,10 +1179,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.18, y: 0.18}
     newSize: {x: 0.18, y: 0.18}
     adaptiveTilingThreshold: 0.5
@@ -1183,7 +1205,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: -0.02}
+  m_Offset: {x: 0, y: -0.02}
   m_Size: {x: 0.15, y: 0.1}
   m_Direction: 0
 --- !u!114 &7427762152881149730
@@ -1415,7 +1437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   boundHeight: 50
-  enemyDeathObj: {fileID: 100002, guid: 391ec6f1311384e75b4888fd6fc26b7e, type: 3}
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 29434be1494f45d4491f8805e25ef719,
+    type: 3}
   CS: 3
   playerjump: 0
 --- !u!212 &7594188205545765321
@@ -1739,7 +1762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   boundHeight: 90
-  enemyDeathObj: {fileID: 100002, guid: 391ec6f1311384e75b4888fd6fc26b7e, type: 3}
+  enemyDeathObj: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
+    type: 3}
   CS: 1
   playerjump: 0
 --- !u!212 &7796879359614977441
@@ -2037,7 +2061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8394191246085996599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.478488, y: 5, z: 0}
+  m_LocalPosition: {x: 4.44, y: 5, z: 0}
   m_LocalScale: {x: 10, y: 20.000002, z: 1}
   m_Children: []
   m_Father: {fileID: 8909887380131106699}
@@ -2081,7 +2105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: 6260a814b3468cd4ab572cf88ce63824, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2129,7 +2153,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1.6, y: 5.76}
     newSize: {x: 0.5, y: 0.14}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
@@ -2145,16 +2169,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8909887380131106699}
     m_Modifications:
-    - target: {fileID: 63873826252549283, guid: a4705b548b42ff64991379c5d6464389,
-        type: 3}
-      propertyPath: m_Name
-      value: GroundBox2
-      objectReference: {fileID: 0}
-    - target: {fileID: 63873826252549283, guid: a4705b548b42ff64991379c5d6464389,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1088130474168824937, guid: a4705b548b42ff64991379c5d6464389,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2208,6 +2222,16 @@ PrefabInstance:
     - target: {fileID: 1088130474168824937, guid: a4705b548b42ff64991379c5d6464389,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 63873826252549283, guid: a4705b548b42ff64991379c5d6464389,
+        type: 3}
+      propertyPath: m_Name
+      value: GroundBox2
+      objectReference: {fileID: 0}
+    - target: {fileID: 63873826252549283, guid: a4705b548b42ff64991379c5d6464389,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2575643560771282187, guid: a4705b548b42ff64991379c5d6464389,
