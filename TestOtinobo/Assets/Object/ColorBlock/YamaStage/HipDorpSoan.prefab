@@ -1511,6 +1511,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 2
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &2997480350031754390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2141,6 +2147,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 1
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &7660684192978408960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2909,6 +2921,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 1
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &6390068314370960971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3607,6 +3625,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 2
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &8624100126540494274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4303,6 +4327,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 3
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &8573167491943341322
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -29,8 +29,8 @@ TagManager:
   - 
   - Enemy
   - ColorBlock
-  - 
-  - 
+  - SameColorBlock
+  - Player
   - 
   - 
   - 

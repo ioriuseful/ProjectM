@@ -96,6 +96,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 2
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &6205790764306437586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -225,16 +231,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2873580388081674388, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
-        type: 3}
-      propertyPath: CS
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8242538305806346176, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 0312af6c85088604ca1390155ea121e7, type: 2}
+    - target: {fileID: 2873580388081674388, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
+        type: 3}
+      propertyPath: CS
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a8c5f9ecc522e743a37587bd49dbc75, type: 3}
 --- !u!4 &3653750416056804484 stripped
@@ -320,6 +326,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2.503772
       objectReference: {fileID: 0}
+    - target: {fileID: 8394191245007429557, guid: 0293e4ddf890b124ab248a5057c2d1fd,
+        type: 3}
+      propertyPath: CS
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8394191245007427659, guid: 0293e4ddf890b124ab248a5057c2d1fd,
         type: 3}
       propertyPath: m_Sprite
@@ -340,11 +351,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394191245007429557, guid: 0293e4ddf890b124ab248a5057c2d1fd,
-        type: 3}
-      propertyPath: CS
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0293e4ddf890b124ab248a5057c2d1fd, type: 3}
@@ -516,6 +522,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2873580388081674473, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2873580388081674472, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -571,16 +582,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2873580388081674388, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
-        type: 3}
-      propertyPath: CS
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8242538305806346176, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 0312af6c85088604ca1390155ea121e7, type: 2}
+    - target: {fileID: 2873580388081674388, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
+        type: 3}
+      propertyPath: CS
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a8c5f9ecc522e743a37587bd49dbc75, type: 3}
 --- !u!4 &5004106199119918213 stripped
