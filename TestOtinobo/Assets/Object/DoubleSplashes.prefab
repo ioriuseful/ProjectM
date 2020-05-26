@@ -99,15 +99,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8397496469721482781, guid: 15f75dc90a27b464dab1fdac0820c462,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
         type: 3}
       propertyPath: Yspeed
-      value: 0.01
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
         type: 3}
       propertyPath: Xspeed
-      value: 0.03
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
+        type: 3}
+      propertyPath: z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
+        type: 3}
+      propertyPath: time
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15f75dc90a27b464dab1fdac0820c462, type: 3}
@@ -184,20 +199,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8397496469721482781, guid: 15f75dc90a27b464dab1fdac0820c462,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
         type: 3}
       propertyPath: Yspeed
-      value: 0.01
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
         type: 3}
       propertyPath: Xspeed
-      value: 0.03
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
         type: 3}
       propertyPath: time
-      value: 0.5
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2602503100224664659, guid: 15f75dc90a27b464dab1fdac0820c462,
+        type: 3}
+      propertyPath: z
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
