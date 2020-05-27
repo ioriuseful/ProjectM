@@ -260,6 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58375b6ee3d710d45ae49ec9505a914c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freeplaytutorial: {fileID: 8906406173295614386, guid: c4372241a5c1822419b63e275d6f1f23,
+    type: 3}
   Maincamera: {fileID: 0}
   playerDeathObj: {fileID: 8091104894708125172, guid: c05e0cb5fb9cd404e8ceee8f19d853d0,
     type: 3}

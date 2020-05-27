@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TutorialEnemyGenerate : MonoBehaviour
 {
+    [Header("親。フリープレイなんちゃら")]
+    public Transform freeplaytutorial;
+
     public List<GameObject> enemys = new List<GameObject>();
     bool isgenerateflag;
     int count;
@@ -16,7 +19,7 @@ public class TutorialEnemyGenerate : MonoBehaviour
         if(count >= 120)
         {
             int rnd = Random.Range(0, enemys.Count);
-            Instantiate(enemys[rnd], transform.position, Quaternion.identity);
+            Instantiate(enemys[rnd], transform.position, Quaternion.identity,freeplaytutorial);
             count = 0;
             isgenerateflag = false;
         }
