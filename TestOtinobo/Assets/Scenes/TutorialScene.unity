@@ -422,11 +422,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SystemTutorial
       objectReference: {fileID: 0}
-    - target: {fileID: 3668862806148150557, guid: 2b3e7aee6e7927d4b9af6beb92660383,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5951318856500893468, guid: 2b3e7aee6e7927d4b9af6beb92660383,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -481,18 +476,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290520662, guid: 2b3e7aee6e7927d4b9af6beb92660383, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 150645098, guid: 2b3e7aee6e7927d4b9af6beb92660383, type: 3}
-      propertyPath: sflag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 150645098, guid: 2b3e7aee6e7927d4b9af6beb92660383, type: 3}
-      propertyPath: mflag
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b3e7aee6e7927d4b9af6beb92660383, type: 3}
