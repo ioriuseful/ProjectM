@@ -521,7 +521,12 @@ public class PlayerScript : MonoBehaviour
             hip = false;
             stop = false;
         }
-
+        if (other.gameObject.tag == "Rain")
+        {
+            Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
+            Instantiate(playerDeathObj, transform.position, Quaternion.identity);
+            isDeadFlag = true;
+        }
     }
 
     //private void GenerateEffect()
