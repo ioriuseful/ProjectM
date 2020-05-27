@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6425168862963783060}
   - component: {fileID: 6425168862963783061}
   - component: {fileID: 6425168862963782251}
-  - component: {fileID: 6832770179366894713}
   - component: {fileID: 2145821091866522910}
   m_Layer: 0
   m_Name: HColorBlock(Red)
@@ -97,31 +96,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 1
   player: {fileID: 0}
---- !u!68 &6832770179366894713
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6425168862963782248}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.23, y: 0.08}
-  - {x: -0.23, y: 0}
-  - {x: -0.05, y: 0}
-  - {x: -0.05, y: -0.09}
-  - {x: 0.23, y: -0.09}
-  - {x: 0.23, y: 0.01}
-  - {x: 0.02, y: 0.01}
-  - {x: 0.02, y: 0.08}
-  - {x: -0.23, y: 0.08}
+  RedBlockParticle: {fileID: 0}
+  GreenBlockParticle: {fileID: 0}
+  BlueBlockParticle: {fileID: 0}
 --- !u!61 &2145821091866522910
 BoxCollider2D:
   m_ObjectHideFlags: 0
