@@ -18,6 +18,7 @@ TagManager:
   - Splashes
   - Tutorial
   - RTutorial
+  - DeathGround
   layers:
   - Default
   - TransparentFX
