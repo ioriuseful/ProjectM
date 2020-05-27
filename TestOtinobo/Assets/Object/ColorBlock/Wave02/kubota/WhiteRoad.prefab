@@ -1499,7 +1499,7 @@ Animator:
   m_GameObject: {fileID: 5170333608777640266}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5056d040bc09c0d458cfd70a35a1616e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2285cb50288c3f441aaf92484abfda74, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2971,7 +2971,7 @@ Animator:
   m_GameObject: {fileID: 8362624918173774839}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5056d040bc09c0d458cfd70a35a1616e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2285cb50288c3f441aaf92484abfda74, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3350,6 +3350,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8362624917456776692}
     m_Modifications:
+    - target: {fileID: 6425168862963782248, guid: 05060dcb8820cba41b5210845243d438,
+        type: 3}
+      propertyPath: m_Name
+      value: HColorBlock(Red) (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6425168862963783060, guid: 05060dcb8820cba41b5210845243d438,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3410,11 +3415,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6425168862963782248, guid: 05060dcb8820cba41b5210845243d438,
-        type: 3}
-      propertyPath: m_Name
-      value: HColorBlock(Red) (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6425168862963782251, guid: 05060dcb8820cba41b5210845243d438,
         type: 3}
       propertyPath: GreenBlockParticle
@@ -3463,6 +3463,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8362624917456776692}
     m_Modifications:
+    - target: {fileID: 6425168862963782248, guid: 05060dcb8820cba41b5210845243d438,
+        type: 3}
+      propertyPath: m_Name
+      value: HColorBlock(Red)
+      objectReference: {fileID: 0}
     - target: {fileID: 6425168862963783060, guid: 05060dcb8820cba41b5210845243d438,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3517,11 +3522,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6425168862963782248, guid: 05060dcb8820cba41b5210845243d438,
-        type: 3}
-      propertyPath: m_Name
-      value: HColorBlock(Red)
       objectReference: {fileID: 0}
     - target: {fileID: 6425168862963782251, guid: 05060dcb8820cba41b5210845243d438,
         type: 3}
