@@ -11,7 +11,8 @@ public class TutorialPlayerScript : MonoBehaviour
     ////playerの画像を指定するところ
     //[SerializeField, Header("上方向のプレイヤー")] Sprite UpPlayer;
     //[SerializeField, Header("下方向のプレイヤー")] Sprite DownPlayer;
-
+    [Header("親。フリープレイなんちゃら")]
+    public Transform freeplaytutorial;
     //メインカメラの当たり判定
     [SerializeField, Header("プレイヤーを追跡するカメラ")] Camera Maincamera;
     [SerializeField, Header("プレイヤーが死んだときに出すパーティクルオブジェクト")] GameObject playerDeathObj;
@@ -322,7 +323,7 @@ public class TutorialPlayerScript : MonoBehaviour
             if (CS == 0)
             {
                 Instantiate(playerDeathObj, transform.position, Quaternion.identity);
-                Instantiate(gameObject, new Vector2(2.51f, 1.6f), Quaternion.identity);
+                Instantiate(gameObject, new Vector2(2.51f, 1.6f), new Quaternion(0,0,0,0),freeplaytutorial);
                 //プレイヤー死亡
                 isDeadFlag = true;
             }

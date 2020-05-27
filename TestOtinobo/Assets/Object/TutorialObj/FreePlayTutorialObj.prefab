@@ -2075,6 +2075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641c3a490a96a5844b31162212a00a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freeplaytutorial: {fileID: 8906406173295614386}
   enemys:
   - {fileID: 2389140809400001680}
   - {fileID: 2389140809400001680}
@@ -3240,6 +3241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641c3a490a96a5844b31162212a00a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freeplaytutorial: {fileID: 0}
   enemys:
   - {fileID: 647195149800932578}
   - {fileID: 647195149800932578}
@@ -3621,6 +3623,11 @@ PrefabInstance:
       propertyPath: jumpText
       value: 
       objectReference: {fileID: 5687826804060941847}
+    - target: {fileID: 3984449674527527875, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: freeplaytutorial
+      value: 
+      objectReference: {fileID: 8906406173295614386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02479fee36f2704e88446c438b6e8af, type: 3}
 --- !u!114 &2359920483090391025 stripped
