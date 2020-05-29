@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6255323151675261760}
   - component: {fileID: 1035021248917903987}
   - component: {fileID: 1035021248917903984}
-  - component: {fileID: 3984449674527527875}
+  - component: {fileID: 3985827026549748601}
   m_Layer: 0
   m_Name: TutorilaPlayer
   m_TagString: Player
@@ -248,7 +248,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3984449674527527875
+--- !u!114 &3985827026549748601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,61 +260,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58375b6ee3d710d45ae49ec9505a914c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freeplaytutorial: {fileID: 8906406173295614386, guid: c4372241a5c1822419b63e275d6f1f23,
-    type: 3}
+  freeplaytutorial: {fileID: 0}
   Maincamera: {fileID: 0}
-  playerDeathObj: {fileID: 8091104894708125172, guid: c05e0cb5fb9cd404e8ceee8f19d853d0,
-    type: 3}
-  jumpSpeed: 5
-  jumpHeight: 3
-  jumpLimitTime: 0.7
+  playerDeathObj: {fileID: 0}
+  jumpSpeed: 0
+  jumpHeight: 0
+  jumpLimitTime: 0
   jumpCurve:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.009429932
-      inSlope: 0.11749778
-      outSlope: 0.11749778
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.22363146
-    - serializedVersion: 3
-      time: 0.9874878
-      value: 0.5023575
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  stepOnRate: 1
-  HipJump: 5
-  Parasol: 8
-  Recovery: 5
-  jumpLimitTime2: 1
-  HipLimitTime: 0.5
+  stepOnRate: 0
+  HipJump: 0
+  Parasol: 0
+  Recovery: 0
+  jumpLimitTime2: 0
+  HipLimitTime: 0
   CS: 0
   Color: 
   jumpText: {fileID: 0}
-  ItemSE: {fileID: 8300000, guid: 94445ea2e8e2f0840b71be5c57d89aca, type: 3}
-  JumpSE: {fileID: 8300000, guid: 0cb4162039f571d4e8a93585fc099e39, type: 3}
-  EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
-  HipDropSE: {fileID: 8300000, guid: 1a4518867a18a7d4e979df04ce1a1056, type: 3}
+  ItemSE: {fileID: 0}
+  JumpSE: {fileID: 0}
+  EnemyDeadSE: {fileID: 0}
+  HipDropSE: {fileID: 0}
   retryGame: {fileID: 0}
-  White: {fileID: 7255854300219104043, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
-  Green: {fileID: -6127215198058392024, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
-  Red: {fileID: 5770437819054901188, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
-  Blue: {fileID: -4906125199742805290, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
-  GreenEffect: {fileID: 2014583720770757417, guid: 65c1b7945c39c6243864b9dcb97c0022,
-    type: 3}
-  RedEffect: {fileID: 5240447221211088345, guid: 6d78b3d27e4c09448b862d5402fa8a81,
-    type: 3}
-  BlueEffect: {fileID: 100006, guid: 16685c0b5f081124bb602176b402f038, type: 3}
+  White: {fileID: 0}
+  Green: {fileID: 0}
+  Red: {fileID: 0}
+  Blue: {fileID: 0}
+  GreenEffect: {fileID: 0}
+  RedEffect: {fileID: 0}
+  BlueEffect: {fileID: 0}
   SteamPoint: 0
   score: 0
   AddPoint: 100

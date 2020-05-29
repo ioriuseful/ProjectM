@@ -98,7 +98,7 @@ MonoBehaviour:
   hight: 5
   speed: 5
   WaveSE: {fileID: 8300000, guid: ccd90dba723312541b28d0cceaeb5086, type: 3}
-  changewave: 0
+  score: 0
   wave: 0
   max: 5
 --- !u!114 &7285091741936300004
@@ -473,6 +473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  score: 0
+  ScoreSE: {fileID: 0}
 --- !u!114 &1296412532049726934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   playerScript: {fileID: 0}
+  scorepoint: 0
 --- !u!1 &6101816958142434133
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +793,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseManager
       objectReference: {fileID: 0}
+    - target: {fileID: 396561167613488197, guid: 4b901eb469661bb4c95c7beaf0584b6c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 396561167613488199, guid: 4b901eb469661bb4c95c7beaf0584b6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -844,6 +852,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 396561167613488196, guid: 4b901eb469661bb4c95c7beaf0584b6c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b901eb469661bb4c95c7beaf0584b6c, type: 3}

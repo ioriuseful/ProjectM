@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &396561167528773815
 RectTransform:
   m_ObjectHideFlags: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
     type: 3}
   Panel: {fileID: 396561167528773812}
   canvasObject: {fileID: 396561167613488197}
-  pauseGame: 1
+  pauseGame: 0
   setGround: 0
   setGround2: 0
 --- !u!82 &1429338407

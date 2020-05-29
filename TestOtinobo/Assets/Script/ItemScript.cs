@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
     public PlayerScript player;
-    private float item;
+    private int item;
     //アニメーション用
     private float changeitem;
     private Animator animator;
