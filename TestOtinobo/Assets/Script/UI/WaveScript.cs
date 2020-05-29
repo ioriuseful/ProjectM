@@ -14,7 +14,7 @@ public class WaveScript : MonoBehaviour
     [SerializeField, Header("Wave変更時のSE")] public AudioClip WaveSE;
     AudioSource audioSource;
     private Vector3 pos;
-    private int score;
+    public int score;
     private int changewave;
     [Header("この値は基本いじらない")]
     public int wave;
