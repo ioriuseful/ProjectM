@@ -7610,6 +7610,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6010670984278493115, guid: 8244a377b8fa0ac41ad79afdb0c58a75,
         type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: GreenEffect
+      value: 
+      objectReference: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
+        type: 3}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x
