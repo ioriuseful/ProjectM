@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreLineCount : MonoBehaviour
 {
     public PlayerScript player;
-    private int score;
+    public int score;
     Text text;
     //アニメーション用
     private int changescore;
