@@ -87,7 +87,7 @@ public class PlayerScript : MonoBehaviour
     private bool isHead = false;
 
     private bool IJump = false;
-    public float IJumpC = 0;
+    public  int IJumpC = 0;
     private float IJumpH = 20;
     private float xSpeed = 1;
 
@@ -104,6 +104,7 @@ public class PlayerScript : MonoBehaviour
     private bool ColorBStep = false;
    // public GameObject PowerUp;
     public bool PU = false;
+    public int EnemyDown;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -127,6 +128,7 @@ public class PlayerScript : MonoBehaviour
         hinan = Parasol;
         jumpText.text = string.Format("× " + IJumpC);
         CS = ColorState.White;
+        EnemyDown = 0;
     }
     private void Awake()//追加
     {

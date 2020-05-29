@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemJump : MonoBehaviour
 {
     [SerializeField, Header("アイテムを入手したときの飛ぶ高さ")] public float boundHeight;
-    [SerializeField, Header("アイテムを入手したときの飛ぶ回数")] public float boundCount;
+    [SerializeField, Header("アイテムを入手したときの飛ぶ回数")] public int boundCount;
    // AudioSource audioSource;
     [SerializeField, Header("アイテムをとるSE")] public AudioClip ItemSE;
     private float time;
