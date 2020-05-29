@@ -19,16 +19,33 @@ public class StarScript : MonoBehaviour
     private bool change = true;
     private float timer = 0.01f;
 
+    [SerializeField, Header("消えるまでの距離")] int count = 20;
+
+    private PlayerScript Pscript;//プレイヤースクリプト取得
+    private GameObject player;
+    private int score;//生成時のスコア
+    private int scorenow;//現在のスコア
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         random = Random.Range(mintime, maxtime);
         timelimit2 = retime;
+
+        player = GameObject.Find("Player");
+        Pscript = player.GetComponent<PlayerScript>();
+        score = Pscript.scoreline;
+        score += count;
     }
 
     void Update()
     {
         Invoke("Animation", random);
+        scorenow = Pscript.scoreline;
+        if (score == scorenow)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Animation()
@@ -74,10 +91,5 @@ public class StarScript : MonoBehaviour
         sprite.color = color;
         Debug.Log(timelimit);
         MyTransform.localScale = size;
-    }
-
-    void IsDead()
-    {
-        Destroy(gameObject);
     }
 }

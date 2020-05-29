@@ -6930,15 +6930,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 182353151372698856, guid: 86c77060406f28f48ac7f13d99a7ece1,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2052297936775392367, guid: 86c77060406f28f48ac7f13d99a7ece1,
         type: 3}
       propertyPath: m_Name
       value: BGMSouce
+      objectReference: {fileID: 0}
+    - target: {fileID: 2052297936775392367, guid: 86c77060406f28f48ac7f13d99a7ece1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182353151372698856, guid: 86c77060406f28f48ac7f13d99a7ece1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2052297936775392361, guid: 86c77060406f28f48ac7f13d99a7ece1,
         type: 3}
