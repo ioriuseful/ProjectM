@@ -100,6 +100,7 @@ public class TutorialPlayerScript : MonoBehaviour
     public bool ColorWallBottom = false;
     public bool Pause = false;
     private bool ColorBStep = false;
+    public bool PU = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -117,9 +118,11 @@ public class TutorialPlayerScript : MonoBehaviour
         rig2D = GetComponent<Rigidbody2D>();
         capcol = GetComponent<BoxCollider2D>();
         FadeManager.FadeIn();
-        hinan = Parasol;
+        hinan = 8;
+        Parasol = hinan;
         jumpText.text = string.Format("× " + IJumpC);
         CS = ColorState.White;
+        hip = false;
     }
     private void Awake()//追加
     {
@@ -128,6 +131,8 @@ public class TutorialPlayerScript : MonoBehaviour
 
     void Update()
     {
+        
+
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, transform.rotation.w);
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;
@@ -179,6 +184,8 @@ public class TutorialPlayerScript : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
+                hip = false;
+                Parasol = hinan;
                 anim1 = true; //animのtrue追加
                 audioSource.PlayOneShot(HipDropSE);
                 hip = true;
@@ -291,6 +298,8 @@ public class TutorialPlayerScript : MonoBehaviour
         {
             gameObject.SetActive(false);
             rig2D.velocity = new Vector2(0, 0);
+            hip = false;
+            Parasol = hinan;
             //Destroy(gameObject);
             //SceneManager.LoadScene(0);
         }
@@ -324,6 +333,7 @@ public class TutorialPlayerScript : MonoBehaviour
             {
                 Instantiate(playerDeathObj, transform.position, Quaternion.identity);
                 Instantiate(gameObject, new Vector2(2.51f, 1.6f), new Quaternion(0,0,0,0),freeplaytutorial);
+                hip = false;
                 //プレイヤー死亡
                 isDeadFlag = true;
             }
@@ -435,6 +445,10 @@ public class TutorialPlayerScript : MonoBehaviour
             ColorWallRight = false;
             ColorWallLeft = false;
             ColorWallBottom = false;
+            if (PU)
+            {
+                PU = false;
+            }
         }
     }
     private void OnCollisionStay2D(Collision2D other)
@@ -465,7 +479,11 @@ public class TutorialPlayerScript : MonoBehaviour
             {
                 if (p.point.y < judgePos)
                 {
-                    if (hip)
+                    if (stop)
+                    {
+                        PU = true;
+                    }
+                    if (!PU && hip)
                     {
                         ColorBStep = true;
                         hip = false;
@@ -507,6 +525,7 @@ public class TutorialPlayerScript : MonoBehaviour
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
 
             //プレイヤー死亡
+            hip = false;
             isDeadFlag = true;
         }
         if (other.gameObject.tag == "ColorBlock")
