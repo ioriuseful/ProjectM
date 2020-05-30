@@ -123,6 +123,10 @@ public class ColorBlockScript : MonoBehaviour
                     break;
             }
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
         if(col.gameObject.tag == "Rain")
         {
             Invoke("IsDead", 10.0f);
