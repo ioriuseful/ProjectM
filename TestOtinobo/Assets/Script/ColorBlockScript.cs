@@ -19,11 +19,22 @@ public class ColorBlockScript : MonoBehaviour
     public GameObject GreenBlockParticle;
     public GameObject BlueBlockParticle;
 
+    [SerializeField, Header("カラーブロックの移動用変数")]
+    public float Yspeed;
+    public float Xspeed;
+
+    [SerializeField, Header("上下移動反転の間隔")] float time = 0.3f;
+    private float timer = 0.01f;
+    private float timelimit;
+    private bool change = true;
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<PlayerScript>();
         collider = GetComponent<Collider2D>();
+        Yspeed /= 100;
+        Xspeed /= 100;
     }
 
     void Update()
@@ -47,6 +58,51 @@ public class ColorBlockScript : MonoBehaviour
                 Color = "Blue";
                 break;
         }
+
+        Transform MyTransform = transform;
+
+        Vector3 pos = MyTransform.position;
+
+        #region 縦移動
+        if (Yspeed != 0)
+        {
+            if (timelimit < time && change == true)
+            {
+                pos.y += Yspeed;
+                timelimit += timer;
+            }
+            else
+            {
+                if (change == true)
+                {
+                    change = false;
+                }
+            }
+            if (timelimit > 0f && change == false)
+            {
+                pos.y -= Yspeed;
+                timelimit -= timer;
+            }
+            else
+            {
+                if (change == false)
+                {
+                    change = true;
+                }
+            }
+        }
+        #endregion
+
+        #region 横移動
+
+        if (Xspeed != 0)
+        {
+            pos.x -= Xspeed;
+        }
+
+        #endregion
+        
+        MyTransform.position = pos;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -66,6 +122,10 @@ public class ColorBlockScript : MonoBehaviour
                     Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
                     break;
             }
+        }
+        if(col.gameObject.tag == "Rain")
+        {
+            Invoke("IsDead", 10.0f);
         }
     }
 
@@ -87,5 +147,10 @@ public class ColorBlockScript : MonoBehaviour
                     break;
             }
         }
+    }
+
+    void IsDead()
+    {
+        Destroy(gameObject);
     }
 }

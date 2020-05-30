@@ -373,6 +373,9 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!212 &512020711
 SpriteRenderer:
   m_ObjectHideFlags: 0

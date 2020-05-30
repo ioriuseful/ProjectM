@@ -53,7 +53,7 @@ public class SaveScore : MonoBehaviour
         Apoint = Ipoint + Spoint + Ppoint;
         nowScore = Apoint;
         NowScoreText.text = "NowScore:" + nowScore.ToString();
-        Debug.Log(nowScore);
+        //Debug.Log(nowScore);
         if(forthScore>Apoint&&Apoint>fifthScore)
         {
             fifthScore = Apoint;
