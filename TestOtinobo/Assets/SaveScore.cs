@@ -172,7 +172,7 @@ public class SaveScore : MonoBehaviour
         if (Change==true&&Set==true)
         {
              audioSource.PlayOneShot(ChangeSE);
-             OMEDETO.text = "おめでとう！";
+             OMEDETO.text = "Congratulation";
              Set = false;
         } 
         if(Change==false&&Set==false)
