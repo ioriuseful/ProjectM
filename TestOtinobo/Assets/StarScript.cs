@@ -89,7 +89,6 @@ public class StarScript : MonoBehaviour
         Color color = sprite.color;
         color.a = alpha;
         sprite.color = color;
-        Debug.Log(timelimit);
         MyTransform.localScale = size;
     }
 }

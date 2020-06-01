@@ -102,6 +102,9 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &5440459546852192831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,5 +129,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 5.02}
-  m_EdgeRadius: 0.3
+  m_Size: {x: 1.18, y: 5.3}
+  m_EdgeRadius: 0.18
