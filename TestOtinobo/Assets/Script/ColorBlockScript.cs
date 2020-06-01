@@ -54,6 +54,7 @@ public class ColorBlockScript : MonoBehaviour
         if(col.gameObject.tag == "Player" && Color == player.Color)
         {
             collider.isTrigger = true;
+            gameObject.tag = "Ground";
             switch(CS)
             {
                 case ColorState.Red:
