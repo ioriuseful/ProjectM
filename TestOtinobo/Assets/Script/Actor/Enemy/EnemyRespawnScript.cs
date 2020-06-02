@@ -84,14 +84,14 @@ public class EnemyRespawnScript : MonoBehaviour
             case 1:
                 MaxTime = maxRespawnTime + MaxTimeUp - MaxTimeDown;
                 MinTime = minRespawnTime + MinTimeUp - MinTimeDown;
-                rnd = Random.Range(0, 2);
+                rnd = Random.Range(0, 4);
                 Respawn();
                 break;
 
             case 2:
                 MaxTime = maxRespawnTime + MaxTimeUp * Enemywave - MaxTimeDown * Enemywave;
                 MinTime = minRespawnTime + MinTimeUp * Enemywave - MinTimeDown * Enemywave;
-                rnd = Random.Range(2, 4);
+                rnd = Random.Range(4, 8);
                 Respawn();
                 break;
 

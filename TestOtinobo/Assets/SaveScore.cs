@@ -56,7 +56,7 @@ public class SaveScore : MonoBehaviour
         FifthscoreText.text = "5位:" + fifthScore.ToString();
         NowScoreText.text = "今回のスコア:" + nowScore.ToString();
         Result.text = "結果:" + result.ToString();
-        OMEDETO.text = "";
+        OMEDETO.text = "あああえ";
     }
 
     // Update is called once per frame

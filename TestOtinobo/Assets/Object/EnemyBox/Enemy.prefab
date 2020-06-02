@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2873580388081674472}
+  - component: {fileID: 8242538305806346176}
   - component: {fileID: 2873580388081674388}
   - component: {fileID: 2873580388081674389}
   - component: {fileID: 438994120507813787}
   - component: {fileID: 37999097624880798}
   - component: {fileID: 2873580388081674475}
-  - component: {fileID: 8242538305806346176}
   - component: {fileID: 7019325044390912751}
   - component: {fileID: 9197319366209578388}
   m_Layer: 8
@@ -38,6 +38,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8242538305806346176
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873580388081674473}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1998e483f7dfc55439908a082618743b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2873580388081674388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,25 +182,6 @@ MonoBehaviour:
   maxSpeedX: -1
   minSpeedY: -0.1
   maxSpeedY: 0.1
---- !u!95 &8242538305806346176
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2873580388081674473}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1998e483f7dfc55439908a082618743b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!82 &7019325044390912751
 AudioSource:
   m_ObjectHideFlags: 0

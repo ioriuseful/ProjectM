@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Maincamera: {fileID: 0}
-  playerDeathObj: {fileID: 3350002887334250769, guid: 411b283391ccda94d87a71676574014f,
+  playerDeathObj: {fileID: 8522984589034868226, guid: 5d3fe1a5819367047811df31fde15aeb,
     type: 3}
   jumpSpeed: 10
   jumpHeight: 5
@@ -182,7 +182,7 @@ MonoBehaviour:
   Parasol: 8
   Recovery: 10
   jumpLimitTime2: 1
-  HipLimitTime: 0.5
+  HipLimitTime: 0.35
   CS: 0
   Color: 
   jumpText: {fileID: 0}
@@ -195,12 +195,13 @@ MonoBehaviour:
   Green: {fileID: -6127215198058392024, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Red: {fileID: 5770437819054901188, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Blue: {fileID: -4906125199742805290, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
-  GreenEffect: {fileID: 2014583720770757417, guid: 65c1b7945c39c6243864b9dcb97c0022,
+  GreenEffect: {fileID: 8522984589034868226, guid: 29434be1494f45d4491f8805e25ef719,
     type: 3}
-  RedEffect: {fileID: 5240447221211088345, guid: 6d78b3d27e4c09448b862d5402fa8a81,
+  RedEffect: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
     type: 3}
-  BlueEffect: {fileID: 100006, guid: 16685c0b5f081124bb602176b402f038, type: 3}
-  ItemUp: {fileID: 0}
+  BlueEffect: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
+    type: 3}
+  ItemUp: {fileID: 6010670984278493115, guid: 8244a377b8fa0ac41ad79afdb0c58a75, type: 3}
   SteamPoint: 0
   score: 0
   AddPoint: 100
@@ -215,6 +216,7 @@ MonoBehaviour:
   ColorWallBottom: 0
   Pause: 0
   PU: 0
+  EnemyDown: 0
 --- !u!114 &6382301148395647404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +254,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

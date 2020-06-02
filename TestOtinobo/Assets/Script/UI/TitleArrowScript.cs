@@ -19,11 +19,11 @@ public class TitleArrowScript : MonoBehaviour
 
         if(arrowposition == 0)
         {
-            transform.position = new Vector2(-7.4f, -2.3f);
+            transform.position = new Vector2(-7.4f, -3.15f);
         }
         else if(arrowposition == 1)
         {
-            transform.position = new Vector2(2.6f,-2.2f);
+            transform.position = new Vector2(2.6f,-3.15f);
         }
     }
 }
