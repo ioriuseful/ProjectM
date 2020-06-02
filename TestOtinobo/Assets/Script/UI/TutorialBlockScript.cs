@@ -19,7 +19,7 @@ public class TutorialBlockScript : MonoBehaviour
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        player = GameObject.Find("Player").GetComponent<TutorialPlayerScript>();
+        player = GameObject.Find("TutorilaPlayer").GetComponent<TutorialPlayerScript>();
     }
 
     void Update()
