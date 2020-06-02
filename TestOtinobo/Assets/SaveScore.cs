@@ -297,7 +297,7 @@ public class SaveScore : MonoBehaviour
                 if (Change == true && Set == true && result > 0)
                 {
                     audioSource.PlayOneShot(ChangeSE);
-                    OMEDETO.text = "おめでとう！";
+                    OMEDETO.text = "Congratulation";
                     Set = false;
                 }
                 if (Change == false && Set == false)
@@ -332,8 +332,6 @@ public class SaveScore : MonoBehaviour
                 FifthscoreText.color = new Color(1f, 1f, 1f, level);
             }
         }
-        
-       
         OnDamegeEffect();
     }
     void OnDamegeEffect()

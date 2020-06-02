@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   boundHeight: 20
-  enemyDeathObj: {fileID: 3963455896299686799, guid: e1f8cbc4f89c5fe47bd9c69fce361467,
+  enemyDeathObj: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
     type: 3}
   CS: 1
   playerjump: 0

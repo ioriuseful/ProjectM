@@ -429,6 +429,65 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: x 5
+--- !u!114 &2891850862088207747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703125463961603953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946a866a76ceccf41a8b4ccd021659a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freeplaytutorial: {fileID: 0}
+  Maincamera: {fileID: 0}
+  playerDeathObj: {fileID: 0}
+  jumpSpeed: 0
+  jumpHeight: 0
+  jumpLimitTime: 0
+  jumpCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stepOnRate: 0
+  HipJump: 0
+  Parasol: 0
+  Recovery: 0
+  jumpLimitTime2: 0
+  HipLimitTime: 0
+  CS: 0
+  Color: 
+  jumpText: {fileID: 0}
+  ItemSE: {fileID: 0}
+  JumpSE: {fileID: 0}
+  EnemyDeadSE: {fileID: 0}
+  HipDropSE: {fileID: 0}
+  retryGame: {fileID: 0}
+  White: {fileID: 0}
+  Green: {fileID: 0}
+  Red: {fileID: 0}
+  Blue: {fileID: 0}
+  GreenEffect: {fileID: 0}
+  RedEffect: {fileID: 0}
+  BlueEffect: {fileID: 0}
+  SteamPoint: 0
+  score: 0
+  AddPoint: 100
+  HighPoint: 200
+  scoreline: 0
+  GetisDeadFlag: 0
+  IJumpC: 0
+  anim1: 0
+  anim2: 0
+  ColorWallRight: 0
+  ColorWallLeft: 0
+  ColorWallBottom: 0
+  Pause: 0
+  PU: 0
 --- !u!1 &1772283835551450884
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +747,9 @@ MonoBehaviour:
   RedBlockParticle: {fileID: 0}
   GreenBlockParticle: {fileID: 0}
   BlueBlockParticle: {fileID: 0}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &7997047632662877883
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2877,6 +2939,9 @@ MonoBehaviour:
   RedBlockParticle: {fileID: 0}
   GreenBlockParticle: {fileID: 0}
   BlueBlockParticle: {fileID: 0}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &8492391637191991796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3628,11 +3693,18 @@ PrefabInstance:
       propertyPath: freeplaytutorial
       value: 
       objectReference: {fileID: 8906406173295614386}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3985827026549748601, guid: b02479fee36f2704e88446c438b6e8af, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b02479fee36f2704e88446c438b6e8af, type: 3}
 --- !u!4 &4703125463961603957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6255323151675261767, guid: b02479fee36f2704e88446c438b6e8af,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696595865447631922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4703125463961603953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6255323151675261763, guid: b02479fee36f2704e88446c438b6e8af,
     type: 3}
   m_PrefabInstance: {fileID: 1696595865447631922}
   m_PrefabAsset: {fileID: 0}

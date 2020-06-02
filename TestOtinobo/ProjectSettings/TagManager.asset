@@ -18,6 +18,7 @@ TagManager:
   - Splashes
   - Tutorial
   - RTutorial
+  - DeathGround
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - 
   - Enemy
   - ColorBlock
-  - SameColorBlock
+  - 
   - Player
   - 
   - 
