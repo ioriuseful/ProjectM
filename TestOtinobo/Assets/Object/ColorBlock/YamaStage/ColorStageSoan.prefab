@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8158590838150398183}
   - component: {fileID: 5849156627319604154}
   - component: {fileID: 7465256781338345041}
-  - component: {fileID: 4802679297404538013}
+  - component: {fileID: 3330666603103374372}
   m_Layer: 9
   m_Name: GreenBox (1)
   m_TagString: ColorBlock
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680026431152231139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.542322, y: 31.003754, z: 22.840626}
+  m_LocalPosition: {x: -18.61, y: 31.003754, z: 22.840626}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 4920914105103623361}
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.0148358345, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,8 +102,11 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &4802679297404538013
-CapsuleCollider2D:
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
+--- !u!61 &3330666603103374372
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116,8 +119,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.37}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.16, y: 0.49189213}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.47}
+  m_EdgeRadius: 0
 --- !u!1 &779400191650358816
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779400191650358816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.2, y: 1, z: 0}
+  m_LocalPosition: {x: 40.2, y: 4.879999, z: 0}
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 1}
   m_Children: []
   m_Father: {fileID: 6597702819537701203}
@@ -581,7 +594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2164282495406085634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.06232, y: -24.5, z: -22.840626}
+  m_LocalPosition: {x: 49.06232, y: -20.62, z: -22.840626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1411635543313078412}
@@ -604,7 +617,7 @@ GameObject:
   - component: {fileID: 2552816051671863519}
   - component: {fileID: 2552816051671863518}
   - component: {fileID: 2552816051671865120}
-  - component: {fileID: 9207290068790501757}
+  - component: {fileID: 2654793097967848227}
   m_Layer: 9
   m_Name: BlueBox
   m_TagString: ColorBlock
@@ -664,7 +677,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.06587124, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -695,8 +708,11 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &9207290068790501757
-CapsuleCollider2D:
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
+--- !u!61 &2654793097967848227
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -709,8 +725,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.36}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.16, y: 0.40274912}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.4}
+  m_EdgeRadius: 0
 --- !u!1 &2599797286991110977
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,7 +748,6 @@ GameObject:
   - component: {fileID: 6340758861272633241}
   - component: {fileID: 6931389500159714550}
   - component: {fileID: 1626702102690630433}
-  - component: {fileID: 8787802955806724794}
   m_Layer: 9
   m_Name: GreenBox
   m_TagString: ColorBlock
@@ -782,7 +807,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.0148358345, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -813,22 +838,9 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &8787802955806724794
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2599797286991110977}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.37}
-  m_Direction: 0
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!1 &3777285101504065919
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +852,7 @@ GameObject:
   - component: {fileID: 6347192074859843968}
   - component: {fileID: 5140662692592996711}
   - component: {fileID: 8139299157844506874}
-  - component: {fileID: 3653695740242093874}
+  - component: {fileID: 5129679166949439283}
   m_Layer: 9
   m_Name: RedBox (2)
   m_TagString: ColorBlock
@@ -900,7 +912,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 1, g: 0, b: 0.0586915, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -931,8 +943,11 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &3653695740242093874
-CapsuleCollider2D:
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
+--- !u!61 &5129679166949439283
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -945,8 +960,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.43}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.16, y: 0.45324394}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.48}
+  m_EdgeRadius: 0
 --- !u!1 &4042019796728680252
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +999,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4042019796728680252}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15, y: 4.17, z: 0}
+  m_LocalPosition: {x: 15, y: 8.049999, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 6597702819537701203}
@@ -1413,7 +1438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4594414707604625617}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15, y: 6.3799996, z: 0}
+  m_LocalPosition: {x: 15, y: 10.259998, z: 0}
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 1}
   m_Children: []
   m_Father: {fileID: 6597702819537701203}
@@ -1511,7 +1536,7 @@ GameObject:
   - component: {fileID: 3515680255650477941}
   - component: {fileID: 7420194592373820047}
   - component: {fileID: 1997504753191214816}
-  - component: {fileID: 5427178030419340669}
+  - component: {fileID: 4529843165341534946}
   m_Layer: 9
   m_Name: BlueBox (1)
   m_TagString: ColorBlock
@@ -1571,7 +1596,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.06587124, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1602,8 +1627,11 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &5427178030419340669
-CapsuleCollider2D:
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
+--- !u!61 &4529843165341534946
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1616,8 +1644,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.37}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.16, y: 0.40274912}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.4}
+  m_EdgeRadius: 0
 --- !u!1 &5786607221790207678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,7 +1992,7 @@ GameObject:
   - component: {fileID: 1009144150109547663}
   - component: {fileID: 3044707138327463738}
   - component: {fileID: 5045834201091960355}
-  - component: {fileID: 7115430380899610177}
+  - component: {fileID: 7738671045270492623}
   m_Layer: 9
   m_Name: RedBox (1)
   m_TagString: ColorBlock
@@ -2014,7 +2052,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 1, g: 0, b: 0.0586915, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2045,8 +2083,11 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &7115430380899610177
-CapsuleCollider2D:
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
+--- !u!61 &7738671045270492623
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2059,8 +2100,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.16, y: 0.45324394}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
   m_Size: {x: 0.13, y: 0.45}
-  m_Direction: 0
+  m_EdgeRadius: 0
 --- !u!1 &6274434411260139866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,7 +2123,6 @@ GameObject:
   - component: {fileID: 6274434411260139869}
   - component: {fileID: 6274434411260139870}
   - component: {fileID: 6274434411260139871}
-  - component: {fileID: 6274434411260139868}
   m_Layer: 9
   m_Name: RedBox
   m_TagString: ColorBlock
@@ -2132,7 +2182,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 1, g: 0, b: 0.0586915, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2163,22 +2213,9 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &6274434411260139868
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6274434411260139866}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.4}
-  m_Direction: 0
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!1 &6274434411281445638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,7 +2551,7 @@ GameObject:
   - component: {fileID: 5737567083215142131}
   - component: {fileID: 4242884747711650104}
   - component: {fileID: 8259433087954073766}
-  - component: {fileID: 2432088343081206063}
+  - component: {fileID: 5302525876501526074}
   m_Layer: 9
   m_Name: BlueBox (2)
   m_TagString: ColorBlock
@@ -2530,7 +2567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7477220328001347782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4376793, y: 31.513754, z: 22.840626}
+  m_LocalPosition: {x: 0.3, y: 31.513754, z: 22.840626}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 4920914105103623361}
@@ -2574,7 +2611,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.06587124, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2605,8 +2642,11 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &2432088343081206063
-CapsuleCollider2D:
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
+--- !u!61 &5302525876501526074
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2619,8 +2659,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.35}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.16, y: 0.40274912}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.4}
+  m_EdgeRadius: 0
 --- !u!1 &7742124965891830528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,7 +3006,7 @@ GameObject:
   - component: {fileID: 7865775157830834513}
   - component: {fileID: 2386433893094281369}
   - component: {fileID: 8544398936039707101}
-  - component: {fileID: 4221383123837423814}
+  - component: {fileID: 4541091224190096192}
   m_Layer: 9
   m_Name: GreenBox (2)
   m_TagString: ColorBlock
@@ -3016,7 +3066,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
   m_Color: {r: 0.0148358345, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3047,8 +3097,11 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
---- !u!70 &4221383123837423814
-CapsuleCollider2D:
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
+--- !u!61 &4541091224190096192
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3061,8 +3114,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.44}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 5.76}
+    newSize: {x: 0.16, y: 0.49189213}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.48}
+  m_EdgeRadius: 0
 --- !u!1 &8478823627541416796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,7 +3153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8478823627541416796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.2, y: 9.3, z: 0}
+  m_LocalPosition: {x: 40.2, y: 13.179999, z: 0}
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 1}
   m_Children: []
   m_Father: {fileID: 6597702819537701203}
@@ -3237,7 +3300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8956951481758160845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.06232, y: -23.4, z: -22.840626}
+  m_LocalPosition: {x: 49.06232, y: -19.52, z: -22.840626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2552816051671863519}

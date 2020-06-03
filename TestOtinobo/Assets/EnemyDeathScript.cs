@@ -10,6 +10,7 @@ public class EnemyDeathScript : MonoBehaviour
     [SerializeField, Header("パーティクルが大きくなる最大値")] float max = 2;
     [SerializeField, Header("パーティクルが小さくなる最小値")] float min = 1;
     [SerializeField, Header("パーティクルが何回拡大縮小を繰り返すかの値")] int count = 2;
+    [Header("プレイヤーデスオブジェならチェック")] public bool isPlayerflag;
     
     private string name;
     private Object parent;
@@ -87,8 +88,9 @@ public class EnemyDeathScript : MonoBehaviour
         Vector3 pos = MyTransform.position;
 
         timelimit -= Time.deltaTime;
-        if(timelimit <= 0f)
+        if(timelimit <= 0f && !isPlayerflag)
         {
+            Debug.Log("通ってる");
             IsDead();
         }
 

@@ -92,7 +92,7 @@ public class FadeManager : MonoBehaviour
                 alpha = 1.0f;
 
                 //次のシーンへ遷移
-                SceneManager.LoadScene(nextScene);
+                SceneManager.LoadScene("Result");
             }
 
             //フェード用Imageの色・透明度設定

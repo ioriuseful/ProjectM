@@ -688,6 +688,9 @@ MonoBehaviour:
   RedBlockParticle: {fileID: 0}
   GreenBlockParticle: {fileID: 0}
   BlueBlockParticle: {fileID: 0}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &7997047632662877883
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2877,6 +2880,9 @@ MonoBehaviour:
   RedBlockParticle: {fileID: 0}
   GreenBlockParticle: {fileID: 0}
   BlueBlockParticle: {fileID: 0}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &8492391637191991796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3012,7 +3018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  StopGroundWave: 0
+  StopGroundWave: 1
   nowWave: {fileID: 0}
 --- !u!61 &4111201640033809073
 BoxCollider2D:
@@ -3618,16 +3624,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3984449674527527875, guid: b02479fee36f2704e88446c438b6e8af,
-        type: 3}
-      propertyPath: jumpText
-      value: 
-      objectReference: {fileID: 5687826804060941847}
-    - target: {fileID: 3984449674527527875, guid: b02479fee36f2704e88446c438b6e8af,
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
         type: 3}
       propertyPath: freeplaytutorial
       value: 
       objectReference: {fileID: 8906406173295614386}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: jumpText
+      value: 
+      objectReference: {fileID: 5687826804060941847}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02479fee36f2704e88446c438b6e8af, type: 3}
 --- !u!4 &4703125463961603957 stripped

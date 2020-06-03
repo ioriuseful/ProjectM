@@ -13,12 +13,13 @@ public class RainMove : MonoBehaviour
     [Header("加速量")] public float acceleration = 10;//加速量
     public bool flag1 = false;//距離が遠くなった時のフラグ
     public bool flag2 = true;//距離が近くなった時のフラグ
+    public WaveScript nowWave;
     //public float MaxDistance;//遠い距離
     //public float MinDistance;//近い距離
     public bool setpause;
     // Start is called before the first frame update
     void Start()
-    {        
+    {
         seconds = 0;
     }
 
@@ -52,17 +53,17 @@ public class RainMove : MonoBehaviour
         //}
         if (flag1 == true)
         {
-            pos.x = c + speed * acceleration * 0.1f;
+            pos.x = c + speed * acceleration * 0.5f;
         }
         else if (flag2 == true)
         {
-            pos.x = c + speed * 0.1f;
+            pos.x = c + speed * nowWave.wave / 8;
         }
         else
         {
-            pos.x = c + speed * 0.1f;
+            pos.x = c + speed * nowWave.wave;
         }
-        if(setpause==true)
+        if (setpause == true)
         {
             speed = 0;
         }
