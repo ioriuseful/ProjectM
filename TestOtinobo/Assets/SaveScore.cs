@@ -126,7 +126,7 @@ public class SaveScore : MonoBehaviour
             result = Apoint;
             PlayerPrefs.SetInt(key7, result);
             Result.text = "result:" + result.ToString();
-            Debug.Log(result);
+            //Debug.Log(result);
         }
         if (forthScore > result && result > fifthScore)
         {
