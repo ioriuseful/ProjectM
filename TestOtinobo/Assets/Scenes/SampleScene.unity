@@ -6516,17 +6516,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2747871219962801857, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1642768534}
     - target: {fileID: 2747871220312188995, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1642768534}
     - target: {fileID: 1495752276, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1642768534}
+    - target: {fileID: 2747871219962801857, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1642768534}
@@ -6951,6 +6951,12 @@ PrefabInstance:
       propertyPath: retryGame
       value: 
       objectReference: {fileID: 1429338406}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: playerDeathObj
+      value: 
+      objectReference: {fileID: 8522984589034868226, guid: 5d3fe1a5819367047811df31fde15aeb,
+        type: 3}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x

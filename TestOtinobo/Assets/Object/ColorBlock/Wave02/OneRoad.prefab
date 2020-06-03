@@ -752,6 +752,9 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &6041655493580874398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -880,6 +883,9 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &7693793664663541323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1008,6 +1014,9 @@ MonoBehaviour:
     type: 3}
   BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
     type: 3}
+  Yspeed: 0
+  Xspeed: 0
+  time: 0.3
 --- !u!61 &7332672723345717028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1233,7 +1242,7 @@ Animator:
   m_GameObject: {fileID: 3672696483697606193}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5056d040bc09c0d458cfd70a35a1616e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2285cb50288c3f441aaf92484abfda74, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
