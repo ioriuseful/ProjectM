@@ -78,7 +78,7 @@ public class SaveScore : MonoBehaviour
         Apoint = Ipoint + Spoint + Ppoint;
         nowScore = Apoint;
         PlayerPrefs.SetInt(key6, nowScore);
-        NowScoreText.text = "今回の成績:" + nowScore.ToString();
+        NowScoreText.text = "Sore:" + nowScore.ToString();
         #region//同点処理
         if (fifthScore == result)
         {
@@ -293,11 +293,11 @@ public class SaveScore : MonoBehaviour
                 break;
             case 5:
                 Clear = true;
-                Result.text = "今回の得点:" + result.ToString();
+                Result.text = "今回のスコア:" + result.ToString();
                 if (Change == true && Set == true && result > 0)
                 {
                     audioSource.PlayOneShot(ChangeSE);
-                    OMEDETO.text = "Congratulation";
+                    OMEDETO.text = "Congratulation！";
                     Set = false;
                 }
                 if (Change == false && Set == false)
