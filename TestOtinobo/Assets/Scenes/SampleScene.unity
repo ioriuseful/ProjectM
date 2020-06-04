@@ -1266,7 +1266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shadowplayer: {fileID: 3527521996550464541, guid: a3ecae1300652a0468dfd7af1ec427c0,
     type: 3}
-  interval: 5
+  interval: 3
 --- !u!114 &1642768534 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
@@ -6972,6 +6972,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8522984589034868226, guid: 5d3fe1a5819367047811df31fde15aeb,
         type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: shadowtime
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x
