@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4621309871805539560}
   - component: {fileID: 1642768538}
   - component: {fileID: 1642768537}
+  - component: {fileID: 1642768530}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -190,6 +191,7 @@ MonoBehaviour:
   JumpSE: {fileID: 8300000, guid: 0cb4162039f571d4e8a93585fc099e39, type: 3}
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   HipDropSE: {fileID: 8300000, guid: 1a4518867a18a7d4e979df04ce1a1056, type: 3}
+  shadowtime: 0.6
   retryGame: {fileID: 0}
   White: {fileID: 7255854300219104043, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Green: {fileID: -6127215198058392024, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
@@ -217,6 +219,7 @@ MonoBehaviour:
   Pause: 0
   PU: 0
   EnemyDown: 0
+  shadowGenerator: 0
 --- !u!114 &6382301148395647404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,3 +360,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1642768530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6382301148395647402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c229b013027ecf40ac2d2e6210e488c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shadowplayer: {fileID: 3527521996550464541, guid: a3ecae1300652a0468dfd7af1ec427c0,
+    type: 3}
+  interval: 3

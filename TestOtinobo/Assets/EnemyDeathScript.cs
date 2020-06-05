@@ -90,7 +90,6 @@ public class EnemyDeathScript : MonoBehaviour
         timelimit -= Time.deltaTime;
         if(timelimit <= 0f && !isPlayerflag)
         {
-            Debug.Log("通ってる");
             IsDead();
         }
 

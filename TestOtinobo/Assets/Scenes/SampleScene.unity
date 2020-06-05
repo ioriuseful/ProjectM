@@ -1252,21 +1252,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6382301147836324155}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1642768530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642768529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c229b013027ecf40ac2d2e6210e488c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Shadowplayer: {fileID: 3527521996550464541, guid: a3ecae1300652a0468dfd7af1ec427c0,
-    type: 3}
-  interval: 3
 --- !u!114 &1642768534 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
@@ -6966,17 +6951,6 @@ PrefabInstance:
       propertyPath: retryGame
       value: 
       objectReference: {fileID: 1429338406}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: playerDeathObj
-      value: 
-      objectReference: {fileID: 8522984589034868226, guid: 5d3fe1a5819367047811df31fde15aeb,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: shadowtime
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7037,6 +7011,10 @@ PrefabInstance:
       propertyPath: metorText
       value: 
       objectReference: {fileID: 1466918962}
+    - target: {fileID: 1642768530, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
+      propertyPath: interval
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
 --- !u!82 &7019325045400939922
