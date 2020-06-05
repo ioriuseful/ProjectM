@@ -424,6 +424,12 @@ public class PlayerScript : MonoBehaviour
             }
 
         }
+
+        if(other.gameObject.tag == "ColorBlock")
+        {
+            ShadowOff();
+        }
+
         //300点取る度にジャンプを一回増やす
         if (numScore >= 300)
         {
