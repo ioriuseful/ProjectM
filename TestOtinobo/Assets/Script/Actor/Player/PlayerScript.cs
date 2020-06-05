@@ -40,6 +40,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("プレイヤーがジャンプしたSE")] public AudioClip JumpSE;
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
+    [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
     AudioSource audioSource;
     private Animator _animator;
     public RetryGame retryGame;
@@ -104,6 +105,8 @@ public class PlayerScript : MonoBehaviour
    // public GameObject PowerUp;
     public bool PU = false;
     public int EnemyDown;
+    [SerializeField, Header("軌跡の表示用")]
+    public bool shadowGenerator = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -114,8 +117,6 @@ public class PlayerScript : MonoBehaviour
     //[Header("blueのRGBA")] public byte BlueR = 87;
     //public byte BlueG = 117, BlueB = 255, BlueA = 255;//ブルー　
     #endregion
-
-    
 
     void Start()
     {
@@ -171,6 +172,8 @@ public class PlayerScript : MonoBehaviour
         else if (axis != 0 && hiptime && !hip)
         {
             velocity.x = axis * 5 * HipJump;
+            ShadowOn();
+            Invoke("ShadowOff", shadowtime);
         }
         if (!stop)
         {
@@ -224,6 +227,7 @@ public class PlayerScript : MonoBehaviour
                     IJumpC--;
                     jumpText.text = string.Format("× " + IJumpC);
                     audioSource.PlayOneShot(JumpSE);
+                    ShadowOff();
                 }
                 else
                 {
@@ -238,7 +242,7 @@ public class PlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 Parasol = hinan;
                 hiptime = false;
-                //Debug.Log("ジャンプしたよ");       
+                //Debug.Log("ジャンプしたよ");
             }
         }
         switch (CS)
@@ -320,6 +324,7 @@ public class PlayerScript : MonoBehaviour
             {
                 Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
                 Instantiate(playerDeathObj, transform.position, Quaternion.identity);
+                ShadowOff();
 
                 //プレイヤー死亡
                 isDeadFlag = true;
@@ -336,6 +341,7 @@ public class PlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 on_ground = true;
                 StartCoroutine("WaitForit");
+                ShadowOff();
                 //着地時のエフェクト
                 switch (CS)
                 {
@@ -358,6 +364,7 @@ public class PlayerScript : MonoBehaviour
             Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             isDeadFlag = true;
+            ShadowOff();
         }
         //if (other.collider.tag == "ColorBlock") 
         //{ 
@@ -402,6 +409,7 @@ public class PlayerScript : MonoBehaviour
                             score += HighPoint / 2;
                             numScore += HighPoint / 2;
                         }
+                        ShadowOff();
                     }
                     else
                     {
@@ -513,6 +521,7 @@ public class PlayerScript : MonoBehaviour
         {
             Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
+            ShadowOff();
 
             //プレイヤー死亡
             isDeadFlag = true;
@@ -526,6 +535,7 @@ public class PlayerScript : MonoBehaviour
         {
             Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
+            ShadowOff();
             isDeadFlag = true;
         }
     }
@@ -624,5 +634,16 @@ public class PlayerScript : MonoBehaviour
         Parasol = 0;
         hiptime = false;
         stop = false;
+        ShadowOn();
+    }
+
+    public void ShadowOn()
+    {
+        shadowGenerator = true;
+    }
+
+    public void ShadowOff()
+    {
+        shadowGenerator = false;
     }
 }
