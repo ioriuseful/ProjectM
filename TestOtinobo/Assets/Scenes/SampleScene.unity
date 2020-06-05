@@ -6618,7 +6618,7 @@ PrefabInstance:
       objectReference: {fileID: 1642768534}
     - target: {fileID: 1495752276, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
       propertyPath: number
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2747871219962801857, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
         type: 3}
@@ -7017,6 +7017,11 @@ PrefabInstance:
       propertyPath: nowWave
       value: 
       objectReference: {fileID: 1495752276}
+    - target: {fileID: 4727442476876301309, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f51187adc8e9d3b46a828624dbea23bf, type: 3}
 --- !u!1001 &6382301147836324155
