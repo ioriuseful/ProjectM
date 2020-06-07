@@ -105,7 +105,7 @@ public class ColorBlockScript : MonoBehaviour
         MyTransform.position = pos;
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionStay2D(Collision2D col)
     {
         if(col.gameObject.tag == "Player" && Color == player.Color)
         {
