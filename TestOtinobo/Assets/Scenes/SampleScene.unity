@@ -721,6 +721,18 @@ PrefabInstance:
       propertyPath: Wscript
       value: 
       objectReference: {fileID: 1495752276}
+    - target: {fileID: 3977168066030091532, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5,
+        type: 3}
+      propertyPath: enemyBoxes.Array.data[5]
+      value: 
+      objectReference: {fileID: 3513858382733054670, guid: ad7ad941f2d7d544fb44a7a22ff5b899,
+        type: 3}
+    - target: {fileID: 3977168066030091532, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5,
+        type: 3}
+      propertyPath: enemyBoxes.Array.data[6]
+      value: 
+      objectReference: {fileID: 6200774872430394649, guid: c503c585ed9d64546af675ed289e8409,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33a0b0f24c6f9da4f9a24b101ad1aac5, type: 3}
 --- !u!1 &745606977
@@ -924,6 +936,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1219909706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219909707}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1219909707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219909706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 535.2053, y: 168.21437, z: -195.01012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1429338406 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2747871220312188995, guid: 93dac0ac155bd874c89f0d1ace8ad6f0,
@@ -6662,6 +6704,26 @@ PrefabInstance:
       propertyPath: saveItem
       value: 
       objectReference: {fileID: 1642768534}
+    - target: {fileID: 2028014070, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: first
+      value: 
+      objectReference: {fileID: 1219909706}
+    - target: {fileID: 2028014070, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: second
+      value: 
+      objectReference: {fileID: 1219909706}
+    - target: {fileID: 2028014070, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: third
+      value: 
+      objectReference: {fileID: 1219909706}
+    - target: {fileID: 2028014070, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: forth
+      value: 
+      objectReference: {fileID: 1219909706}
+    - target: {fileID: 2028014070, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
+      propertyPath: fifth
+      value: 
+      objectReference: {fileID: 1219909706}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93dac0ac155bd874c89f0d1ace8ad6f0, type: 3}
 --- !u!1001 &2786704927440356346

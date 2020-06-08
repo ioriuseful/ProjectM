@@ -57,7 +57,7 @@ public class RainMove : MonoBehaviour
         }
         else if (flag2 == true)
         {
-            pos.x = c + speed * nowWave.wave / 8;
+            pos.x = c + speed * nowWave.wave / 16;
         }
         else
         {
