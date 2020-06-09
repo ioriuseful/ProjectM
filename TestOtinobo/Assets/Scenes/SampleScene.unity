@@ -7120,6 +7120,21 @@ PrefabInstance:
       propertyPath: interval
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1642768530, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
+      propertyPath: ShadowplayerRed
+      value: 
+      objectReference: {fileID: 4619800305469865478, guid: a8ca070fc037e474983779551c21c10d,
+        type: 3}
+    - target: {fileID: 1642768530, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
+      propertyPath: ShadowplayerGreen
+      value: 
+      objectReference: {fileID: 4354011045537801840, guid: 05548397c7ae6b74994dc92a73c3107d,
+        type: 3}
+    - target: {fileID: 1642768530, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
+      propertyPath: ShadowplayerBlue
+      value: 
+      objectReference: {fileID: 1585287213863251640, guid: 6f60555cb1aa2504baee2fa117acdba8,
+        type: 3}
     - target: {fileID: 6382301148395647407, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_Enabled
