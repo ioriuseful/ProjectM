@@ -35,10 +35,6 @@ public class ColorBlockScript : MonoBehaviour
         collider = GetComponent<Collider2D>();
         Yspeed /= 100;
         Xspeed /= 100;
-    }
-
-    void Update()
-    {
         switch (CS)
         {
             case ColorState.White:
@@ -58,7 +54,10 @@ public class ColorBlockScript : MonoBehaviour
                 Color = "Blue";
                 break;
         }
+    }
 
+    void Update()
+    {
         Transform MyTransform = transform;
 
         Vector3 pos = MyTransform.position;

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SaveScore : MonoBehaviour
 {
-
+    public GameObject first,second,third,forth,fifth;
     public AudioClip NomalSE;
     public AudioClip ChangeSE;
     private AudioSource audioSource;
@@ -53,6 +53,11 @@ public class SaveScore : MonoBehaviour
         result = PlayerPrefs.GetInt(key7, result);
         Change = false;
         Set = true;
+        first.SetActive(false);
+        second.SetActive(false);
+        third.SetActive(false);
+        forth.SetActive(false);
+        fifth.SetActive(false);
         Ipoint = saveItem.IJumpC;
         Spoint = savePoint.score;
         Ppoint = savePlayer.scorepoint;
@@ -63,7 +68,7 @@ public class SaveScore : MonoBehaviour
         Flag0 = false;Flag1 = false;Flag2 = false;Flag3 = false;Flag4 = false;
         test = true;
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -125,14 +130,14 @@ public class SaveScore : MonoBehaviour
         {
             result = Apoint;
             PlayerPrefs.SetInt(key7, result);
-            Result.text = "result:" + result.ToString();
+            Result.text = result.ToString();
             //Debug.Log(result);
         }
         if (forthScore > result && result > fifthScore)
         {
             fifthScore = result;
             PlayerPrefs.SetInt(key5, fifthScore);
-            FifthscoreText.text = "5位:" + fifthScore.ToString();
+            FifthscoreText.text = fifthScore.ToString();
             if (fifthScore == Apoint)
             {
                 Change = true;
@@ -144,7 +149,7 @@ public class SaveScore : MonoBehaviour
             PlayerPrefs.SetInt(key5, fifthScore);
             forthScore = result;
             PlayerPrefs.SetInt(key4, forthScore);
-            ForthscoreText.text = "4位:" + forthScore.ToString();
+            ForthscoreText.text =  forthScore.ToString();
             if (forthScore == result)
             {
                 Change = true;
@@ -158,7 +163,7 @@ public class SaveScore : MonoBehaviour
             PlayerPrefs.SetInt(key4, forthScore);
             thirdScore = result;
             PlayerPrefs.SetInt(key3, thirdScore);
-            ThirdscoreText.text = "3位:" + secondScore.ToString();
+            ThirdscoreText.text =  thirdScore.ToString();
             if (thirdScore == result)
             {
                 Change = true;
@@ -174,7 +179,7 @@ public class SaveScore : MonoBehaviour
             PlayerPrefs.SetInt(key3, thirdScore);
             secondScore = result;
             PlayerPrefs.SetInt(key2, secondScore);
-            SecondscoreText.text = "2位:" + secondScore.ToString();
+            SecondscoreText.text = secondScore.ToString();
             if (secondScore == result)
             {
                 Change = true;
@@ -195,7 +200,7 @@ public class SaveScore : MonoBehaviour
             //ハイスコア更新
             PlayerPrefs.SetInt(key, highScore);
             //ハイスコアを保存
-            HighScoreText.text = "1位:" + highScore.ToString();
+            HighScoreText.text =  highScore.ToString();
             //ハイスコアを表示
             if (highScore == result)
             {
@@ -217,83 +222,94 @@ public class SaveScore : MonoBehaviour
         }
         switch (i)
         {
-            case 0:
+            case 1:
                 //ハイスコアを表示
                 if (Flag0 == true)
                 {
+                    first.SetActive(true);
                     Flag1 = true;
-                    HighScoreText.text = "new 1位:" + highScore.ToString();
+                    HighScoreText.text =  highScore.ToString();
                     Change = true;
                 }
                 else if (highScore == result && Flag0 == false)
                 {
+                    first.SetActive(true);
                     Flag1 = true;
                     Flag2 = true;
                     Flag3 = true;
                     Flag4 = true;
-                    HighScoreText.text = "new 1位:" + highScore.ToString();
+                    HighScoreText.text =  highScore.ToString();//更新
                     Change = true;
                 }
                 else
                 {
-                    HighScoreText.text = "1位:" + highScore.ToString();
+                    first.SetActive(true);
+                    HighScoreText.text =  highScore.ToString();
                 }
                 break;
-            case 1:
+            case 2:
                 //SecondscoreText.text = "2位:" + secondScore.ToString();
                 if (secondScore == result && Flag1 == false)
                 {
+                    second.SetActive(true);
                     Flag2 = true;
                     Flag3 = true;
                     Flag4 = true;
                     Change = true;
-                    SecondscoreText.text = "new 2位:" + secondScore.ToString();
+                    SecondscoreText.text =  secondScore.ToString();//更新
                 }
                 else
                 {
-                    SecondscoreText.text = "2位:" + secondScore.ToString();
+                    second.SetActive(true);
+                    SecondscoreText.text =  secondScore.ToString();
                 }
 
                 break;
-            case 2:
+            case 3:
                 if (thirdScore == result && Flag2 == false)
                 {
+                    third.SetActive(true);
                     Flag3 = true;
                     Flag4 = true;
                     Change = true;
-                    ThirdscoreText.text = "new 3位:" + thirdScore.ToString();
+                    ThirdscoreText.text =  thirdScore.ToString();//更新
                 }
                 else
                 {
-                    ThirdscoreText.text = "3位:" + thirdScore.ToString();
-                }
-                break;
-            case 3:
-                if (forthScore == result && Flag3 == false)
-                {
-                    Flag4 = true;
-                    ForthscoreText.text = "new4位:" + forthScore.ToString();
-                    Change = true;
-                }
-                else
-                {
-                    ForthscoreText.text = "4位:" + forthScore.ToString();
+                    third.SetActive(true);
+                    ThirdscoreText.text =  thirdScore.ToString();
                 }
                 break;
             case 4:
-                if (fifthScore == result && Flag4 == false)
+                if (forthScore == result && Flag3 == false)
                 {
-                    FifthscoreText.text = "new 5位:" + fifthScore.ToString();
+                    forth.SetActive(true);
+                    Flag4 = true;
+                    ForthscoreText.text =  forthScore.ToString();//更新
                     Change = true;
                 }
                 else
                 {
-                    FifthscoreText.text = "5位:" + fifthScore.ToString();
+                    forth.SetActive(true);
+                    ForthscoreText.text =  forthScore.ToString();
                 }
                 break;
             case 5:
+                if (fifthScore == result && Flag4 == false)
+                {
+                    fifth.SetActive(true);
+                    FifthscoreText.text =  fifthScore.ToString();//更新
+                    Change = true;
+                }
+                else
+                {
+                    fifth.SetActive(true);
+                    FifthscoreText.text = fifthScore.ToString();
+                }
+                break;
+            case 6:
                 Clear = true;
-                Result.text = "今回のスコア:" + result.ToString();
+                Result.text =  result.ToString();
                 if (Change == true && Set == true && result > 0)
                 {
                     audioSource.PlayOneShot(ChangeSE);
@@ -332,38 +348,5 @@ public class SaveScore : MonoBehaviour
                 FifthscoreText.color = new Color(1f, 1f, 1f, level);
             }
         }
-        OnDamegeEffect();
     }
-    void OnDamegeEffect()
-    {
-        Flash = true;
-        //StartCoroutine(WaitForit());//WaitForitで指定した秒分待ってから呼び出す
-    }
-
-
-    //IEnumerator WaitForit()
-    //{
-    //    yield return new WaitForSeconds(0);//1秒間処理を止める
-    //    //Flash = false;
-    //    //if (highScore == result)
-    //    //{
-    //    //    HighScoreText.color = new Color(1f, 1f, 1f, 1f);
-    //    //}
-    //    //if (secondScore == result)
-    //    //{
-    //    //    SecondscoreText.color = new Color(1f, 1f, 1f, 1f);
-    //    //}
-    //    //if (thirdScore == result)
-    //    //{
-    //    //    ThirdscoreText.color = new Color(1f, 1f, 1f, 1f);
-    //    //}
-    //    //if (forthScore == result)
-    //    //{
-    //    //    ForthscoreText.color = new Color(1f, 1f, 1f, 1f);
-    //    //}
-    //    //if (fifthScore == result)
-    //    //{
-    //    //    FifthscoreText.color = new Color(1f, 1f, 1f, 1f);
-    //    //}
-    //}
 }

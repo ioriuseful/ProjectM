@@ -39,7 +39,7 @@ public class BackGroundRespawn : MonoBehaviour
         transform.position = new Vector3(player.transform.position.x + x, y, 0);
         Px = (int)player.transform.position.x;
 
-        if (Px % interval == 0)
+        if (Px % interval == 0 || Px + 1 % interval == 0)
         {
             if (poslist.Contains(Px) == false)
             {
