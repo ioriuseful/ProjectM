@@ -509,6 +509,45 @@ public class PlayerScript : MonoBehaviour
             IJump = true;
             jumpText.text = string.Format("× " + IJumpC);
         }
+
+        //if (other.gameObject.tag == "ColorBlock")
+        //{
+        //    foreach (ContactPoint2D point in other.contacts)
+        //    {
+        //        if (point.point.x - transform.position.x > 0.1)
+        //        {
+        //            ColorWallRight = true;
+        //        }
+        //        else if (point.point.x - transform.position.x < -0.1)
+        //        {
+        //            ColorWallLeft = true;
+        //        }
+        //        else if (point.point.y - transform.position.y < -0.1)
+        //        {
+        //            ColorWallBottom = true;
+        //        }
+        //    }
+        //    //踏みつけ判定になる高さ
+        //    float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
+        //    //踏みつけ判定のワールド座標
+        //    float judgePos = transform.position.y - (capcol.size.y / 2f) + stepOnHeight;
+        //    //Debug.Log("接触したよ");
+        //    foreach (ContactPoint2D p in other.contacts)
+        //    {
+        //        if (p.point.y < judgePos)
+        //        {
+        //            if (stop)
+        //            {
+        //                PU = true;
+        //            }
+        //            if (!PU && hip)
+        //            {
+        //                ColorBStep = true;
+        //                hip = false;
+        //            }
+        //        }
+        //    }
+        //}
     }
     private void OnCollisionExit2D(Collision2D other)
     {
@@ -555,7 +594,7 @@ public class PlayerScript : MonoBehaviour
                     {
                         PU = true;
                     }
-                    if (!PU && hip) 
+                    if (!PU && hip)
                     {
                         ColorBStep = true;
                         hip = false;

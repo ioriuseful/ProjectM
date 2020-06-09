@@ -547,6 +547,7 @@ MonoBehaviour:
   shakeTime: 0.1
   shakeRange: {x: 0.9, y: 0.7, z: 0}
   Player: {fileID: 1642768529}
+  tutorial: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -889,8 +890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1642768529}
-  StopGroundWave: 3
+  StopGroundWave: 1
   nowWave: {fileID: 1495752276}
+  isStopGroundflag: 0
 --- !u!1001 &887922364
 PrefabInstance:
   m_ObjectHideFlags: 0
