@@ -54,7 +54,7 @@ public class EnemyRespawnScript : MonoBehaviour
     {
         Enemywave = Wscript.wave;
 
-        transform.position = new Vector3(player.transform.position.x + 13f, transform.position.y, transform.position.z);
+        transform.position = new Vector3(player.transform.position.x + 15f, transform.position.y, transform.position.z);
         NowxPosition = transform.position.x;
         //リスポーンして一定時間が経つと新しいEnemyBoxを生成するようにする
         //if (!isRespawnFlag)
