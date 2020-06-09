@@ -6977,6 +6977,54 @@ PrefabInstance:
       propertyPath: shadowtime
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: DWhite
+      value: 
+      objectReference: {fileID: 8007735068834327713, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: DGreen
+      value: 
+      objectReference: {fileID: -5204144540036793621, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: DRed
+      value: 
+      objectReference: {fileID: -7000511372291502717, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: DBlue
+      value: 
+      objectReference: {fileID: 7246862673173275052, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: UWhite
+      value: 
+      objectReference: {fileID: 2899867347015868019, guid: 532cba090bdd7734fb274ee6927f3bf5,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: UGreen
+      value: 
+      objectReference: {fileID: 1931677151405801848, guid: 532cba090bdd7734fb274ee6927f3bf5,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: URed
+      value: 
+      objectReference: {fileID: -3191241930174410370, guid: 532cba090bdd7734fb274ee6927f3bf5,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: UBlue
+      value: 
+      objectReference: {fileID: -523502994256674753, guid: 532cba090bdd7734fb274ee6927f3bf5,
+        type: 3}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x

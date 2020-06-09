@@ -30,7 +30,12 @@ public class PlayerScript : MonoBehaviour
     {
         White, Red, Blue, Green,
     }
+    public enum PlayerState
+    {
+        Down,Up,Stand,
+    }
     public ColorState CS;//色を追加する場合エネミージャンプにも同様に色を増やすこと
+    public PlayerState state;
     public string Color;
     #endregion
     public Text jumpText;
@@ -47,10 +52,19 @@ public class PlayerScript : MonoBehaviour
     //プレイヤーの画像変更に必要なもの
     SpriteRenderer MainSpriteRenderer;
 
-    [SerializeField, Header("Spriteの格納")] public Sprite White;
+    [SerializeField, Header("Spriteの格納")]
+    public Sprite White;
     public Sprite Green;
     public Sprite Red;
     public Sprite Blue;
+    public Sprite DWhite;
+    public Sprite DGreen;
+    public Sprite DRed;
+    public Sprite DBlue;
+    public Sprite UWhite;
+    public Sprite UGreen;
+    public Sprite URed;
+    public Sprite UBlue;
     [SerializeField, Header("地面にぶつかったときのエフェクト")]
     public GameObject GreenEffect;
     public GameObject RedEffect;
@@ -128,6 +142,7 @@ public class PlayerScript : MonoBehaviour
         hinan = Parasol;
         jumpText.text = string.Format("× " + IJumpC);
         CS = ColorState.White;
+        state = PlayerState.Stand;
         EnemyDown = 0;
     }
     private void Awake()//追加
@@ -215,6 +230,7 @@ public class PlayerScript : MonoBehaviour
             //Parasol = hinan;
             hiptime = false;
             ColorBStep = false;
+            state = PlayerState.Up;
         }//押し上げます。
 
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
@@ -242,6 +258,7 @@ public class PlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 Parasol = hinan;
                 hiptime = false;
+                state = PlayerState.Up;
                 //Debug.Log("ジャンプしたよ");
             }
         }
@@ -249,23 +266,75 @@ public class PlayerScript : MonoBehaviour
         {
             case ColorState.White:
                 //GetComponent<Renderer>().material.color = new Color32(WhiteR, WhiteG, WhiteB, WhiteA);
-                GetComponent<SpriteRenderer>().sprite = White;
-                Color = "white";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = White;
+                        Color = "white";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UWhite;
+                        Color = "white";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DWhite;
+                        Color = "white";
+                        break;
+                }
                 break;
             case ColorState.Red:
                 //GetComponent<Renderer>().material.color = new Color32(RedR, RedG, RedB, RedA);
-                GetComponent<SpriteRenderer>().sprite = Red;
-                Color = "Red";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Red;
+                        Color = "Red";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = URed;
+                        Color = "Red";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DRed;
+                        Color = "Red";
+                        break;
+                }
                 break;
             case ColorState.Green:
                 //GetComponent<Renderer>().material.color = new Color32(GreenR, GreenG, GreenB, GreenA);
-                GetComponent<SpriteRenderer>().sprite = Green;
-                Color = "Green";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Green;
+                        Color = "Green";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UGreen;
+                        Color = "Green";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DGreen;
+                        Color = "Green";
+                        break;
+                }
                 break;
             case ColorState.Blue:
                 //GetComponent<Renderer>().material.color = new Color32(BlueR, BlueG, BlueB, BlueA);
-                GetComponent<SpriteRenderer>().sprite = Blue;
-                Color = "Blue";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Blue;
+                        Color = "Blue";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UBlue;
+                        Color = "Blue";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DBlue;
+                        Color = "Blue";
+                        break;
+                }
                 break;
         }
         //アニメーションの条件取得
@@ -341,6 +410,7 @@ public class PlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 on_ground = true;
                 StartCoroutine("WaitForit");
+                state = PlayerState.Up;
                 ShadowOff();
                 //着地時のエフェクト
                 switch (CS)
@@ -397,6 +467,7 @@ public class PlayerScript : MonoBehaviour
                         isOtherJump = true;
                         isJump = false;
                         jumpTime = 0.0f;
+                        state = PlayerState.Up;
                         //Debug.Log("ジャンプしたよ");
                         Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
                         if (other.collider.tag == "Enemy")
@@ -612,6 +683,7 @@ public class PlayerScript : MonoBehaviour
                 hiptime = false;
                 Rcv = false;
                 jumpTime = 0.0f;
+                state = PlayerState.Stand;
             }
 
         }
@@ -619,6 +691,7 @@ public class PlayerScript : MonoBehaviour
         {
             isOtherJump = false;
             jumpTime = 0.0f;
+            state = PlayerState.Down;
         }
         return ySpeed;
     }
@@ -632,6 +705,7 @@ public class PlayerScript : MonoBehaviour
     public void Hip()
     {
         Parasol = 0;
+        state = PlayerState.Down;
         hiptime = false;
         stop = false;
         ShadowOn();
