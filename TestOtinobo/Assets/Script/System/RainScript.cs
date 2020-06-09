@@ -54,7 +54,8 @@ public class RainScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isFallflag && (other.gameObject.tag == "Ground" || other.gameObject.tag == "Untagged"))
+        //if (!isFallflag && (other.gameObject.tag == "Ground" || other.gameObject.tag == "Untagged"))
+        if (!isFallflag && other.gameObject.tag == "Untagged")
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + y, 0);
             Instantiate(Splashes, transform.position, Quaternion.identity);

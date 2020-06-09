@@ -71,12 +71,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: b17456d56e88b4a4dae75c46f752b59a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f01e76206be596d48b983f5fcac0ca9f, type: 3}
   m_Color: {r: 0, g: 0.4894998, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.52, y: 5.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,8 +122,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 5.76}
-    newSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 1.52, y: 5.68}
+    newSize: {x: 1.52, y: 5.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2507,11 +2507,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
-    - target: {fileID: 8394191245007429558, guid: 0293e4ddf890b124ab248a5057c2d1fd,
-        type: 3}
-      propertyPath: m_Name
-      value: HColorBlock(Red)
-      objectReference: {fileID: 0}
     - target: {fileID: 8394191245007427658, guid: 0293e4ddf890b124ab248a5057c2d1fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2571,6 +2566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394191245007429558, guid: 0293e4ddf890b124ab248a5057c2d1fd,
+        type: 3}
+      propertyPath: m_Name
+      value: HColorBlock(Red)
       objectReference: {fileID: 0}
     - target: {fileID: 8394191245007429557, guid: 0293e4ddf890b124ab248a5057c2d1fd,
         type: 3}

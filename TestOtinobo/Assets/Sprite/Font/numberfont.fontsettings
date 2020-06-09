@@ -136,7 +136,7 @@ Font:
       serializedVersion: 2
       x: 0.875
       y: 0.5
-      width: 0.1
+      width: 0.135
       height: 0.5
     vert:
       serializedVersion: 2
@@ -151,9 +151,9 @@ Font:
     uv:
       serializedVersion: 2
       x: 0
-      y: 0.05
+      y: 0
       width: 0.125
-      height: 0.5
+      height: 0.47
     vert:
       serializedVersion: 2
       x: 0
@@ -167,16 +167,16 @@ Font:
     uv:
       serializedVersion: 2
       x: 0.125
-      y: 0.05
+      y: 0
       width: 0.125
-      height: 0.5
+      height: 0.47
     vert:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 16
-      height: -16
-    advance: 16
+      width: 32
+      height: -32
+    advance: 32
     flipped: 0
   m_KerningValues: []
   m_PixelScale: 0.1
