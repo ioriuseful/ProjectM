@@ -16,14 +16,18 @@ public class TutorialBlockScript : MonoBehaviour
     public TutorialPlayerScript player;
     private string Color;
 
+    private GameObject colorobj;
+    private Collider2D collider;
+    [SerializeField, Header("カラーブロック入った時&出た時用パーティクル")]
+    public GameObject RedBlockParticle;
+    public GameObject GreenBlockParticle;
+    public GameObject BlueBlockParticle;
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         player = GameObject.Find("TutorilaPlayer").GetComponent<TutorialPlayerScript>();
-    }
-
-    void Update()
-    {
+        collider = GetComponent<Collider2D>();
         switch (CS)
         {
             case ColorState.White:
@@ -43,39 +47,50 @@ public class TutorialBlockScript : MonoBehaviour
                 Color = "Blue";
                 break;
         }
-        if (Color == player.Color)
+    }
+
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player" && Color == player.Color)
         {
-            if (GetComponent<CapsuleCollider2D>() == null && GetComponent<BoxCollider2D>() == null)
+            collider.isTrigger = true;
+            switch (CS)
             {
-                GetComponent<EdgeCollider2D>().enabled = false;
-            }
-
-            if (GetComponent<BoxCollider2D>() == null)
-            {
-                GetComponent<CapsuleCollider2D>().enabled = false;
-            }
-            else
-            {
-                GetComponent<BoxCollider2D>().enabled = false;
-            }
-
-        }
-        else
-        {
-            if (GetComponent<CapsuleCollider2D>() == null && GetComponent<BoxCollider2D>() == null)
-            {
-                GetComponent<EdgeCollider2D>().enabled = true;
-            }
-
-
-            if (GetComponent<BoxCollider2D>() == null)
-            {
-                GetComponent<CapsuleCollider2D>().enabled = true;
-            }
-            else
-            {
-                GetComponent<BoxCollider2D>().enabled = true;
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
             }
         }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            collider.isTrigger = false;
+            switch (CS)
+            {
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+            }
+        }
+    }
+
+    void IsDead()
+    {
+        Destroy(gameObject);
     }
 }
