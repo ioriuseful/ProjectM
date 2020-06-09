@@ -105,7 +105,7 @@ public class ColorBlockScript : MonoBehaviour
         MyTransform.position = pos;
     }
 
-    void OnCollisionStay2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.tag == "Player" && Color == player.Color)
         {
@@ -124,7 +124,25 @@ public class ColorBlockScript : MonoBehaviour
             }
         }
     }
-
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player" && Color == player.Color)
+        {
+            collider.isTrigger = true;
+            switch (CS)
+            {
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+            }
+        }
+    }
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Rain")
