@@ -49,6 +49,25 @@ public class TutorialBlockScript : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player" && Color == player.Color)
+        {
+            collider.isTrigger = true;
+            switch (CS)
+            {
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+            }
+        }
+    }
     void OnCollisionStay2D(Collision2D col)
     {
         if (col.gameObject.tag == "Player" && Color == player.Color)
@@ -68,7 +87,6 @@ public class TutorialBlockScript : MonoBehaviour
             }
         }
     }
-
     void OnTriggerExit2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
