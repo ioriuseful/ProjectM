@@ -134,8 +134,6 @@ public class TutorialPlayerScript : MonoBehaviour
 
     void Update()
     {
-        
-
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, transform.rotation.w);
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;

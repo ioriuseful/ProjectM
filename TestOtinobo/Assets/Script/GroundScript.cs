@@ -8,7 +8,7 @@ public class GroundScript : MonoBehaviour
     [Header("何Wave目から移動を止めるか")] public int StopGroundWave;
     public WaveScript nowWave;
 
-    bool isStopGroundflag;
+    public bool isStopGroundflag = false;
 
 
     private void Start()

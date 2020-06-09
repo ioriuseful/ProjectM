@@ -598,7 +598,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1846185191138799970}
   - component: {fileID: 1846185191138799971}
-  - component: {fileID: 1846185191138801309}
   - component: {fileID: 7997047632662877883}
   - component: {fileID: 5220629608965754900}
   m_Layer: 9
@@ -671,26 +670,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1846185191138801309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846185191138801310}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CS: 3
-  player: {fileID: 0}
-  RedBlockParticle: {fileID: 0}
-  GreenBlockParticle: {fileID: 0}
-  BlueBlockParticle: {fileID: 0}
-  Yspeed: 0
-  Xspeed: 0
-  time: 0.3
 --- !u!61 &7997047632662877883
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2817,7 +2796,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7234132241544358502}
   - component: {fileID: 7234132241544358503}
-  - component: {fileID: 7234132241544359321}
   - component: {fileID: 8492391637191991796}
   - component: {fileID: 9215072369825514910}
   m_Layer: 9
@@ -2890,26 +2868,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7234132241544359321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7234132241544359322}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f2ec2789ae37419015931d0df8377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CS: 1
-  player: {fileID: 0}
-  RedBlockParticle: {fileID: 0}
-  GreenBlockParticle: {fileID: 0}
-  BlueBlockParticle: {fileID: 0}
-  Yspeed: 0
-  Xspeed: 0
-  time: 0.3
 --- !u!61 &8492391637191991796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3054,6 +3012,7 @@ MonoBehaviour:
   player: {fileID: 0}
   StopGroundWave: 1
   nowWave: {fileID: 0}
+  isStopGroundflag: 0
 --- !u!61 &4111201640033809073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3509,8 +3468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_IgnoreReversedGraphics: 7
+  m_BlockingObjects: 7
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3668,17 +3627,38 @@ PrefabInstance:
       propertyPath: jumpText
       value: 
       objectReference: {fileID: 5687826804060941847}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: playerDeathObj
+      value: 
+      objectReference: {fileID: 6408383657692961706, guid: ae72db6623cef96498ec9255df8245e6,
+        type: 3}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: Recovery
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: CS
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02479fee36f2704e88446c438b6e8af, type: 3}
---- !u!1 &4703125463961603953 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6255323151675261763, guid: b02479fee36f2704e88446c438b6e8af,
-    type: 3}
-  m_PrefabInstance: {fileID: 1696595865447631922}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4703125463961603957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6255323151675261767, guid: b02479fee36f2704e88446c438b6e8af,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696595865447631922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4703125463961603953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6255323151675261763, guid: b02479fee36f2704e88446c438b6e8af,
     type: 3}
   m_PrefabInstance: {fileID: 1696595865447631922}
   m_PrefabAsset: {fileID: 0}
