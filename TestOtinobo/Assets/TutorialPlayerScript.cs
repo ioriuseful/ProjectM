@@ -42,6 +42,7 @@ public class TutorialPlayerScript : MonoBehaviour
     [SerializeField, Header("プレイヤーがジャンプしたSE")] public AudioClip JumpSE;
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
+    [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
     AudioSource audioSource;
     private Animator _animator;
     public RetryGame retryGame;
@@ -101,6 +102,8 @@ public class TutorialPlayerScript : MonoBehaviour
     public bool Pause = false;
     private bool ColorBStep = false;
     public bool PU = false;
+    [SerializeField, Header("軌跡の表示用")]
+    public bool shadowGenerator = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -131,8 +134,6 @@ public class TutorialPlayerScript : MonoBehaviour
 
     void Update()
     {
-        
-
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0.0f, transform.rotation.w);
         float axis = Input.GetAxis("Horizontal");
         Vector2 velocity = rig2D.velocity;
@@ -168,6 +169,8 @@ public class TutorialPlayerScript : MonoBehaviour
         else if (axis != 0 && hiptime && !hip)
         {
             velocity.x = axis * 5 * HipJump;
+            ShadowOn();
+            Invoke("ShadowOff", shadowtime);
         }
         if (!stop)
         {
@@ -223,6 +226,7 @@ public class TutorialPlayerScript : MonoBehaviour
                     IJumpC--;
                     jumpText.text = string.Format("× " + IJumpC);
                     audioSource.PlayOneShot(JumpSE);
+                    ShadowOff();
                 }
                 else
                 {
@@ -333,6 +337,7 @@ public class TutorialPlayerScript : MonoBehaviour
             {
                 Instantiate(playerDeathObj, transform.position, Quaternion.identity);
                 Instantiate(gameObject, new Vector2(2.51f, 1.6f), new Quaternion(0,0,0,0),freeplaytutorial);
+                ShadowOff();
                 hip = false;
                 //プレイヤー死亡
                 isDeadFlag = true;
@@ -349,6 +354,7 @@ public class TutorialPlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 on_ground = true;
                 StartCoroutine("WaitForit");
+                ShadowOff();
                 //着地時のエフェクト
                 switch (CS)
                 {
@@ -371,6 +377,7 @@ public class TutorialPlayerScript : MonoBehaviour
             Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             isDeadFlag = true;
+            ShadowOff();
         }
         if (other.collider.tag == "ColorBlock")
         {
@@ -415,6 +422,7 @@ public class TutorialPlayerScript : MonoBehaviour
                             score += HighPoint / 2;
                             numScore += HighPoint / 2;
                         }
+                        ShadowOff();
                     }
                     else
                     {
@@ -429,6 +437,12 @@ public class TutorialPlayerScript : MonoBehaviour
             }
 
         }
+
+        if(other.gameObject.tag == "ColorBlock")
+        {
+            ShadowOff();
+        }
+
         //300点取る度にジャンプを一回増やす
         if (numScore >= 300)
         {
@@ -632,5 +646,16 @@ public class TutorialPlayerScript : MonoBehaviour
         Parasol = 0;
         hiptime = false;
         stop = false;
+        ShadowOn();
+    }
+
+    public void ShadowOn()
+    {
+        shadowGenerator = true;
+    }
+
+    public void ShadowOff()
+    {
+        shadowGenerator = false;
     }
 }

@@ -185,6 +185,7 @@ MonoBehaviour:
   jumpLimitTime2: 1
   HipLimitTime: 0.35
   CS: 0
+  state: 0
   Color: 
   jumpText: {fileID: 0}
   ItemSE: {fileID: 8300000, guid: 94445ea2e8e2f0840b71be5c57d89aca, type: 3}
@@ -197,6 +198,14 @@ MonoBehaviour:
   Green: {fileID: -6127215198058392024, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Red: {fileID: 5770437819054901188, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Blue: {fileID: -4906125199742805290, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
+  DWhite: {fileID: 8007735068834327713, guid: b2bcb8d0cf438984d9ad0c08e679e9dc, type: 3}
+  DGreen: {fileID: -5204144540036793621, guid: b2bcb8d0cf438984d9ad0c08e679e9dc, type: 3}
+  DRed: {fileID: -7000511372291502717, guid: b2bcb8d0cf438984d9ad0c08e679e9dc, type: 3}
+  DBlue: {fileID: 7246862673173275052, guid: b2bcb8d0cf438984d9ad0c08e679e9dc, type: 3}
+  UWhite: {fileID: 2899867347015868019, guid: 532cba090bdd7734fb274ee6927f3bf5, type: 3}
+  UGreen: {fileID: 1931677151405801848, guid: 532cba090bdd7734fb274ee6927f3bf5, type: 3}
+  URed: {fileID: -3191241930174410370, guid: 532cba090bdd7734fb274ee6927f3bf5, type: 3}
+  UBlue: {fileID: -523502994256674753, guid: 532cba090bdd7734fb274ee6927f3bf5, type: 3}
   GreenEffect: {fileID: 8522984589034868226, guid: 29434be1494f45d4491f8805e25ef719,
     type: 3}
   RedEffect: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
@@ -374,4 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shadowplayer: {fileID: 3527521996550464541, guid: a3ecae1300652a0468dfd7af1ec427c0,
     type: 3}
+  ShadowplayerRed: {fileID: 0}
+  ShadowplayerGreen: {fileID: 0}
+  ShadowplayerBlue: {fileID: 0}
   interval: 3
