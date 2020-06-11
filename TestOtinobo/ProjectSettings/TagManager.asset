@@ -19,6 +19,7 @@ TagManager:
   - Tutorial
   - RTutorial
   - DeathGround
+  - Cloud
   layers:
   - Default
   - TransparentFX
