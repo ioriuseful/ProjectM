@@ -9,25 +9,26 @@ public class ReStart : MonoBehaviour
     AudioSource audioSource;
     private float time;
     private bool end = false;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
         FadeManager.FadeIn();
     }
+    
 
-    // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-        if (end == true && time > 0.9f)
-        {
-            Quit();
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Quit();
-        }
+        //if (end == true && time > 0.9f)
+        //{
+        //    Quit();
+        //}
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    Quit();
+        //}
     }
 
     /// ボタンをクリックした時の処理
@@ -41,14 +42,16 @@ public class ReStart : MonoBehaviour
     public void Retry()
     {
         audioSource.PlayOneShot(selectse);
-        SceneManager.LoadScene("SampleEnd");
+        SceneManager.LoadScene("Result");
     }
+
     public void ButtonClickedEnd()
     {
         audioSource.PlayOneShot(selectse);
         time = 0;
         end = true;
     }
+
     public void Quit()
     {
 #if UNITY_EDITOR

@@ -20,14 +20,17 @@ public class SceneController : MonoBehaviour
         time += Time.deltaTime;
         if (end == true && time > 0.9f)
         {
+            PlayerPrefs.DeleteAll();
             Quit();
         }
     }
     void Quit()
     {
 #if UNITY_EDITOR
+        PlayerPrefs.DeleteAll();
         UnityEditor.EditorApplication.isPlaying = false;
 #elif UNITY_STANDALONE
+          PlayerPrefs.DeleteAll();
         UnityEngine.Application.Quit();
 #endif
     }
@@ -52,6 +55,7 @@ public class SceneController : MonoBehaviour
     
     public void ButtonClickedEnd()
     {
+        PlayerPrefs.DeleteAll();
         audioSource.PlayOneShot(selectse);
         time = 0;
         end = true;

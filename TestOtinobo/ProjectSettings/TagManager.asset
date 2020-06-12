@@ -16,6 +16,11 @@ TagManager:
   - ColorBlock
   - ScoreLine
   - Splashes
+  - Tutorial
+  - RTutorial
+  - DeathGround
+  - Cloud
+  - Ceiling
   layers:
   - Default
   - TransparentFX
@@ -28,7 +33,7 @@ TagManager:
   - Enemy
   - ColorBlock
   - 
-  - 
+  - Player
   - 
   - 
   - 

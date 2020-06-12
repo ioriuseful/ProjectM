@@ -10,17 +10,17 @@ public class ScoreCount : MonoBehaviour
 
     public GameObject player;//プレイヤーの蒸気の値を取得したい為
     public PlayerScript playerScript;//同上
-    int scorepoint;//蒸気の値
+    public int scorepoint;//蒸気の値
     // Start is called before the first frame update
     void Start()
     {
-        scoreText = GameObject.Find("Score").GetComponent<Text>();//テキストを探す
+       /* scoreText = GameObject.Find("Score").GetComponent<Text>();//テキストを探す*/
     }
 
     // Update is called once per frame
     void Update()
     {
         scorepoint = playerScript.score;
-        scoreText.text = scorepoint.ToString();//値によって変動させる
+        //scoreText.text = scorepoint.ToString();//値によって変動させる
     }
 }

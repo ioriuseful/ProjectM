@@ -8,18 +8,21 @@ public class RainMove : MonoBehaviour
     [SerializeField, Header("プレイヤーのx軸を取得するため")] GameObject player;
     [SerializeField]
     private float seconds;
-    public float speed = 0.1f;//速さ
+    public float speed = 0.3f;//速さ
     public RetryGame retry;
     [Header("加速量")] public float acceleration = 10;//加速量
     public bool flag1 = false;//距離が遠くなった時のフラグ
     public bool flag2 = true;//距離が近くなった時のフラグ
+    public WaveScript nowWave;
     //public float MaxDistance;//遠い距離
     //public float MinDistance;//近い距離
     public bool setpause;
+    private float addspeed;
     // Start is called before the first frame update
     void Start()
-    {        
+    {
         seconds = 0;
+        addspeed = speed;
     }
 
     // Update is called once per frame
@@ -52,23 +55,23 @@ public class RainMove : MonoBehaviour
         //}
         if (flag1 == true)
         {
-            pos.x = c + speed * acceleration * 0.1f;
+            pos.x = c + speed * acceleration * 0.5f;
         }
         else if (flag2 == true)
         {
-            pos.x = c + speed * 0.1f;
+            pos.x = c + speed * nowWave.wave / 16;
         }
         else
         {
-            pos.x = c + speed * 0.1f;
+            pos.x = c + speed * nowWave.wave;
         }
-        if(setpause==true)
+        if (setpause == true)
         {
             speed = 0;
         }
         else
         {
-            speed = 0.1f;
+            speed = addspeed;
         }
         myTransform.position = pos;
     }

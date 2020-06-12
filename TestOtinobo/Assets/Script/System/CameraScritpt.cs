@@ -15,8 +15,10 @@ public class CameraScritpt : MonoBehaviour
     private bool _ShakeEnd;
 
     [SerializeField] GameObject Player;
-    
-    
+
+    public bool tutorial = false;
+
+
     void Start()
     {
         _shakeTime = -1f;
@@ -27,13 +29,13 @@ public class CameraScritpt : MonoBehaviour
 
     void Update()
     {
-        if (Player.transform.position.x > 0)
+        if (Player.transform.position.x > 0 && tutorial == false)
         {
             transform.position = new Vector3(Player.transform.position.x, transform.position.y, transform.position.z);
         }
-        
 
-        if(_timer <= _shakeTime)
+
+        if (_timer <= _shakeTime)
         {
             _ShakeEnd = true;
             _timer += Time.deltaTime;

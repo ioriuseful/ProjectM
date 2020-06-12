@@ -238,7 +238,7 @@ public class PlayerScript : MonoBehaviour
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
         if (Pause == false)
         {
-            if (IJump && Input.GetButtonDown("Jump"))
+            if (IJump && Input.GetButtonDown("Jump") && JumpCancel == false)
             {
                 if (IJumpC > 0)
                 {
@@ -659,6 +659,14 @@ public class PlayerScript : MonoBehaviour
         if(other.gameObject.tag == "Ceiling")
         {
             JumpCancel = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = false;
         }
     }
 

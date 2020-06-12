@@ -46,9 +46,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyBoxes:
   - {fileID: 3394205166927199167, guid: cffad16fbb4694744be1ee8b112bd55c, type: 3}
+  - {fileID: 8348362019204280334, guid: 639d64703224d9c4a9013169dcc73cec, type: 3}
+  - {fileID: 8470175722524815931, guid: d128e8b3b8dded54590f4d168fe06b35, type: 3}
   - {fileID: 662339871802683833, guid: d783b9c2884f0cd4a8cb71a4c5c5187c, type: 3}
   - {fileID: 6500378855208816136, guid: bf59e0ca610b5454dbfceed8b995d4d2, type: 3}
-  - {fileID: 8362624917456776651, guid: 9821bb6cb1b9d4a4a90e87cba44992b0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   groundBoxes:
   - {fileID: 4123188264756906717, guid: 00be10a57dfdf914ba05f7bd054f14f9, type: 3}
   - {fileID: 63873826252549283, guid: a4705b548b42ff64991379c5d6464389, type: 3}
@@ -64,7 +75,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3977168066030091533}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

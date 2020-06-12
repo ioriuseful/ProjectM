@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boundHeight: 20
   boundCount: 1
+  ItemSE: {fileID: 0}
   playerjump: 0
 --- !u!212 &1514998960887715442
 SpriteRenderer:

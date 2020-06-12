@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-using UnityEditor;
+﻿using UnityEngine;
 
 public class ColorBlockScript : MonoBehaviour
 {
@@ -16,14 +12,29 @@ public class ColorBlockScript : MonoBehaviour
     public PlayerScript player;
     private string Color;
 
+    private GameObject colorobj;
+    private Collider2D collider;
+    [SerializeField, Header("カラーブロック入った時&出た時用パーティクル")]
+    public GameObject RedBlockParticle;
+    public GameObject GreenBlockParticle;
+    public GameObject BlueBlockParticle;
+
+    [SerializeField, Header("カラーブロックの移動用変数")]
+    public float Yspeed;
+    public float Xspeed;
+
+    [SerializeField, Header("上下移動反転の間隔")] float time = 0.3f;
+    private float timer = 0.01f;
+    private float timelimit;
+    private bool change = true;
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player").GetComponent<PlayerScript>();
-    }
-
-    void Update()
-    {
+        collider = GetComponent<Collider2D>();
+        Yspeed /= 100;
+        Xspeed /= 100;
         switch (CS)
         {
             case ColorState.White:
@@ -43,39 +54,124 @@ public class ColorBlockScript : MonoBehaviour
                 Color = "Blue";
                 break;
         }
-        if (Color == player.Color)
-        {
-            if (GetComponent<CapsuleCollider2D>() == null && GetComponent<BoxCollider2D>() == null)
-            {
-                GetComponent<EdgeCollider2D>().enabled = false;
-            }
+    }
 
-            if (GetComponent<BoxCollider2D>() == null)
+    void Update()
+    {
+        Transform MyTransform = transform;
+
+        Vector3 pos = MyTransform.position;
+
+        #region 縦移動
+        if (Yspeed != 0)
+        {
+            if (timelimit < time && change == true)
             {
-                GetComponent<CapsuleCollider2D>().enabled = false;
+                pos.y += Yspeed;
+                timelimit += timer;
             }
             else
             {
-                GetComponent<BoxCollider2D>().enabled = false;
+                if (change == true)
+                {
+                    change = false;
+                }
             }
-
-        }
-        else
-        {
-            if (GetComponent<CapsuleCollider2D>() == null && GetComponent<BoxCollider2D>() == null)
+            if (timelimit > 0f && change == false)
             {
-                GetComponent<EdgeCollider2D>().enabled = true;
-            }
-
-
-            if (GetComponent<BoxCollider2D>() == null)
-            {
-                GetComponent<CapsuleCollider2D>().enabled = true;
+                pos.y -= Yspeed;
+                timelimit -= timer;
             }
             else
             {
-                GetComponent<BoxCollider2D>().enabled = true;
+                if (change == false)
+                {
+                    change = true;
+                }
             }
         }
+        #endregion
+
+        #region 横移動
+
+        if (Xspeed != 0)
+        {
+            pos.x -= Xspeed;
+        }
+
+        #endregion
+        
+        MyTransform.position = pos;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Player" && Color == player.Color)
+        {
+            collider.isTrigger = true;
+            switch(CS)
+            {
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+            }
+        }
+    }
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player" && Color == player.Color)
+        {
+            collider.isTrigger = true;
+            switch (CS)
+            {
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+            }
+        }
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Rain")
+        {
+            Invoke("IsDead", 10.0f);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Player")
+        {
+            collider.isTrigger = false;
+            switch (CS)
+            {
+                case ColorState.Red:
+                    Instantiate(RedBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Green:
+                    Instantiate(GreenBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+                case ColorState.Blue:
+                    Instantiate(BlueBlockParticle, player.transform.position, Quaternion.identity);
+                    break;
+            }
+        }
+    }
+
+    void IsDead()
+    {
+        Destroy(gameObject);
     }
 }

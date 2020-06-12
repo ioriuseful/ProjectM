@@ -8,7 +8,7 @@ public class GroundScript : MonoBehaviour
     [Header("何Wave目から移動を止めるか")] public int StopGroundWave;
     public WaveScript nowWave;
 
-    bool isStopGroundflag;
+    public bool isStopGroundflag = false;
 
 
     private void Start()
@@ -24,10 +24,10 @@ public class GroundScript : MonoBehaviour
             transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
         }
 
-        if(nowWave.wave >= StopGroundWave)
-        {
-            isStopGroundflag = true;
-        }
+        //if (nowWave.wave >= StopGroundWave)
+        //{
+        //    isStopGroundflag = true;
+        //}
 
     }
 }

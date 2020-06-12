@@ -96,6 +96,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 3
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &9086233167580835048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -253,6 +259,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 3
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &6849937866624961177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -521,6 +533,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 1
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &2768514529061219991
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1775,6 +1793,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CS: 1
   player: {fileID: 0}
+  RedBlockParticle: {fileID: 6606926848770303882, guid: e16c9621f4c42f14991c016a6f79f5a3,
+    type: 3}
+  GreenBlockParticle: {fileID: 6211819774031168418, guid: 4c630552e0072ad4081be9989b9be206,
+    type: 3}
+  BlueBlockParticle: {fileID: 7075687802571940937, guid: 322ca84e68ca0224eb1bbd12ec80a437,
+    type: 3}
 --- !u!61 &5232245467023449561
 BoxCollider2D:
   m_ObjectHideFlags: 0
