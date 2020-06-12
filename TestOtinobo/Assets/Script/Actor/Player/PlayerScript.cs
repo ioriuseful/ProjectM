@@ -87,6 +87,7 @@ public class PlayerScript : MonoBehaviour
     private int numScore = 0;//ジャンプのご褒美を与えるための500区切りのスコア
     public int AddPoint = 100;//普通のスコア加算
     public int HighPoint = 200;//スコア加算の高いポイント
+    public int Iscore;
 
     public int scoreline = 0;
 
@@ -683,6 +684,7 @@ public class PlayerScript : MonoBehaviour
             if (o != null)
             {
                 audioSource.PlayOneShot(ItemSE);
+                Iscore += 1;
                 ItemEffect = (GameObject)Instantiate(ItemUp);
                 ItemEffect.transform.SetParent(this.transform, false);
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する

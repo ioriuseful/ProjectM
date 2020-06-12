@@ -78,7 +78,6 @@ public class SaveScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Ppoint);
         PDead = saveItem.GetisDeadFlag;
         if (i <= 10)
         {
