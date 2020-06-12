@@ -72,18 +72,6 @@ public class PlayerScript : MonoBehaviour
     public Sprite UGreen;
     public Sprite URed;
     public Sprite UBlue;
-    public Sprite CWhite;
-    public Sprite CGreen;
-    public Sprite CRed;
-    public Sprite CBlue;
-    public Sprite CDWhite;
-    public Sprite CDGreen;
-    public Sprite CDRed;
-    public Sprite CDBlue;
-    public Sprite CUWhite;
-    public Sprite CUGreen;
-    public Sprite CURed;
-    public Sprite CUBlue;
     #endregion
     [SerializeField, Header("地面にぶつかったときのエフェクト")]
     public GameObject GreenEffect;
@@ -291,158 +279,75 @@ public class PlayerScript : MonoBehaviour
         {
             case ColorState.White:
                 //GetComponent<Renderer>().material.color = new Color32(WhiteR, WhiteG, WhiteB, WhiteA);
-                if (date == PlayerDate.Normal)
+                switch (state)
                 {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = White;
-                            Color = "white";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = UWhite;
-                            Color = "white";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = DWhite;
-                            Color = "white";
-                            break;
-                    }
-                }
-                else if(date ==PlayerDate.cloud)
-                {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = CWhite;
-                            Color = "white";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = CUWhite;
-                            Color = "white";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = CDWhite;
-                            Color = "white";
-                            break;
-                    }
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = White;
+                        Color = "white";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UWhite;
+                        Color = "white";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DWhite;
+                        Color = "white";
+                        break;
                 }
                 break;
             case ColorState.Red:
                 //GetComponent<Renderer>().material.color = new Color32(RedR, RedG, RedB, RedA);
-                if (date == PlayerDate.Normal)
+                switch (state)
                 {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = Red;
-                            Color = "Red";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = URed;
-                            Color = "Red";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = DRed;
-                            Color = "Red";
-                            break;
-                    }
-                }
-                else if (date == PlayerDate.cloud)
-                {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = CRed;
-                            Color = "Red";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = CURed;
-                            Color = "Red";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = CDRed;
-                            Color = "Red";
-                            break;
-                    }
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Red;
+                        Color = "Red";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = URed;
+                        Color = "Red";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DRed;
+                        Color = "Red";
+                        break;
+
                 }
                 break;
             case ColorState.Green:
                 //GetComponent<Renderer>().material.color = new Color32(GreenR, GreenG, GreenB, GreenA);
-                if (date == PlayerDate.Normal)
+                switch (state)
                 {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = Green;
-                            Color = "Green";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = UGreen;
-                            Color = "Green";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = DGreen;
-                            Color = "Green";
-                            break;
-                    }
-                }
-                if (date == PlayerDate.cloud)
-                {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = CGreen;
-                            Color = "Green";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = CUGreen;
-                            Color = "Green";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = CDGreen;
-                            Color = "Green";
-                            break;
-                    }
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Green;
+                        Color = "Green";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UGreen;
+                        Color = "Green";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DGreen;
+                        Color = "Green";
+                        break;
                 }
                 break;
             case ColorState.Blue:
                 //GetComponent<Renderer>().material.color = new Color32(BlueR, BlueG, BlueB, BlueA);
-                if (date == PlayerDate.Normal)
+                switch (state)
                 {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = Blue;
-                            Color = "Blue";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = UBlue;
-                            Color = "Blue";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = DBlue;
-                            Color = "Blue";
-                            break;
-                    }
-                }
-                if (date == PlayerDate.cloud)
-                {
-                    switch (state)
-                    {
-                        case PlayerState.Stand:
-                            GetComponent<SpriteRenderer>().sprite = CBlue;
-                            Color = "Blue";
-                            break;
-                        case PlayerState.Up:
-                            GetComponent<SpriteRenderer>().sprite = CUBlue;
-                            Color = "Blue";
-                            break;
-                        case PlayerState.Down:
-                            GetComponent<SpriteRenderer>().sprite = CDBlue;
-                            Color = "Blue";
-                            break;
-                    }
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Blue;
+                        Color = "Blue";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UBlue;
+                        Color = "Blue";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DBlue;
+                        Color = "Blue";
+                        break;
                 }
                 break;
         }
