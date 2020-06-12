@@ -64,7 +64,7 @@ public class SaveScore : MonoBehaviour
         third.SetActive(false);
         forth.SetActive(false);
         fifth.SetActive(false);
-        Ipoint = saveItem.Iscore;
+    
         Spoint = savePoint.score;
         Ppoint = savePlayer.scorepoint;
         Apoint = Ipoint + Spoint + Ppoint;
@@ -83,7 +83,6 @@ public class SaveScore : MonoBehaviour
         {
             timer += Time.deltaTime;
         }      
-        Ipoint = saveItem.Iscore * ItemP;
         Spoint = savePoint.score * LineP;
         Ppoint = savePlayer.scorepoint * EnemyP;
         Apoint = Ipoint + Spoint + Ppoint;

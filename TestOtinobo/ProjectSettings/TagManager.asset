@@ -21,6 +21,7 @@ TagManager:
   - DeathGround
   - Cloud
   - Ceiling
+  - Kumo
   layers:
   - Default
   - TransparentFX

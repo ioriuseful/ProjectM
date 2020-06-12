@@ -6,7 +6,7 @@ public class EnemyJump : MonoBehaviour
 {
     AudioSource audioSource;
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
-
+    [SerializeField, Header("スピードDown1~4ね")] public int ozyama;
     [SerializeField, Header("敵を踏んだ時飛ぶ高さ")] public float boundHeight;
     [SerializeField, Header("エネミーが死んだときに出すパーティクルオブジェクト")] GameObject enemyDeathObj;
     //[SerializeField, Header("エネミーが死んだときに出すパーティクルオブジェクト")] GameObject enemyDeathObj2;
