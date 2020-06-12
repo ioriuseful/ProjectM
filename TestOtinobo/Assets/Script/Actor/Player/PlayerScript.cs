@@ -36,7 +36,7 @@ public class PlayerScript : MonoBehaviour
     }
     public enum PlayerDate
     {
-        Normal,cloud,
+        Normal,Cloud,
     }
     public ColorState CS;//色を追加する場合エネミージャンプにも同様に色を増やすこと
     public PlayerState state;
@@ -530,7 +530,7 @@ public class PlayerScript : MonoBehaviour
                         otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                         o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
                         CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor());
-                        date = PlayerDate.cloud;
+                        date = PlayerDate.Cloud;
                         jumpPos = transform.position.y; //ジャンプした位置を記録する 
                         isOtherJump = true;
                         isJump = false;
