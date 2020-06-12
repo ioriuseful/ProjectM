@@ -20,6 +20,7 @@ TagManager:
   - RTutorial
   - DeathGround
   - Cloud
+  - Ceiling
   layers:
   - Default
   - TransparentFX
