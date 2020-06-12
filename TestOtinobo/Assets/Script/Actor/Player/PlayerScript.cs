@@ -34,8 +34,13 @@ public class PlayerScript : MonoBehaviour
     {
         Down,Up,Stand,
     }
+    public enum PlayerDate
+    {
+        Normal,cloud,
+    }
     public ColorState CS;//色を追加する場合エネミージャンプにも同様に色を増やすこと
     public PlayerState state;
+    public PlayerDate date;
     public string Color;
     #endregion
     public Text jumpText;
@@ -47,12 +52,13 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
     [SerializeField, Header("ヒップドロップ中の制限回数")] public int limit = 5;
+    public int SpeedDown = 0;
     AudioSource audioSource;
     private Animator _animator;
     public RetryGame retryGame;
     //プレイヤーの画像変更に必要なもの
     SpriteRenderer MainSpriteRenderer;
-
+    #region//画像の格納
     [SerializeField, Header("Spriteの格納")]
     public Sprite White;
     public Sprite Green;
@@ -66,6 +72,19 @@ public class PlayerScript : MonoBehaviour
     public Sprite UGreen;
     public Sprite URed;
     public Sprite UBlue;
+    public Sprite CWhite;
+    public Sprite CGreen;
+    public Sprite CRed;
+    public Sprite CBlue;
+    public Sprite CDWhite;
+    public Sprite CDGreen;
+    public Sprite CDRed;
+    public Sprite CDBlue;
+    public Sprite CUWhite;
+    public Sprite CUGreen;
+    public Sprite CURed;
+    public Sprite CUBlue;
+    #endregion
     [SerializeField, Header("地面にぶつかったときのエフェクト")]
     public GameObject GreenEffect;
     public GameObject RedEffect;
@@ -145,7 +164,9 @@ public class PlayerScript : MonoBehaviour
         jumpText.text = string.Format("× " + IJumpC);
         CS = ColorState.White;
         state = PlayerState.Stand;
+        date = PlayerDate.Normal;
         EnemyDown = 0;
+        SpeedDown = 0;
     }
     private void Awake()//追加
     {
@@ -163,32 +184,32 @@ public class PlayerScript : MonoBehaviour
         //プレイヤーが動いていたらaxisの値に5かけて動かす
         if (axis > 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5-SpeedDown);
         }
         if (axis < 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true && ColorWallBottom == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false && ColorWallBottom == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == false)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
 
         else if (axis != 0 && hiptime && !hip)
         {
-            velocity.x = axis * 5 * HipJump;
+            velocity.x = axis * (5 - SpeedDown) * HipJump;
             ShadowOn();
             Invoke("ShadowOff", shadowtime);
         }
@@ -212,6 +233,8 @@ public class PlayerScript : MonoBehaviour
                 hip = true;
                 stop = true;
                 xSpeed = 1;
+                SpeedDown = 0;
+                date = PlayerDate.Normal;
                 Invoke("Hip", HipLimitTime);
             }
         }
@@ -268,74 +291,158 @@ public class PlayerScript : MonoBehaviour
         {
             case ColorState.White:
                 //GetComponent<Renderer>().material.color = new Color32(WhiteR, WhiteG, WhiteB, WhiteA);
-                switch (state)
+                if (date == PlayerDate.Normal)
                 {
-                    case PlayerState.Stand:
-                        GetComponent<SpriteRenderer>().sprite = White;
-                        Color = "white";
-                        break;
-                    case PlayerState.Up:
-                        GetComponent<SpriteRenderer>().sprite = UWhite;
-                        Color = "white";
-                        break;
-                    case PlayerState.Down:
-                        GetComponent<SpriteRenderer>().sprite = DWhite;
-                        Color = "white";
-                        break;
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = White;
+                            Color = "white";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = UWhite;
+                            Color = "white";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = DWhite;
+                            Color = "white";
+                            break;
+                    }
+                }
+                else if(date ==PlayerDate.cloud)
+                {
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = CWhite;
+                            Color = "white";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = CUWhite;
+                            Color = "white";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = CDWhite;
+                            Color = "white";
+                            break;
+                    }
                 }
                 break;
             case ColorState.Red:
                 //GetComponent<Renderer>().material.color = new Color32(RedR, RedG, RedB, RedA);
-                switch (state)
+                if (date == PlayerDate.Normal)
                 {
-                    case PlayerState.Stand:
-                        GetComponent<SpriteRenderer>().sprite = Red;
-                        Color = "Red";
-                        break;
-                    case PlayerState.Up:
-                        GetComponent<SpriteRenderer>().sprite = URed;
-                        Color = "Red";
-                        break;
-                    case PlayerState.Down:
-                        GetComponent<SpriteRenderer>().sprite = DRed;
-                        Color = "Red";
-                        break;
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = Red;
+                            Color = "Red";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = URed;
+                            Color = "Red";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = DRed;
+                            Color = "Red";
+                            break;
+                    }
+                }
+                else if (date == PlayerDate.cloud)
+                {
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = CRed;
+                            Color = "Red";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = CURed;
+                            Color = "Red";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = CDRed;
+                            Color = "Red";
+                            break;
+                    }
                 }
                 break;
             case ColorState.Green:
                 //GetComponent<Renderer>().material.color = new Color32(GreenR, GreenG, GreenB, GreenA);
-                switch (state)
+                if (date == PlayerDate.Normal)
                 {
-                    case PlayerState.Stand:
-                        GetComponent<SpriteRenderer>().sprite = Green;
-                        Color = "Green";
-                        break;
-                    case PlayerState.Up:
-                        GetComponent<SpriteRenderer>().sprite = UGreen;
-                        Color = "Green";
-                        break;
-                    case PlayerState.Down:
-                        GetComponent<SpriteRenderer>().sprite = DGreen;
-                        Color = "Green";
-                        break;
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = Green;
+                            Color = "Green";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = UGreen;
+                            Color = "Green";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = DGreen;
+                            Color = "Green";
+                            break;
+                    }
+                }
+                if (date == PlayerDate.cloud)
+                {
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = CGreen;
+                            Color = "Green";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = CUGreen;
+                            Color = "Green";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = CDGreen;
+                            Color = "Green";
+                            break;
+                    }
                 }
                 break;
             case ColorState.Blue:
                 //GetComponent<Renderer>().material.color = new Color32(BlueR, BlueG, BlueB, BlueA);
-                switch (state)
+                if (date == PlayerDate.Normal)
                 {
-                    case PlayerState.Stand:
-                        GetComponent<SpriteRenderer>().sprite = Blue;
-                        Color = "Blue";
-                        break;
-                    case PlayerState.Up:
-                        GetComponent<SpriteRenderer>().sprite = UBlue;
-                        Color = "Blue";
-                        break;
-                    case PlayerState.Down:
-                        GetComponent<SpriteRenderer>().sprite = DBlue;
-                        Color = "Blue";
-                        break;
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = Blue;
+                            Color = "Blue";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = UBlue;
+                            Color = "Blue";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = DBlue;
+                            Color = "Blue";
+                            break;
+                    }
+                }
+                if (date == PlayerDate.cloud)
+                {
+                    switch (state)
+                    {
+                        case PlayerState.Stand:
+                            GetComponent<SpriteRenderer>().sprite = CBlue;
+                            Color = "Blue";
+                            break;
+                        case PlayerState.Up:
+                            GetComponent<SpriteRenderer>().sprite = CUBlue;
+                            Color = "Blue";
+                            break;
+                        case PlayerState.Down:
+                            GetComponent<SpriteRenderer>().sprite = CDBlue;
+                            Color = "Blue";
+                            break;
+                    }
                 }
                 break;
         }
@@ -497,8 +604,61 @@ public class PlayerScript : MonoBehaviour
             }
 
         }
+        if(!stop && other.collider.tag == "Kumo")
+        {
+            //踏みつけ判定になる高さ
+            float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
+            //踏みつけ判定のワールド座標
+            float judgePos = transform.position.y - (capcol.size.y / 2f) + stepOnHeight;
+            //Debug.Log("接触したよ");
+            foreach (ContactPoint2D p in other.contacts)
+            {
+                if (p.point.y < judgePos)
+                {
+                    EnemyJump o = other.gameObject.GetComponent<EnemyJump>();
+                    if (o != null)
+                    {
+                        anim1 = true;//animのtrue
+                        audioSource.PlayOneShot(EnemyDeadSE);
+                        audioSource.PlayOneShot(JumpSE);
+                        otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
+                        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
+                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor());
+                        date = PlayerDate.cloud;
+                        jumpPos = transform.position.y; //ジャンプした位置を記録する 
+                        isOtherJump = true;
+                        isJump = false;
+                        jumpTime = 0.0f;
+                        state = PlayerState.Up;
+                        SpeedDown = o.ozyama;
+                        //Debug.Log("ジャンプしたよ");
+                        Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
+                        if (other.collider.tag == "Enemy")
+                        {
+                            score += AddPoint / 2;//スコアを足す(4/17)
+                            numScore += AddPoint / 2;
+                        }
+                        else
+                        {
+                            score += HighPoint / 2;
+                            numScore += HighPoint / 2;
+                        }
+                        ShadowOff();
+                    }
+                    else
+                    {
+                        Debug.Log("ObjectCollisionが付いてないよ!");
+                    }
+                }
+                else
+                {
+                    isDown = true;
+                    break;
+                }
+            }
+        }
 
-        if(other.gameObject.tag == "ColorBlock")
+        if (other.gameObject.tag == "ColorBlock")
         {
             ShadowOff();
         }
