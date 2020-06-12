@@ -34,8 +34,13 @@ public class PlayerScript : MonoBehaviour
     {
         Down,Up,Stand,
     }
+    public enum PlayerDate
+    {
+        Normal,cloud,
+    }
     public ColorState CS;//色を追加する場合エネミージャンプにも同様に色を増やすこと
     public PlayerState state;
+    public PlayerDate date;
     public string Color;
     #endregion
     public Text jumpText;
@@ -46,12 +51,14 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
+    [SerializeField, Header("ヒップドロップ中の制限回数")] public int limit = 5;
+    public int SpeedDown = 0;
     AudioSource audioSource;
     private Animator _animator;
     public RetryGame retryGame;
     //プレイヤーの画像変更に必要なもの
     SpriteRenderer MainSpriteRenderer;
-
+    #region//画像の格納
     [SerializeField, Header("Spriteの格納")]
     public Sprite White;
     public Sprite Green;
@@ -65,6 +72,7 @@ public class PlayerScript : MonoBehaviour
     public Sprite UGreen;
     public Sprite URed;
     public Sprite UBlue;
+    #endregion
     [SerializeField, Header("地面にぶつかったときのエフェクト")]
     public GameObject GreenEffect;
     public GameObject RedEffect;
@@ -79,6 +87,7 @@ public class PlayerScript : MonoBehaviour
     private int numScore = 0;//ジャンプのご褒美を与えるための500区切りのスコア
     public int AddPoint = 100;//普通のスコア加算
     public int HighPoint = 200;//スコア加算の高いポイント
+    public int Iscore;
 
     public int scoreline = 0;
 
@@ -109,6 +118,7 @@ public class PlayerScript : MonoBehaviour
     private bool hiptime = false;
     private bool hip = false;
     private bool stop = false;
+    private bool JumpCancel = false;
     public bool anim1 = false;//animetion
     public bool anim2 = false;//animation
     public bool ColorWallRight = false;
@@ -143,7 +153,9 @@ public class PlayerScript : MonoBehaviour
         jumpText.text = string.Format("× " + IJumpC);
         CS = ColorState.White;
         state = PlayerState.Stand;
+        date = PlayerDate.Normal;
         EnemyDown = 0;
+        SpeedDown = 0;
     }
     private void Awake()//追加
     {
@@ -161,32 +173,32 @@ public class PlayerScript : MonoBehaviour
         //プレイヤーが動いていたらaxisの値に5かけて動かす
         if (axis > 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5-SpeedDown);
         }
         if (axis < 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true && ColorWallBottom == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false && ColorWallBottom == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == true)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis != 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == false)
         {
-            velocity.x = axis * 5;
+            velocity.x = axis * (5 - SpeedDown);
         }
 
         else if (axis != 0 && hiptime && !hip)
         {
-            velocity.x = axis * 5 * HipJump;
+            velocity.x = axis * (5 - SpeedDown) * HipJump;
             ShadowOn();
             Invoke("ShadowOff", shadowtime);
         }
@@ -210,6 +222,8 @@ public class PlayerScript : MonoBehaviour
                 hip = true;
                 stop = true;
                 xSpeed = 1;
+                SpeedDown = 0;
+                date = PlayerDate.Normal;
                 Invoke("Hip", HipLimitTime);
             }
         }
@@ -236,7 +250,7 @@ public class PlayerScript : MonoBehaviour
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
         if (Pause == false)
         {
-            if (IJump && Input.GetButtonDown("Jump"))
+            if (IJump && Input.GetButtonDown("Jump") && JumpCancel == false)
             {
                 if (IJumpC > 0)
                 {
@@ -298,6 +312,7 @@ public class PlayerScript : MonoBehaviour
                         GetComponent<SpriteRenderer>().sprite = DRed;
                         Color = "Red";
                         break;
+
                 }
                 break;
             case ColorState.Green:
@@ -495,20 +510,73 @@ public class PlayerScript : MonoBehaviour
             }
 
         }
+        if(!stop && other.collider.tag == "Kumo")
+        {
+            //踏みつけ判定になる高さ
+            float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
+            //踏みつけ判定のワールド座標
+            float judgePos = transform.position.y - (capcol.size.y / 2f) + stepOnHeight;
+            //Debug.Log("接触したよ");
+            foreach (ContactPoint2D p in other.contacts)
+            {
+                if (p.point.y < judgePos)
+                {
+                    EnemyJump o = other.gameObject.GetComponent<EnemyJump>();
+                    if (o != null)
+                    {
+                        anim1 = true;//animのtrue
+                        audioSource.PlayOneShot(EnemyDeadSE);
+                        audioSource.PlayOneShot(JumpSE);
+                        otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
+                        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
+                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor());
+                        date = PlayerDate.cloud;
+                        jumpPos = transform.position.y; //ジャンプした位置を記録する 
+                        isOtherJump = true;
+                        isJump = false;
+                        jumpTime = 0.0f;
+                        state = PlayerState.Up;
+                        SpeedDown = o.ozyama;
+                        //Debug.Log("ジャンプしたよ");
+                        Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
+                        if (other.collider.tag == "Enemy")
+                        {
+                            score += AddPoint / 2;//スコアを足す(4/17)
+                            numScore += AddPoint / 2;
+                        }
+                        else
+                        {
+                            score += HighPoint / 2;
+                            numScore += HighPoint / 2;
+                        }
+                        ShadowOff();
+                    }
+                    else
+                    {
+                        Debug.Log("ObjectCollisionが付いてないよ!");
+                    }
+                }
+                else
+                {
+                    isDown = true;
+                    break;
+                }
+            }
+        }
 
-        if(other.gameObject.tag == "ColorBlock")
+        if (other.gameObject.tag == "ColorBlock")
         {
             ShadowOff();
         }
 
         //300点取る度にジャンプを一回増やす
-        if (numScore >= 300)
-        {
-            IJumpC += 1;
-            numScore = 0;
-            IJump = true;
-            jumpText.text = string.Format("× " + IJumpC);
-        }
+        //if (numScore >= 300)
+        //{
+        //    IJumpC += 1;
+        //    numScore = 0;
+        //    IJump = true;
+        //    jumpText.text = string.Format("× " + IJumpC);
+        //}
 
         //if (other.gameObject.tag == "ColorBlock")
         //{
@@ -605,7 +673,6 @@ public class PlayerScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.tag == "ScoreLine")
         {
             scoreline++;
@@ -617,14 +684,24 @@ public class PlayerScript : MonoBehaviour
             if (o != null)
             {
                 audioSource.PlayOneShot(ItemSE);
+                Iscore += 1;
                 ItemEffect = (GameObject)Instantiate(ItemUp);
                 ItemEffect.transform.SetParent(this.transform, false);
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-                IJumpC += o.boundCount;
+                if (IJumpC >= limit)
+                {
+                    IJumpC = limit;
+                }
+                else
+                {
+                    IJumpC += o.boundCount;
+                    Debug.Log("足してるお");
+                }
                 IJump = true;
                 //GenerateEffect();
                 o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
                 jumpText.text = string.Format("× " + IJumpC);
+                Debug.Log(IJumpC);
             }
             else
             {
@@ -653,6 +730,18 @@ public class PlayerScript : MonoBehaviour
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             ShadowOff();
             isDeadFlag = true;
+        }
+        if(other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = false;
         }
     }
 

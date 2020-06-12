@@ -1248,7 +1248,7 @@ GameObject:
   - component: {fileID: 1509045141}
   m_Layer: 0
   m_Name: CeilingGround
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1277,10 +1277,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.83}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -1291,7 +1291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7, y: 0.13}
+  m_Size: {x: 2.7, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &1509045142
 MonoBehaviour:
@@ -1413,6 +1413,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d6c8d0b3976ed46b3a1c7d4361db49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1740676667 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4727442476876301298, guid: f51187adc8e9d3b46a828624dbea23bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3827345685710899238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1784366383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784366384}
+  - component: {fileID: 1784366385}
+  m_Layer: 0
+  m_Name: Cloud
+  m_TagString: Rain
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1784366384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784366383}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1740676667}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1784366385
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784366383}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.07, y: 0.4}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.76, y: 3.72}
+    newSize: {x: 1, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3}
+  m_EdgeRadius: 0
 --- !u!1 &1880885859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7030,6 +7093,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clouds
       objectReference: {fileID: 0}
+    - target: {fileID: 4727442477102090696, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cloud
+      objectReference: {fileID: 0}
     - target: {fileID: 4727442477102090699, guid: f51187adc8e9d3b46a828624dbea23bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7144,6 +7212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 366598295250152697, guid: f51187adc8e9d3b46a828624dbea23bf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f51187adc8e9d3b46a828624dbea23bf, type: 3}
