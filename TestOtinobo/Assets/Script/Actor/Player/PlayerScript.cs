@@ -636,7 +636,7 @@ public class PlayerScript : MonoBehaviour
                 //GenerateEffect();
                 o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
                 jumpText.text = string.Format("× " + IJumpC);
-                Debug.Log(IJumpC);
+                //Debug.Log(IJumpC);
             }
             else
             {
