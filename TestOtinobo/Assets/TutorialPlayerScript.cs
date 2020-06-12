@@ -94,6 +94,7 @@ public class TutorialPlayerScript : MonoBehaviour
     private bool hiptime = false;
     private bool hip = false;
     private bool stop = false;
+    private bool JumpCancel = false;
     public bool anim1 = false;//animetion
     public bool anim2 = false;//animation
     public bool ColorWallRight = false;
@@ -219,7 +220,7 @@ public class TutorialPlayerScript : MonoBehaviour
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
         if (Pause == false)
         {
-            if (IJump && Input.GetButtonDown("Jump"))
+            if (IJump && Input.GetButtonDown("Jump") && JumpCancel == false)
             {
                 if (IJumpC > 0)
                 {
@@ -555,7 +556,18 @@ public class TutorialPlayerScript : MonoBehaviour
         {
             transform.position = new Vector2(2, transform.position.y);
         }
+        if(other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = true;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = false;
+        }
     }
 
     #region　ダメージの時に点滅させる処理(使用中)
