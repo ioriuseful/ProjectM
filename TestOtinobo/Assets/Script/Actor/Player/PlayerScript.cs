@@ -110,6 +110,7 @@ public class PlayerScript : MonoBehaviour
     private bool hiptime = false;
     private bool hip = false;
     private bool stop = false;
+    private bool JumpCancel = false;
     public bool anim1 = false;//animetion
     public bool anim2 = false;//animation
     public bool ColorWallRight = false;
@@ -237,7 +238,7 @@ public class PlayerScript : MonoBehaviour
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
         if (Pause == false)
         {
-            if (IJump && Input.GetButtonDown("Jump"))
+            if (IJump && Input.GetButtonDown("Jump") && JumpCancel == false)
             {
                 if (IJumpC > 0)
                 {
@@ -606,7 +607,6 @@ public class PlayerScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.tag == "ScoreLine")
         {
             scoreline++;
@@ -663,6 +663,18 @@ public class PlayerScript : MonoBehaviour
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             ShadowOff();
             isDeadFlag = true;
+        }
+        if(other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = false;
         }
     }
 
