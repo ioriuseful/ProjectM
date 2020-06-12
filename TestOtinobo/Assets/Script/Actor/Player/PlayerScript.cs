@@ -50,6 +50,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("プレイヤーがアイテムをとったSE")] public AudioClip ItemSE;
     [SerializeField, Header("プレイヤーがジャンプしたSE")] public AudioClip JumpSE;
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
+    [SerializeField, Header("雲に触れた時のSE")] public AudioClip CloudGetSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
     [SerializeField, Header("ヒップドロップ中の制限回数")] public int limit = 5;
@@ -522,8 +523,7 @@ public class PlayerScript : MonoBehaviour
             if (o != null)
             {
                 anim1 = true;//animのtrue
-                audioSource.PlayOneShot(EnemyDeadSE);
-                audioSource.PlayOneShot(JumpSE);
+                audioSource.PlayOneShot(CloudGetSE);
                 otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                 o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
 

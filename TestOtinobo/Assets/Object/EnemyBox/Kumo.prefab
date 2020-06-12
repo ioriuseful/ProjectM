@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3775519909877211120}
   - component: {fileID: 3775519909877211127}
   - component: {fileID: 3775519909877211126}
-  - component: {fileID: 3775519909877211125}
   - component: {fileID: 3775519909877211124}
   - component: {fileID: 3775519909877211115}
   m_Layer: 8
@@ -31,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3775519909877211114}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 3, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
@@ -50,10 +49,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c266397f62a03454dbba811b448908b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
+  EnemyDeadSE: {fileID: 8300000, guid: 0cc3c740837411c469ed3d3bd18602dc, type: 3}
   ozyama: 2
   boundHeight: 0
-  enemyDeathObj: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 2a182d7311407074098d0570e1ba752e,
     type: 3}
   CS: 1
   playerjump: 0
@@ -164,25 +163,6 @@ MonoBehaviour:
   maxSpeedX: -1
   minSpeedY: -0.1
   maxSpeedY: 0.1
---- !u!95 &3775519909877211125
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3775519909877211114}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c039bc9f083cd9d43aaac19288082340, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!82 &3775519909877211124
 AudioSource:
   m_ObjectHideFlags: 0

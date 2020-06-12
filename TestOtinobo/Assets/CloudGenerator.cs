@@ -3,38 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CloudGenerator : MonoBehaviour
-{ 
+{
     public GameObject[] Cloud;
+    public int Generatetime;//何秒間隔で生成するか
+    private bool isGenerateFlag;
     int rnd;
     public PlayerScript player;
     public PlayerScript.PlayerDate state;
-    public bool onece;
-    public float min = -0.2f, max = 0.2f;
-    
+
+    [Header("X座標をplayerからどの範囲までずらすか")]
+    public float Xmin = -0.5f, Xmax = 0.5f;
+    [Header("Y座標をplayerからどの範囲までずらすか")]
+    public float Ymin = -0.5f, Ymax = 0.5f;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        onece = true;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        var parent = transform;//演出雲を子供にするためのおまじない
         state = player.date;
-        float random = Random.Range(min, max);
-        float random1 = Random.Range(min, max);
-        if (state==PlayerScript.PlayerDate.Cloud)
+        //プレイヤーが雲状態ならプレイヤーの周りに演出雲生成処理を開始する
+        if (state == PlayerScript.PlayerDate.Cloud)
         {
-            if(onece==true)
+            Generatetime--;
+            if (Generatetime <= 0)
             {
-                onece = false;
                 rnd = Random.Range(0, Cloud.Length);
-                Instantiate(Cloud[rnd], this.gameObject.transform.position+new Vector3(random,random1,0.0f), this.gameObject.transform.rotation,this.gameObject.transform.parent);                 
+                float xrnd = Random.Range(Xmin, Xmax);
+                float yrnd = Random.Range(Ymin, Ymax);
+                Instantiate(Cloud[rnd], new Vector2(transform.position.x + xrnd, transform.position.y + yrnd), Quaternion.identity, parent);
+                Generatetime = 30;
             }
+
+
         }
-        else
-        {
-            onece = true;
-        }
+
     }
 }

@@ -1136,12 +1136,12 @@ PrefabInstance:
     - target: {fileID: 3775519909877211123, guid: af60fdcea5be1b34ea7408d002d00152,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.84
+      value: 9.14
       objectReference: {fileID: 0}
     - target: {fileID: 3775519909877211123, guid: af60fdcea5be1b34ea7408d002d00152,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.47
+      value: 7.11
       objectReference: {fileID: 0}
     - target: {fileID: 3775519909877211123, guid: af60fdcea5be1b34ea7408d002d00152,
         type: 3}
@@ -1188,8 +1188,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3775519909877211125, guid: af60fdcea5be1b34ea7408d002d00152, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af60fdcea5be1b34ea7408d002d00152, type: 3}
 --- !u!114 &1495752276 stripped
 MonoBehaviour:
@@ -7216,71 +7215,6 @@ PrefabInstance:
       propertyPath: retryGame
       value: 
       objectReference: {fileID: 1429338406}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: playerDeathObj
-      value: 
-      objectReference: {fileID: 8522984589034868226, guid: 5d3fe1a5819367047811df31fde15aeb,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: shadowtime
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: DWhite
-      value: 
-      objectReference: {fileID: 8007735068834327713, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: DGreen
-      value: 
-      objectReference: {fileID: -5204144540036793621, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: DRed
-      value: 
-      objectReference: {fileID: -7000511372291502717, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: DBlue
-      value: 
-      objectReference: {fileID: 7246862673173275052, guid: b2bcb8d0cf438984d9ad0c08e679e9dc,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: UWhite
-      value: 
-      objectReference: {fileID: 2899867347015868019, guid: 532cba090bdd7734fb274ee6927f3bf5,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: UGreen
-      value: 
-      objectReference: {fileID: 1931677151405801848, guid: 532cba090bdd7734fb274ee6927f3bf5,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: URed
-      value: 
-      objectReference: {fileID: -3191241930174410370, guid: 532cba090bdd7734fb274ee6927f3bf5,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: UBlue
-      value: 
-      objectReference: {fileID: -523502994256674753, guid: 532cba090bdd7734fb274ee6927f3bf5,
-        type: 3}
-    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: CloudToNormalObj
-      value: 
-      objectReference: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
-        type: 3}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7341,26 +7275,6 @@ PrefabInstance:
       propertyPath: metorText
       value: 
       objectReference: {fileID: 1466918962}
-    - target: {fileID: 1642768530, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
-      propertyPath: ShadowplayerRed
-      value: 
-      objectReference: {fileID: 4619800305469865478, guid: a8ca070fc037e474983779551c21c10d,
-        type: 3}
-    - target: {fileID: 1642768530, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
-      propertyPath: ShadowplayerGreen
-      value: 
-      objectReference: {fileID: 4354011045537801840, guid: 05548397c7ae6b74994dc92a73c3107d,
-        type: 3}
-    - target: {fileID: 1642768530, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
-      propertyPath: ShadowplayerBlue
-      value: 
-      objectReference: {fileID: 1585287213863251640, guid: 6f60555cb1aa2504baee2fa117acdba8,
-        type: 3}
-    - target: {fileID: 6382301148395647401, guid: 1af6f15de1830ea4985ac7ce91375105,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af6f15de1830ea4985ac7ce91375105, type: 3}
 --- !u!82 &7019325045400939922
