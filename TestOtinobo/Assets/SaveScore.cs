@@ -22,6 +22,12 @@ public class SaveScore : MonoBehaviour
     public ScoreCount savePlayer;
     private int FhighScore, FsecondScore , FthirdScore, FforthScore , FfifthScore ;//スタート時スコア
     private int highScore=1000, secondScore=800, thirdScore=600, forthScore=400, fifthScore=200, nowScore, result; //ハイスコア用変数
+    [SerializeField, Header("アイテム拾った時のポイント")]
+    public int ItemP=1000;
+    [SerializeField, Header("ラインを通った時のポイント")]
+    public int LineP=1000;
+    [SerializeField, Header("敵を踏んだ時のポイント、300*EnemyPくらいになる")]
+    public int EnemyP=10;
     private string key = "HIGH SCORE"; //ハイスコアの保存先キー
     private string key2 = "SECOND SCORE"; //2位
     private string key3 = "THIRD SCORE";//3位
@@ -58,7 +64,8 @@ public class SaveScore : MonoBehaviour
         third.SetActive(false);
         forth.SetActive(false);
         fifth.SetActive(false);
-        Ipoint = saveItem.IJumpC;
+        Ipoint = saveItem.Iscore;
+
         Spoint = savePoint.score;
         Ppoint = savePlayer.scorepoint;
         Apoint = Ipoint + Spoint + Ppoint;
@@ -77,9 +84,10 @@ public class SaveScore : MonoBehaviour
         {
             timer += Time.deltaTime;
         }      
-        Ipoint = saveItem.IJumpC * 200;
-        Spoint = savePoint.score * 100;
-        Ppoint = savePlayer.scorepoint * 10;
+        Ipoint = saveItem.Iscore * ItemP;
+        Spoint = savePoint.score * LineP;
+        Ppoint = savePlayer.scorepoint * EnemyP;
+
         Apoint = Ipoint + Spoint + Ppoint;
         nowScore = Apoint;
         PlayerPrefs.SetInt(key6, nowScore);

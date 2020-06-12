@@ -81,6 +81,7 @@ public class PlayerScript : MonoBehaviour
     public int HighPoint = 200;//スコア加算の高いポイント
 
     public int scoreline = 0;
+    public int Iscore = 0;
 
     private float hinan;
     private Rigidbody2D rig2D;
@@ -617,6 +618,7 @@ public class PlayerScript : MonoBehaviour
             if (o != null)
             {
                 audioSource.PlayOneShot(ItemSE);
+                Iscore += 1;
                 ItemEffect = (GameObject)Instantiate(ItemUp);
                 ItemEffect.transform.SetParent(this.transform, false);
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
