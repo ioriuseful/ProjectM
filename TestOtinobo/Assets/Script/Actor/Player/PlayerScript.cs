@@ -32,11 +32,11 @@ public class PlayerScript : MonoBehaviour
     }
     public enum PlayerState
     {
-        Down,Up,Stand,
+        Down, Up, Stand,
     }
     public enum PlayerDate
     {
-        Normal,cloud,
+        Normal, Cloud,
     }
     public ColorState CS;//色を追加する場合エネミージャンプにも同様に色を増やすこと
     public PlayerState state;
@@ -110,7 +110,7 @@ public class PlayerScript : MonoBehaviour
     private bool isHead = false;
 
     private bool IJump = false;
-    public  int IJumpC = 0;
+    public int IJumpC = 0;
     private float IJumpH = 20;
     private float xSpeed = 1;
 
@@ -126,7 +126,7 @@ public class PlayerScript : MonoBehaviour
     public bool ColorWallBottom = false;
     public bool Pause = false;
     private bool ColorBStep = false;
-   // public GameObject PowerUp;
+    // public GameObject PowerUp;
     public bool PU = false;
     public int EnemyDown;
     [SerializeField, Header("軌跡の表示用")]
@@ -173,7 +173,7 @@ public class PlayerScript : MonoBehaviour
         //プレイヤーが動いていたらaxisの値に5かけて動かす
         if (axis > 0 && !hiptime && !hip && ColorWallRight == false && ColorWallLeft == true)
         {
-            velocity.x = axis * (5-SpeedDown);
+            velocity.x = axis * (5 - SpeedDown);
         }
         if (axis < 0 && !hiptime && !hip && ColorWallRight == true && ColorWallLeft == false)
         {
@@ -205,13 +205,13 @@ public class PlayerScript : MonoBehaviour
         if (!stop)
         {
             rig2D.velocity = new Vector2(velocity.x * xSpeed, ySpeed);
-          //  Debug.Log("動けるよ");
+            //  Debug.Log("動けるよ");
         }
         else
         {
             rig2D.velocity = new Vector2(0, 0);
             xSpeed = 0;
-          //  Debug.Log("動けないよ");
+            //  Debug.Log("動けないよ");
         }
         if (Pause == false)
         {
@@ -458,7 +458,7 @@ public class PlayerScript : MonoBehaviour
         //        ColorBStep = true;
         //    }
         //}
-        if (!stop && other.collider.tag == "Enemy" ||!stop && other.collider.tag == "HighEnemy")
+        if (!stop && other.collider.tag == "Enemy" || !stop && other.collider.tag == "HighEnemy")
         {
             //踏みつけ判定になる高さ
             float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
@@ -510,7 +510,7 @@ public class PlayerScript : MonoBehaviour
             }
 
         }
-        if(!stop && other.collider.tag == "Kumo")
+        if (!stop && other.collider.tag == "Kumo")
         {
             //踏みつけ判定になる高さ
             float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
@@ -529,8 +529,8 @@ public class PlayerScript : MonoBehaviour
                         audioSource.PlayOneShot(JumpSE);
                         otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                         o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor());
-                        date = PlayerDate.cloud;
+
+                        date = PlayerDate.Cloud;
                         jumpPos = transform.position.y; //ジャンプした位置を記録する 
                         isOtherJump = true;
                         isJump = false;
@@ -624,7 +624,7 @@ public class PlayerScript : MonoBehaviour
             ColorWallRight = false;
             ColorWallLeft = false;
             ColorWallBottom = false;
-            if(PU)
+            if (PU)
             {
                 PU = false;
             }
@@ -731,7 +731,7 @@ public class PlayerScript : MonoBehaviour
             ShadowOff();
             isDeadFlag = true;
         }
-        if(other.gameObject.tag == "Ceiling")
+        if (other.gameObject.tag == "Ceiling")
         {
             JumpCancel = true;
         }
@@ -739,7 +739,7 @@ public class PlayerScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Ceiling")
+        if (other.gameObject.tag == "Ceiling")
         {
             JumpCancel = false;
         }
