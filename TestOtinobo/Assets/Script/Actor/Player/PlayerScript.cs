@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System;
 using UnityEditor;
 
@@ -31,7 +30,12 @@ public class PlayerScript : MonoBehaviour
     {
         White, Red, Blue, Green,
     }
+    public enum PlayerState
+    {
+        Down,Up,Stand,
+    }
     public ColorState CS;//色を追加する場合エネミージャンプにも同様に色を増やすこと
+    public PlayerState state;
     public string Color;
     #endregion
     public Text jumpText;
@@ -41,22 +45,33 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("プレイヤーがジャンプしたSE")] public AudioClip JumpSE;
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
+    [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
     AudioSource audioSource;
     private Animator _animator;
     public RetryGame retryGame;
     //プレイヤーの画像変更に必要なもの
     SpriteRenderer MainSpriteRenderer;
 
-    [SerializeField, Header("Spriteの格納")] public Sprite White;
+    [SerializeField, Header("Spriteの格納")]
+    public Sprite White;
     public Sprite Green;
     public Sprite Red;
     public Sprite Blue;
+    public Sprite DWhite;
+    public Sprite DGreen;
+    public Sprite DRed;
+    public Sprite DBlue;
+    public Sprite UWhite;
+    public Sprite UGreen;
+    public Sprite URed;
+    public Sprite UBlue;
     [SerializeField, Header("地面にぶつかったときのエフェクト")]
     public GameObject GreenEffect;
     public GameObject RedEffect;
     public GameObject BlueEffect;
     public GameObject ItemUp;
     private GameObject ItemEffect;
+
     //取得した蒸気の数
     public float SteamPoint;
 
@@ -66,6 +81,7 @@ public class PlayerScript : MonoBehaviour
     public int HighPoint = 200;//スコア加算の高いポイント
 
     public int scoreline = 0;
+    public int Iscore = 0;
 
     private float hinan;
     private Rigidbody2D rig2D;
@@ -86,7 +102,7 @@ public class PlayerScript : MonoBehaviour
     private bool isHead = false;
 
     private bool IJump = false;
-    public float IJumpC = 0;
+    public  int IJumpC = 0;
     private float IJumpH = 20;
     private float xSpeed = 1;
 
@@ -94,6 +110,7 @@ public class PlayerScript : MonoBehaviour
     private bool hiptime = false;
     private bool hip = false;
     private bool stop = false;
+    private bool JumpCancel = false;
     public bool anim1 = false;//animetion
     public bool anim2 = false;//animation
     public bool ColorWallRight = false;
@@ -103,6 +120,9 @@ public class PlayerScript : MonoBehaviour
     private bool ColorBStep = false;
    // public GameObject PowerUp;
     public bool PU = false;
+    public int EnemyDown;
+    [SerializeField, Header("軌跡の表示用")]
+    public bool shadowGenerator = false;
     #region//各色のRGBA設定
     //[Header("whiteのRGBA")] public byte WhiteR = 255;
     //public byte WhiteG = 255, WhiteB = 255, WhiteA = 255;//ホワイトの時のRGBA
@@ -113,6 +133,7 @@ public class PlayerScript : MonoBehaviour
     //[Header("blueのRGBA")] public byte BlueR = 87;
     //public byte BlueG = 117, BlueB = 255, BlueA = 255;//ブルー　
     #endregion
+
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -123,6 +144,8 @@ public class PlayerScript : MonoBehaviour
         hinan = Parasol;
         jumpText.text = string.Format("× " + IJumpC);
         CS = ColorState.White;
+        state = PlayerState.Stand;
+        EnemyDown = 0;
     }
     private void Awake()//追加
     {
@@ -166,6 +189,8 @@ public class PlayerScript : MonoBehaviour
         else if (axis != 0 && hiptime && !hip)
         {
             velocity.x = axis * 5 * HipJump;
+            ShadowOn();
+            Invoke("ShadowOff", shadowtime);
         }
         if (!stop)
         {
@@ -207,6 +232,7 @@ public class PlayerScript : MonoBehaviour
             //Parasol = hinan;
             hiptime = false;
             ColorBStep = false;
+            state = PlayerState.Up;
         }//押し上げます。
 
         //ジャンプ(Spaceキー)が押されたらアイテムジャンプを使用する
@@ -219,6 +245,7 @@ public class PlayerScript : MonoBehaviour
                     IJumpC--;
                     jumpText.text = string.Format("× " + IJumpC);
                     audioSource.PlayOneShot(JumpSE);
+                    ShadowOff();
                 }
                 else
                 {
@@ -233,30 +260,83 @@ public class PlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 Parasol = hinan;
                 hiptime = false;
-                //Debug.Log("ジャンプしたよ");       
+                state = PlayerState.Up;
+                //Debug.Log("ジャンプしたよ");
             }
         }
         switch (CS)
         {
             case ColorState.White:
                 //GetComponent<Renderer>().material.color = new Color32(WhiteR, WhiteG, WhiteB, WhiteA);
-                GetComponent<SpriteRenderer>().sprite = White;
-                Color = "white";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = White;
+                        Color = "white";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UWhite;
+                        Color = "white";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DWhite;
+                        Color = "white";
+                        break;
+                }
                 break;
             case ColorState.Red:
                 //GetComponent<Renderer>().material.color = new Color32(RedR, RedG, RedB, RedA);
-                GetComponent<SpriteRenderer>().sprite = Red;
-                Color = "Red";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Red;
+                        Color = "Red";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = URed;
+                        Color = "Red";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DRed;
+                        Color = "Red";
+                        break;
+                }
                 break;
             case ColorState.Green:
                 //GetComponent<Renderer>().material.color = new Color32(GreenR, GreenG, GreenB, GreenA);
-                GetComponent<SpriteRenderer>().sprite = Green;
-                Color = "Green";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Green;
+                        Color = "Green";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UGreen;
+                        Color = "Green";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DGreen;
+                        Color = "Green";
+                        break;
+                }
                 break;
             case ColorState.Blue:
                 //GetComponent<Renderer>().material.color = new Color32(BlueR, BlueG, BlueB, BlueA);
-                GetComponent<SpriteRenderer>().sprite = Blue;
-                Color = "Blue";
+                switch (state)
+                {
+                    case PlayerState.Stand:
+                        GetComponent<SpriteRenderer>().sprite = Blue;
+                        Color = "Blue";
+                        break;
+                    case PlayerState.Up:
+                        GetComponent<SpriteRenderer>().sprite = UBlue;
+                        Color = "Blue";
+                        break;
+                    case PlayerState.Down:
+                        GetComponent<SpriteRenderer>().sprite = DBlue;
+                        Color = "Blue";
+                        break;
+                }
                 break;
         }
         //アニメーションの条件取得
@@ -315,6 +395,7 @@ public class PlayerScript : MonoBehaviour
             {
                 Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
                 Instantiate(playerDeathObj, transform.position, Quaternion.identity);
+                ShadowOff();
 
                 //プレイヤー死亡
                 isDeadFlag = true;
@@ -331,6 +412,8 @@ public class PlayerScript : MonoBehaviour
                 jumpTime = 0.0f;
                 on_ground = true;
                 StartCoroutine("WaitForit");
+                state = PlayerState.Up;
+                ShadowOff();
                 //着地時のエフェクト
                 switch (CS)
                 {
@@ -353,6 +436,7 @@ public class PlayerScript : MonoBehaviour
             Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
             isDeadFlag = true;
+            ShadowOff();
         }
         //if (other.collider.tag == "ColorBlock") 
         //{ 
@@ -385,6 +469,7 @@ public class PlayerScript : MonoBehaviour
                         isOtherJump = true;
                         isJump = false;
                         jumpTime = 0.0f;
+                        state = PlayerState.Up;
                         //Debug.Log("ジャンプしたよ");
                         Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
                         if (other.collider.tag == "Enemy")
@@ -397,6 +482,7 @@ public class PlayerScript : MonoBehaviour
                             score += HighPoint / 2;
                             numScore += HighPoint / 2;
                         }
+                        ShadowOff();
                     }
                     else
                     {
@@ -411,6 +497,12 @@ public class PlayerScript : MonoBehaviour
             }
 
         }
+
+        if(other.gameObject.tag == "ColorBlock")
+        {
+            ShadowOff();
+        }
+
         //300点取る度にジャンプを一回増やす
         if (numScore >= 300)
         {
@@ -419,6 +511,45 @@ public class PlayerScript : MonoBehaviour
             IJump = true;
             jumpText.text = string.Format("× " + IJumpC);
         }
+
+        //if (other.gameObject.tag == "ColorBlock")
+        //{
+        //    foreach (ContactPoint2D point in other.contacts)
+        //    {
+        //        if (point.point.x - transform.position.x > 0.1)
+        //        {
+        //            ColorWallRight = true;
+        //        }
+        //        else if (point.point.x - transform.position.x < -0.1)
+        //        {
+        //            ColorWallLeft = true;
+        //        }
+        //        else if (point.point.y - transform.position.y < -0.1)
+        //        {
+        //            ColorWallBottom = true;
+        //        }
+        //    }
+        //    //踏みつけ判定になる高さ
+        //    float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
+        //    //踏みつけ判定のワールド座標
+        //    float judgePos = transform.position.y - (capcol.size.y / 2f) + stepOnHeight;
+        //    //Debug.Log("接触したよ");
+        //    foreach (ContactPoint2D p in other.contacts)
+        //    {
+        //        if (p.point.y < judgePos)
+        //        {
+        //            if (stop)
+        //            {
+        //                PU = true;
+        //            }
+        //            if (!PU && hip)
+        //            {
+        //                ColorBStep = true;
+        //                hip = false;
+        //            }
+        //        }
+        //    }
+        //}
     }
     private void OnCollisionExit2D(Collision2D other)
     {
@@ -465,7 +596,7 @@ public class PlayerScript : MonoBehaviour
                     {
                         PU = true;
                     }
-                    if (!PU && hip) 
+                    if (!PU && hip)
                     {
                         ColorBStep = true;
                         hip = false;
@@ -476,7 +607,6 @@ public class PlayerScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.tag == "ScoreLine")
         {
             scoreline++;
@@ -488,6 +618,7 @@ public class PlayerScript : MonoBehaviour
             if (o != null)
             {
                 audioSource.PlayOneShot(ItemSE);
+                Iscore += 1;
                 ItemEffect = (GameObject)Instantiate(ItemUp);
                 ItemEffect.transform.SetParent(this.transform, false);
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
@@ -508,6 +639,7 @@ public class PlayerScript : MonoBehaviour
         {
             Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
             Instantiate(playerDeathObj, transform.position, Quaternion.identity);
+            ShadowOff();
 
             //プレイヤー死亡
             isDeadFlag = true;
@@ -517,7 +649,17 @@ public class PlayerScript : MonoBehaviour
             hip = false;
             stop = false;
         }
-
+        if (other.gameObject.tag == "Rain")
+        {
+            Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
+            Instantiate(playerDeathObj, transform.position, Quaternion.identity);
+            ShadowOff();
+            isDeadFlag = true;
+        }
+        if(other.gameObject.tag == "Ceiling")
+        {
+            JumpCancel = true;
+        }
     }
 
     //private void GenerateEffect()
@@ -592,6 +734,7 @@ public class PlayerScript : MonoBehaviour
                 hiptime = false;
                 Rcv = false;
                 jumpTime = 0.0f;
+                state = PlayerState.Stand;
             }
 
         }
@@ -599,6 +742,7 @@ public class PlayerScript : MonoBehaviour
         {
             isOtherJump = false;
             jumpTime = 0.0f;
+            state = PlayerState.Down;
         }
         return ySpeed;
     }
@@ -612,7 +756,19 @@ public class PlayerScript : MonoBehaviour
     public void Hip()
     {
         Parasol = 0;
+        state = PlayerState.Down;
         hiptime = false;
         stop = false;
+        ShadowOn();
+    }
+
+    public void ShadowOn()
+    {
+        shadowGenerator = true;
+    }
+
+    public void ShadowOff()
+    {
+        shadowGenerator = false;
     }
 }
