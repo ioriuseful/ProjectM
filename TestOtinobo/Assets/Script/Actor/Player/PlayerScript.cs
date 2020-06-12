@@ -529,7 +529,7 @@ public class PlayerScript : MonoBehaviour
                         audioSource.PlayOneShot(JumpSE);
                         otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
                         o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
-                        CS = (ColorState)Enum.ToObject(typeof(ColorState), o.GetColor());
+                       
                         date = PlayerDate.cloud;
                         jumpPos = transform.position.y; //ジャンプした位置を記録する 
                         isOtherJump = true;
@@ -695,7 +695,7 @@ public class PlayerScript : MonoBehaviour
                 else
                 {
                     IJumpC += o.boundCount;
-                    Debug.Log("足してるお");
+         
                 }
                 IJump = true;
                 //GenerateEffect();
