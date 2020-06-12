@@ -42,6 +42,7 @@ public class ReStart : MonoBehaviour
     public void Retry()
     {
         audioSource.PlayOneShot(selectse);
+        SceneManager.LoadScene("Result");
     }
 
     public void ButtonClickedEnd()

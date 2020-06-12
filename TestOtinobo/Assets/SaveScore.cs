@@ -77,7 +77,7 @@ public class SaveScore : MonoBehaviour
         {
             timer += Time.deltaTime;
         }      
-        Ipoint = saveItem.IJumpC * 300;
+        Ipoint = saveItem.IJumpC * 200;
         Spoint = savePoint.score * 100;
         Ppoint = savePlayer.scorepoint * 10;
         Apoint = Ipoint + Spoint + Ppoint;

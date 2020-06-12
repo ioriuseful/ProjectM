@@ -24,10 +24,10 @@ public class GroundScript : MonoBehaviour
             transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
         }
 
-        if(nowWave.wave >= StopGroundWave)
-        {
-            isStopGroundflag = true;
-        }
+        //if (nowWave.wave >= StopGroundWave)
+        //{
+        //    isStopGroundflag = true;
+        //}
 
     }
 }

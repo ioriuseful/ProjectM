@@ -46,7 +46,6 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
-    [SerializeField, Header("ジャンプ制限回数")] public int limit = 5;
     AudioSource audioSource;
     private Animator _animator;
     public RetryGame retryGame;
@@ -503,12 +502,51 @@ public class PlayerScript : MonoBehaviour
         }
 
         //300点取る度にジャンプを一回増やす
-        //if (numScore >= 300)
+        if (numScore >= 300)
+        {
+            IJumpC += 1;
+            numScore = 0;
+            IJump = true;
+            jumpText.text = string.Format("× " + IJumpC);
+        }
+
+        //if (other.gameObject.tag == "ColorBlock")
         //{
-        //    IJumpC += 1;
-        //    numScore = 0;
-        //    IJump = true;
-        //    jumpText.text = string.Format("× " + IJumpC);
+        //    foreach (ContactPoint2D point in other.contacts)
+        //    {
+        //        if (point.point.x - transform.position.x > 0.1)
+        //        {
+        //            ColorWallRight = true;
+        //        }
+        //        else if (point.point.x - transform.position.x < -0.1)
+        //        {
+        //            ColorWallLeft = true;
+        //        }
+        //        else if (point.point.y - transform.position.y < -0.1)
+        //        {
+        //            ColorWallBottom = true;
+        //        }
+        //    }
+        //    //踏みつけ判定になる高さ
+        //    float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
+        //    //踏みつけ判定のワールド座標
+        //    float judgePos = transform.position.y - (capcol.size.y / 2f) + stepOnHeight;
+        //    //Debug.Log("接触したよ");
+        //    foreach (ContactPoint2D p in other.contacts)
+        //    {
+        //        if (p.point.y < judgePos)
+        //        {
+        //            if (stop)
+        //            {
+        //                PU = true;
+        //            }
+        //            if (!PU && hip)
+        //            {
+        //                ColorBStep = true;
+        //                hip = false;
+        //            }
+        //        }
+        //    }
         //}
     }
     private void OnCollisionExit2D(Collision2D other)
@@ -556,7 +594,7 @@ public class PlayerScript : MonoBehaviour
                     {
                         PU = true;
                     }
-                    if (!PU && hip) 
+                    if (!PU && hip)
                     {
                         ColorBStep = true;
                         hip = false;
@@ -582,17 +620,9 @@ public class PlayerScript : MonoBehaviour
                 ItemEffect = (GameObject)Instantiate(ItemUp);
                 ItemEffect.transform.SetParent(this.transform, false);
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-                if (IJumpC < limit)
-                {
-                    IJumpC += o.boundCount;
-                }
-                else
-                {
-                    IJumpC = limit;
-                }
+                IJumpC += o.boundCount;
                 IJump = true;
                 //GenerateEffect();
-                Debug.Log(IJumpC + "<+" + limit);
                 o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
                 jumpText.text = string.Format("× " + IJumpC);
             }
