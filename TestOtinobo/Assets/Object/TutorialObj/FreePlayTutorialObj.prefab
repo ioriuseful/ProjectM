@@ -3026,7 +3026,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -3037,7 +3037,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.17, y: 0.12}
+  m_Size: {x: 3.22, y: 0.12}
   m_EdgeRadius: 0
 --- !u!1 &8108004966598539849
 GameObject:
@@ -3617,6 +3617,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1035021248917903987, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
         type: 3}
       propertyPath: freeplaytutorial
@@ -3636,7 +3641,7 @@ PrefabInstance:
     - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
         type: 3}
       propertyPath: jumpHeight
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
         type: 3}
@@ -3647,6 +3652,26 @@ PrefabInstance:
         type: 3}
       propertyPath: CS
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: jumpLimitTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: HipJump
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891850862088207747, guid: b02479fee36f2704e88446c438b6e8af,
+        type: 3}
+      propertyPath: jumpLimitTime2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02479fee36f2704e88446c438b6e8af, type: 3}
