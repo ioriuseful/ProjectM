@@ -46,6 +46,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField, Header("敵が死んだSE")] public AudioClip EnemyDeadSE;
     [SerializeField, Header("ヒップドロップ発動時のSE")] public AudioClip HipDropSE;
     [SerializeField, Header("ヒップドロップ中の軌跡の表示時間")] public float shadowtime = 0.6f;
+    [SerializeField, Header("ヒップドロップ中の制限回数")] public int limit = 5;
     AudioSource audioSource;
     private Animator _animator;
     public RetryGame retryGame;
@@ -502,13 +503,13 @@ public class PlayerScript : MonoBehaviour
         }
 
         //300点取る度にジャンプを一回増やす
-        if (numScore >= 300)
-        {
-            IJumpC += 1;
-            numScore = 0;
-            IJump = true;
-            jumpText.text = string.Format("× " + IJumpC);
-        }
+        //if (numScore >= 300)
+        //{
+        //    IJumpC += 1;
+        //    numScore = 0;
+        //    IJump = true;
+        //    jumpText.text = string.Format("× " + IJumpC);
+        //}
 
         //if (other.gameObject.tag == "ColorBlock")
         //{
@@ -620,11 +621,20 @@ public class PlayerScript : MonoBehaviour
                 ItemEffect = (GameObject)Instantiate(ItemUp);
                 ItemEffect.transform.SetParent(this.transform, false);
                 IJumpH = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-                IJumpC += o.boundCount;
+                if (IJumpC >= limit)
+                {
+                    IJumpC = limit;
+                }
+                else
+                {
+                    IJumpC += o.boundCount;
+                    Debug.Log("足してるお");
+                }
                 IJump = true;
                 //GenerateEffect();
                 o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
                 jumpText.text = string.Format("× " + IJumpC);
+                Debug.Log(IJumpC);
             }
             else
             {
