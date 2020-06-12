@@ -65,7 +65,6 @@ public class SaveScore : MonoBehaviour
         forth.SetActive(false);
         fifth.SetActive(false);
         Ipoint = saveItem.Iscore;
-
         Spoint = savePoint.score;
         Ppoint = savePlayer.scorepoint;
         Apoint = Ipoint + Spoint + Ppoint;
@@ -87,7 +86,6 @@ public class SaveScore : MonoBehaviour
         Ipoint = saveItem.Iscore * ItemP;
         Spoint = savePoint.score * LineP;
         Ppoint = savePlayer.scorepoint * EnemyP;
-
         Apoint = Ipoint + Spoint + Ppoint;
         nowScore = Apoint;
         PlayerPrefs.SetInt(key6, nowScore);
