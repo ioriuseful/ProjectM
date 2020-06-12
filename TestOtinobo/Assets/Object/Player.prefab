@@ -35,7 +35,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.74, y: 7.05, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8399727906873236675}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -184,8 +185,10 @@ MonoBehaviour:
   Recovery: 10
   jumpLimitTime2: 1
   HipLimitTime: 0.35
+  CloudToNormalObj: {fileID: 0}
   CS: 0
   state: 0
+  date: 0
   Color: 
   jumpText: {fileID: 0}
   ItemSE: {fileID: 8300000, guid: 94445ea2e8e2f0840b71be5c57d89aca, type: 3}
@@ -193,6 +196,8 @@ MonoBehaviour:
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   HipDropSE: {fileID: 8300000, guid: 1a4518867a18a7d4e979df04ce1a1056, type: 3}
   shadowtime: 0.6
+  limit: 5
+  SpeedDown: 0
   retryGame: {fileID: 0}
   White: {fileID: 7255854300219104043, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
   Green: {fileID: -6127215198058392024, guid: fc7b2f3bbd6d45f4c9dfa53bdc242d28, type: 3}
@@ -217,6 +222,7 @@ MonoBehaviour:
   score: 0
   AddPoint: 100
   HighPoint: 200
+  Iscore: 0
   scoreline: 0
   GetisDeadFlag: 0
   IJumpC: 0
@@ -387,3 +393,56 @@ MonoBehaviour:
   ShadowplayerGreen: {fileID: 0}
   ShadowplayerBlue: {fileID: 0}
   interval: 3
+--- !u!1 &8399727906873236684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8399727906873236675}
+  - component: {fileID: 8399727906873236674}
+  m_Layer: 0
+  m_Name: CloudGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8399727906873236675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8399727906873236684}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6382301148395647406}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8399727906873236674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8399727906873236684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ce5c144cc53eb439c33e1c4c8cff3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cloud:
+  - {fileID: 2871683778166879249, guid: 37edb0004e5518049b4880bc9c81d1d3, type: 3}
+  - {fileID: 8657549353476772968, guid: 44a5ae511f17b7b4c88b1f2506a4e47c, type: 3}
+  - {fileID: 6529236626213930531, guid: ba598666ba1bb0647b6e6c9906c2dd23, type: 3}
+  - {fileID: 8276841255510154086, guid: b59c4c43ce946054382ee9ab5db8518c, type: 3}
+  player: {fileID: 6382301148395647405}
+  state: 0
+  onece: 0
+  min: -0.5
+  max: 0.5

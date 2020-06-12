@@ -224,7 +224,7 @@ public class PlayerScript : MonoBehaviour
                 stop = true;
                 xSpeed = 1;
                 SpeedDown = 0;
-                if(date == PlayerDate.Cloud)
+                if(date == PlayerDate.Cloud)//雲解除時の演出用objを生成
                 {
                     Instantiate(CloudToNormalObj, transform.position, Quaternion.identity);
                 }
