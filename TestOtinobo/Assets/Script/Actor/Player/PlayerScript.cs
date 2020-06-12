@@ -34,6 +34,7 @@ public class PlayerScript : MonoBehaviour
     {
         Down, Up, Stand,
     }
+    [Header("雲状態を解除した時に生成するパーティクルオブジェクト")] public GameObject CloudToNormalObj;
     public enum PlayerDate
     {
         Normal, Cloud,
@@ -223,6 +224,10 @@ public class PlayerScript : MonoBehaviour
                 stop = true;
                 xSpeed = 1;
                 SpeedDown = 0;
+                if(date == PlayerDate.Cloud)
+                {
+                    Instantiate(CloudToNormalObj, transform.position, Quaternion.identity);
+                }
                 date = PlayerDate.Normal;
                 Invoke("Hip", HipLimitTime);
             }
@@ -512,55 +517,30 @@ public class PlayerScript : MonoBehaviour
         }
         if (!stop && other.collider.tag == "Kumo")
         {
-            //踏みつけ判定になる高さ
-            float stepOnHeight = (capcol.size.y * (stepOnRate / 100f));
-            //踏みつけ判定のワールド座標
-            float judgePos = transform.position.y - (capcol.size.y / 2f) + stepOnHeight;
-            //Debug.Log("接触したよ");
-            foreach (ContactPoint2D p in other.contacts)
-            {
-                if (p.point.y < judgePos)
-                {
-                    EnemyJump o = other.gameObject.GetComponent<EnemyJump>();
-                    if (o != null)
-                    {
-                        anim1 = true;//animのtrue
-                        audioSource.PlayOneShot(EnemyDeadSE);
-                        audioSource.PlayOneShot(JumpSE);
-                        otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
-                        o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
 
-                        date = PlayerDate.Cloud;
-                        jumpPos = transform.position.y; //ジャンプした位置を記録する 
-                        isOtherJump = true;
-                        isJump = false;
-                        jumpTime = 0.0f;
-                        state = PlayerState.Up;
-                        SpeedDown = o.ozyama;
-                        //Debug.Log("ジャンプしたよ");
-                        Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
-                        if (other.collider.tag == "Enemy")
-                        {
-                            score += AddPoint / 2;//スコアを足す(4/17)
-                            numScore += AddPoint / 2;
-                        }
-                        else
-                        {
-                            score += HighPoint / 2;
-                            numScore += HighPoint / 2;
-                        }
-                        ShadowOff();
-                    }
-                    else
-                    {
-                        Debug.Log("ObjectCollisionが付いてないよ!");
-                    }
-                }
-                else
-                {
-                    isDown = true;
-                    break;
-                }
+            EnemyJump o = other.gameObject.GetComponent<EnemyJump>();
+            if (o != null)
+            {
+                anim1 = true;//animのtrue
+                audioSource.PlayOneShot(EnemyDeadSE);
+                audioSource.PlayOneShot(JumpSE);
+                otherJumpHeight = o.boundHeight;    //踏んづけたものから跳ねる高さを取得する
+                o.playerjump = true;        //踏んづけたものに対して踏んづけた事を通知する
+
+                date = PlayerDate.Cloud;
+                jumpPos = transform.position.y; //ジャンプした位置を記録する 
+                isOtherJump = true;
+                isJump = false;
+                jumpTime = 0.0f;
+                state = PlayerState.Up;
+                SpeedDown = o.ozyama;
+                //Debug.Log("ジャンプしたよ");
+                Camera.main.gameObject.GetComponent<CameraScritpt>().Shake();
+                ShadowOff();
+            }
+            else
+            {
+                Debug.Log("ObjectCollisionが付いてないよ!");
             }
         }
 

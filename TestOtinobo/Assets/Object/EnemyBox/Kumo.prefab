@@ -51,9 +51,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
-  ozyama: 3
+  ozyama: 2
   boundHeight: 0
-  enemyDeathObj: {fileID: 0}
+  enemyDeathObj: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
+    type: 3}
   CS: 1
   playerjump: 0
 --- !u!212 &3775519909877211121

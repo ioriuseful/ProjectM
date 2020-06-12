@@ -918,7 +918,7 @@ PrefabInstance:
     - target: {fileID: 3368751762157416046, guid: 527fb9eb27b14544f9f2c0943b9f45bd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -114.7652
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3368751762157416046, guid: 527fb9eb27b14544f9f2c0943b9f45bd,
         type: 3}
@@ -1136,12 +1136,12 @@ PrefabInstance:
     - target: {fileID: 3775519909877211123, guid: af60fdcea5be1b34ea7408d002d00152,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.46
+      value: -4.84
       objectReference: {fileID: 0}
     - target: {fileID: 3775519909877211123, guid: af60fdcea5be1b34ea7408d002d00152,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.21
+      value: 7.47
       objectReference: {fileID: 0}
     - target: {fileID: 3775519909877211123, guid: af60fdcea5be1b34ea7408d002d00152,
         type: 3}
@@ -7274,6 +7274,12 @@ PrefabInstance:
       propertyPath: UBlue
       value: 
       objectReference: {fileID: -523502994256674753, guid: 532cba090bdd7734fb274ee6927f3bf5,
+        type: 3}
+    - target: {fileID: 6382301148395647405, guid: 1af6f15de1830ea4985ac7ce91375105,
+        type: 3}
+      propertyPath: CloudToNormalObj
+      value: 
+      objectReference: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
         type: 3}
     - target: {fileID: 6382301148395647406, guid: 1af6f15de1830ea4985ac7ce91375105,
         type: 3}
