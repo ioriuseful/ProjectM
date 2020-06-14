@@ -2691,6 +2691,12 @@ PrefabInstance:
       propertyPath: CS
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2873580388081674388, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
+        type: 3}
+      propertyPath: enemyDeathObj
+      value: 
+      objectReference: {fileID: 8522984589034868226, guid: 29434be1494f45d4491f8805e25ef719,
+        type: 3}
     - target: {fileID: 8242538305806346176, guid: 6a8c5f9ecc522e743a37587bd49dbc75,
         type: 3}
       propertyPath: m_Controller

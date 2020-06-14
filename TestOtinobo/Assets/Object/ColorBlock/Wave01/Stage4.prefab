@@ -2885,7 +2885,7 @@ MonoBehaviour:
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   ozyama: 0
   boundHeight: 5
-  enemyDeathObj: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 29434be1494f45d4491f8805e25ef719,
     type: 3}
   CS: 3
   playerjump: 0
@@ -3185,9 +3185,9 @@ MonoBehaviour:
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   ozyama: 0
   boundHeight: 5
-  enemyDeathObj: {fileID: 8522984589034868226, guid: dcfca43635227d046aea43b65785b5c9,
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
     type: 3}
-  CS: 1
+  CS: 2
   playerjump: 0
 --- !u!212 &7680693671584902468
 SpriteRenderer:
@@ -3536,7 +3536,7 @@ MonoBehaviour:
   EnemyDeadSE: {fileID: 8300000, guid: 919defd6e5d6f1c48ae2e416daa37c9d, type: 3}
   ozyama: 0
   boundHeight: 5
-  enemyDeathObj: {fileID: 8522984589034868226, guid: 71d600ce795f7754d8010e74ae266a61,
+  enemyDeathObj: {fileID: 8522984589034868226, guid: 29434be1494f45d4491f8805e25ef719,
     type: 3}
   CS: 3
   playerjump: 0
@@ -4090,6 +4090,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
+    - target: {fileID: 6058566292572666988, guid: 62fc1f5a12d18954cb36ac36984f9c30,
+        type: 3}
+      propertyPath: m_Name
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 6058566292572666985, guid: 62fc1f5a12d18954cb36ac36984f9c30,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4145,11 +4150,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6058566292572666988, guid: 62fc1f5a12d18954cb36ac36984f9c30,
-        type: 3}
-      propertyPath: m_Name
-      value: Item
-      objectReference: {fileID: 0}
     - target: {fileID: 6058566292572666987, guid: 62fc1f5a12d18954cb36ac36984f9c30,
         type: 3}
       propertyPath: boundCount
@@ -4170,6 +4170,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
+    - target: {fileID: 6058566292572666988, guid: 62fc1f5a12d18954cb36ac36984f9c30,
+        type: 3}
+      propertyPath: m_Name
+      value: Item (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6058566292572666985, guid: 62fc1f5a12d18954cb36ac36984f9c30,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4225,11 +4230,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6058566292572666988, guid: 62fc1f5a12d18954cb36ac36984f9c30,
-        type: 3}
-      propertyPath: m_Name
-      value: Item (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6058566292572666987, guid: 62fc1f5a12d18954cb36ac36984f9c30,
         type: 3}
       propertyPath: boundCount
@@ -4250,6 +4250,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
+    - target: {fileID: 1116866050855448357, guid: e93a7d6f19b27314bb6e81f145ee8ae5,
+        type: 3}
+      propertyPath: m_Name
+      value: WColorBlock(Blue)
+      objectReference: {fileID: 0}
     - target: {fileID: 1116866050855446745, guid: e93a7d6f19b27314bb6e81f145ee8ae5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4305,11 +4310,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1116866050855448357, guid: e93a7d6f19b27314bb6e81f145ee8ae5,
-        type: 3}
-      propertyPath: m_Name
-      value: WColorBlock(Blue)
-      objectReference: {fileID: 0}
     - target: {fileID: 1116866050855448358, guid: e93a7d6f19b27314bb6e81f145ee8ae5,
         type: 3}
       propertyPath: Xspeed
@@ -4330,6 +4330,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
+    - target: {fileID: 8394191245007429558, guid: 0293e4ddf890b124ab248a5057c2d1fd,
+        type: 3}
+      propertyPath: m_Name
+      value: HColorBlock(Red)
+      objectReference: {fileID: 0}
     - target: {fileID: 8394191245007427658, guid: 0293e4ddf890b124ab248a5057c2d1fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4390,11 +4395,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 8394191245007429558, guid: 0293e4ddf890b124ab248a5057c2d1fd,
-        type: 3}
-      propertyPath: m_Name
-      value: HColorBlock(Red)
-      objectReference: {fileID: 0}
     - target: {fileID: 8394191245007429557, guid: 0293e4ddf890b124ab248a5057c2d1fd,
         type: 3}
       propertyPath: Xspeed
@@ -4425,6 +4425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
+    - target: {fileID: 1116866050855448357, guid: 1a85c9ebbecbd4b4b8a71e1a43a7829b,
+        type: 3}
+      propertyPath: m_Name
+      value: WColorBlock(Green)
+      objectReference: {fileID: 0}
     - target: {fileID: 1116866050855446745, guid: 1a85c9ebbecbd4b4b8a71e1a43a7829b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4480,11 +4485,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1116866050855448357, guid: 1a85c9ebbecbd4b4b8a71e1a43a7829b,
-        type: 3}
-      propertyPath: m_Name
-      value: WColorBlock(Green)
-      objectReference: {fileID: 0}
     - target: {fileID: 1116866050855448358, guid: 1a85c9ebbecbd4b4b8a71e1a43a7829b,
         type: 3}
       propertyPath: Xspeed
@@ -4505,6 +4505,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
+    - target: {fileID: 8394191245007429558, guid: 1091c43277ad44b4488c169e1d3b9bf9,
+        type: 3}
+      propertyPath: m_Name
+      value: HColorBlock(Green)
+      objectReference: {fileID: 0}
     - target: {fileID: 8394191245007427658, guid: 1091c43277ad44b4488c169e1d3b9bf9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4565,11 +4570,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 8394191245007429558, guid: 1091c43277ad44b4488c169e1d3b9bf9,
-        type: 3}
-      propertyPath: m_Name
-      value: HColorBlock(Green)
-      objectReference: {fileID: 0}
     - target: {fileID: 8394191245007429557, guid: 1091c43277ad44b4488c169e1d3b9bf9,
         type: 3}
       propertyPath: Xspeed
@@ -4600,6 +4600,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6504590784188767817}
     m_Modifications:
+    - target: {fileID: 1116866050855448357, guid: fd57d4117251445408a60f5f3e8cef41,
+        type: 3}
+      propertyPath: m_Name
+      value: WColorBlock(Red)
+      objectReference: {fileID: 0}
     - target: {fileID: 1116866050855446745, guid: fd57d4117251445408a60f5f3e8cef41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4654,11 +4659,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1116866050855448357, guid: fd57d4117251445408a60f5f3e8cef41,
-        type: 3}
-      propertyPath: m_Name
-      value: WColorBlock(Red)
       objectReference: {fileID: 0}
     - target: {fileID: 1116866050855448358, guid: fd57d4117251445408a60f5f3e8cef41,
         type: 3}
