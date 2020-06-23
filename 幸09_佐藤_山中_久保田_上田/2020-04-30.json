@@ -1,0 +1,300 @@
+[
+    {
+        "client_msg_id": "f0089139-db9f-41b9-9b4f-13498536de43",
+        "type": "message",
+        "text": "金曜やで。ぼちぼち最新版UPしてアッと驚かせようぜ。",
+        "user": "UV6QJP4J3",
+        "ts": "1588262560.000800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nql",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "金曜やで。ぼちぼち最新版UPしてアッと驚かせようぜ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6E30B707-61A8-4063-B465-85B9D5C951C6",
+        "type": "message",
+        "text": "スケジュールの都合で、プログラム的にキリのいいタイミングが5\/6頃になってしまうのですがよろしいですか？\n多少キリは悪いですが最新版をあげろとのことでしたら現時点でのバージョンを上げさせていただく準備はしています。\n",
+        "user": "U010E4QPX5E",
+        "ts": "1588294994.005300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kbbdz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "スケジュールの都合で、プログラム的にキリのいいタイミングが5\/6頃になってしまうのですがよろしいですか？\n多少キリは悪いですが最新版をあげろとのことでしたら現時点でのバージョンを上げさせていただく準備はしています。\n"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "174fbb1b-6894-4797-a98f-0968bb2731d1",
+        "type": "message",
+        "text": "それは遠すぎるな、駄目。そのマイルストーンを達成できなかったらどうする？だれが責任とる？リスケできるのか？今の状況で判断できないか？\nとまあ、こんな感じで、プロジェクトの報告を細かくUPできないはチームとしてリスクしかないし、出来るやつは細かく報告している（他チーム参照）。\n定期的に進捗を見せれないと仕事では評価されないから意識してください。では、それなりの報告を最速でよろしく。",
+        "user": "UV6QJP4J3",
+        "ts": "1588311041.009600",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=eyU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それは遠すぎるな、駄目。そのマイルストーンを達成できなかったらどうする？だれが責任とる？リスケできるのか？今の状況で判断できないか？\nとまあ、こんな感じで、プロジェクトの報告を細かくUPできないはチームとしてリスクしかないし、出来るやつは細かく報告している（他チーム参照）。\n定期的に進捗を見せれないと仕事では評価されないから意識してください。では、それなりの報告を最速でよろしく。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "取りあえず現時点での最新の統合状態です。",
+        "files": [
+            {
+                "id": "F013L011AF2",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ErI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "取りあえず現時点での最新の統合状態です。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U010E4QPX5E",
+        "display_as_bot": false,
+        "ts": "1588312450.010300",
+        "client_msg_id": "b5701e50-32ce-4dad-9d19-4c9ddff060ad"
+    },
+    {
+        "client_msg_id": "cf2574ec-cd1d-43ab-9ec5-70b3f115db34",
+        "type": "message",
+        "text": "今後もっと細かく定期的に報告できるようにしたいと思います。",
+        "user": "U010E4QPX5E",
+        "ts": "1588312514.011500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BAUUk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今後もっと細かく定期的に報告できるようにしたいと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dfa44d7d-596e-4615-aa61-0784920b3559",
+        "type": "message",
+        "text": "今回の件本当にすいませんでした。\n次からは月水金に定期会議を行い、自分たちの進捗をまとめたメモ帳をアップして報告をするという形でやっていきます。",
+        "user": "U0107ULV1E1",
+        "ts": "1588312599.012000",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vvN5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今回の件本当にすいませんでした。\n次からは月水金に定期会議を行い、自分たちの進捗をまとめたメモ帳をアップして報告をするという形でやっていきます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2a96f077-64f8-4e3b-b837-c1541bb21f4c",
+        "type": "message",
+        "text": "明日に進捗報告の会議を行う予定でしたので、昨日今日で作業がどこまで進み、月曜日までにどの作業を行うのかをまとめたメモ帳をアップします。",
+        "user": "U0107ULV1E1",
+        "ts": "1588314810.015800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SKl3V",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "明日に進捗報告の会議を行う予定でしたので、昨日今日で作業がどこまで進み、月曜日までにどの作業を行うのかをまとめたメモ帳をアップします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "28911448-dff0-4af9-82ae-c433b33185e9",
+        "type": "message",
+        "text": "最新の結合もありがたいが、報告できる形した方がいいので、２４時間以内にEXE付きで再度投稿してください",
+        "user": "UV6QJP4J3",
+        "ts": "1588316086.017200",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TR2UU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最新の結合もありがたいが、報告できる形した方がいいので、２４時間以内にEXE付きで再度投稿してください"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

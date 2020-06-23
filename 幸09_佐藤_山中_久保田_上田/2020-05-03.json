@@ -1,0 +1,186 @@
+[
+    {
+        "client_msg_id": "47211587-c3de-45ee-b2fb-b1f3db3532cd",
+        "type": "message",
+        "text": "はい、報告読みました。まずテキストはスニペットで報告してください。そっちのほうが読みやすいからね。\n率直にいえばプログラマ陣の進捗が心配ですね。現状の３倍ほどのクオリティを想定していました。これだけ遅い理由はなんですか？",
+        "user": "UV6QJP4J3",
+        "ts": "1588560863.003100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "geXJ8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はい、報告読みました。まずテキストはスニペットで報告してください。そっちのほうが読みやすいからね。\n率直にいえばプログラマ陣の進捗が心配ですね。現状の３倍ほどのクオリティを想定していました。これだけ遅い理由はなんですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F012ZC9ULCB",
+                "created": 1588561196,
+                "timestamp": 1588561196,
+                "name": "0502____________.txt",
+                "title": "0502進捗会議",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "UV6QJP4J3",
+                "editable": true,
+                "size": 1058,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F012ZC9ULCB\/0502____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F012ZC9ULCB\/download\/0502____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/UV6QJP4J3\/F012ZC9ULCB\/0502____________.txt",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F012ZC9ULCB-e82c7b38ac",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/UV6QJP4J3\/F012ZC9ULCB\/0502____________.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "UV6QJP4J3",
+        "display_as_bot": false,
+        "ts": "1588561197.003200",
+        "client_msg_id": "d544ce1a-7225-4edd-bfc7-5a082a26c902"
+    },
+    {
+        "client_msg_id": "dd6862e8-c5d7-42b8-b98b-87dcef3b3d35",
+        "type": "message",
+        "text": "目標や機能性を重視するあまり全体的な作業スピードが遅くなってしまい形にするのが遅れてしまいました。\n形にすることを最優先しなくてはいけないのに、作業が遅れてしまい申しわけありません。",
+        "user": "U010E4QPX5E",
+        "ts": "1588573278.007100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ikl1j",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "目標や機能性を重視するあまり全体的な作業スピードが遅くなってしまい形にするのが遅れてしまいました。\n形にすることを最優先しなくてはいけないのに、作業が遅れてしまい申しわけありません。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "最新版のプレイ動画と進捗報告です。\n必要なシステムが実装されているので報告書にも記載してある通り、6日までにレベルデザインをしてある程度まとまったゲームとしてプレイ動画を提出しようと思います。",
+        "files": [
+            {
+                "id": "F012ZAH9U6N",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "U=O",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最新版のプレイ動画と進捗報告です。\n必要なシステムが実装されているので報告書にも記載してある通り、6日までにレベルデザインをしてある程度まとまったゲームとしてプレイ動画を提出しようと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1588573313.007200",
+        "client_msg_id": "23dfcc0c-7a7e-4c50-b12d-9d9130d93096"
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F013P5RCYD6",
+                "created": 1588573350,
+                "timestamp": 1588573350,
+                "name": "0504____________.txt",
+                "title": "0504進捗報告",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0107ULV1E1",
+                "editable": true,
+                "size": 713,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013P5RCYD6\/0504____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013P5RCYD6\/download\/0504____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013P5RCYD6\/0504____________.txt",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F013P5RCYD6-cc7dd40f08",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013P5RCYD6\/0504____________.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1588573351.007500",
+        "client_msg_id": "bf0b1487-9abb-4ed8-812b-0f256a37d814"
+    }
+]

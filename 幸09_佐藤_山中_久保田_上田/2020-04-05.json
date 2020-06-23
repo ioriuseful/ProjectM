@@ -1,0 +1,152 @@
+[
+    {
+        "client_msg_id": "5EDABB89-F17F-47A6-993A-E899172B6E52",
+        "type": "message",
+        "text": "今プロトタイプの統合中なんですが、統合の際に少々ミスしまして、1部データが壊れてしまい、それを直すのに少し時間がかかってます。\nあと、ゲームの肝になる処理のブラッシュアップをやっておりまして、一応今日明日までには完成の予定ですが、今は完成出来てないので完成でき次第改めて報告させていただきます。",
+        "user": "U010E4QPX5E",
+        "ts": "1586088244.006200",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "E1F",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今プロトタイプの統合中なんですが、統合の際に少々ミスしまして、1部データが壊れてしまい、それを直すのに少し時間がかかってます。\nあと、ゲームの肝になる処理のブラッシュアップをやっておりまして、一応今日明日までには完成の予定ですが、今は完成出来てないので完成でき次第改めて報告させていただきます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6687387C-4048-4CE0-8F40-A9C311441D85",
+        "type": "message",
+        "text": "それと、返事に遅れてしまい申し訳ありません。",
+        "user": "U010E4QPX5E",
+        "ts": "1586088266.006900",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wPajx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それと、返事に遅れてしまい申し訳ありません。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3a7653b0-34dc-4556-8fd0-c62c22d201b7",
+        "type": "message",
+        "text": "了解。チームslackでみつに連携してると思うが、ここでも状況報告はするように。\n結合のミスは、エンジニア間の細かな連携不足です。３年目でしていい言い訳ではないので、回避策を十分に検討し、プロトと同じタイミングでここに列挙してください。では頑張って。",
+        "user": "UV6QJP4J3",
+        "ts": "1586091152.009400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Fe5yR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "了解。チームslackでみつに連携してると思うが、ここでも状況報告はするように。\n結合のミスは、エンジニア間の細かな連携不足です。３年目でしていい言い訳ではないので、回避策を十分に検討し、プロトと同じタイミングでここに列挙してください。では頑張って。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "プロト版です。必要な要素はひとまず全て入っています。\n今回結合のミスをなくすために、\n・今後変更箇所の細かな情報の共有\n・ソースツリーのさらなる活用\n・現在行っている大雑把なタイミングでの統合を無くす\n・細かく変更するたびに統合\n・さらなるメンバー間の連携\n等を行っていき今後同じようなことがないように遵守していきたいと考えております。",
+        "files": [
+            {
+                "id": "F0115C0Q534",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tG\/yE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "プロト版です。必要な要素はひとまず全て入っています。\n今回結合のミスをなくすために、\n・今後変更箇所の細かな情報の共有\n・ソースツリーのさらなる活用\n・現在行っている大雑把なタイミングでの統合を無くす\n・細かく変更するたびに統合\n・さらなるメンバー間の連携\n等を行っていき今後同じようなことがないように遵守していきたいと考えております。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U010E4QPX5E",
+        "display_as_bot": false,
+        "ts": "1586151635.014800",
+        "edited": {
+            "user": "U010E4QPX5E",
+            "ts": "1586151669.000000"
+        },
+        "client_msg_id": "484d7534-d183-4c42-9091-257a0d93fe6f"
+    }
+]

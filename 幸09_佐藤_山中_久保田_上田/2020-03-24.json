@@ -1,0 +1,40 @@
+[
+    {
+        "client_msg_id": "6608fb27-07af-4345-846a-e14bef97cb5c",
+        "type": "message",
+        "text": "そろそろ次を出そうぜー",
+        "user": "UV6QJP4J3",
+        "ts": "1585099681.000200",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZK23a",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そろそろ次を出そうぜー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

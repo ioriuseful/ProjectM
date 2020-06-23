@@ -1,0 +1,285 @@
+[
+    {
+        "client_msg_id": "2315b227-ce90-410a-86da-9b955cec39b9",
+        "type": "message",
+        "text": "遅くなってすいません。\n応募アピール文です",
+        "user": "U0107ULV1E1",
+        "ts": "1592044900.005700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hq3ow",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "遅くなってすいません。\n応募アピール文です"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F015CC07SCA",
+                "created": 1592044916,
+                "timestamp": 1592044916,
+                "name": "無題",
+                "title": "無題",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0107ULV1E1",
+                "editable": true,
+                "size": 479,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F015CC07SCA\/______?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F015CC07SCA\/download\/______?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F015CC07SCA\/______",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F015CC07SCA-05f3d8748a",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F015CC07SCA\/______\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1592044917.005800",
+        "client_msg_id": "97cfbe32-1988-4fb9-bf78-ccae8bbc9ae0"
+    },
+    {
+        "client_msg_id": "c535e822-a8f2-402b-8eef-7303beead9f1",
+        "type": "message",
+        "text": "163文字です",
+        "user": "U0107ULV1E1",
+        "ts": "1592044987.006400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9jo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "163文字です"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "869056d3-23fe-4a27-849c-fb5db79d7df1",
+        "type": "message",
+        "text": "色というシステムを推すために、「リスクリターンのヒップドロップ」システムを削ってしまったのですが一緒に書いてあった方が良いのでしょうか？",
+        "user": "U0107ULV1E1",
+        "ts": "1592044996.006600",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xjaF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色というシステムを推すために、「リスクリターンのヒップドロップ」システムを削ってしまったのですが一緒に書いてあった方が良いのでしょうか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "35a81ab0-97bc-4848-b04a-e3efb66ca017",
+        "type": "message",
+        "text": "ゲーム紹介ではなくて、アピールやで。もっと、ウリをアピールしようぜ。",
+        "user": "UV6QJP4J3",
+        "ts": "1592045152.007100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sb6DT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ゲーム紹介ではなくて、アピールやで。もっと、ウリをアピールしようぜ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "夜遅くにすいません。\nヒップドロップを連続で決めて一気に前に進むというのをウリに書いてみました。\n時数は188文字でした。",
+        "files": [
+            {
+                "id": "F015B6FA0TX",
+                "created": 1592067999,
+                "timestamp": 1592067999,
+                "name": "無題",
+                "title": "無題",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0107ULV1E1",
+                "editable": true,
+                "size": 552,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F015B6FA0TX\/______?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F015B6FA0TX\/download\/______?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F015B6FA0TX\/______",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F015B6FA0TX-dd9ab12a58",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F015B6FA0TX\/______\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0nf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "夜遅くにすいません。\nヒップドロップを連続で決めて一気に前に進むというのをウリに書いてみました。\n時数は188文字でした。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1592068000.007200",
+        "client_msg_id": "a543c6c1-33ef-487d-bbd6-fa95ec1ed4c2"
+    },
+    {
+        "client_msg_id": "e2271397-3798-48c9-a47f-e6dbee026d9a",
+        "type": "message",
+        "text": "アピールはそれでいきましょう！",
+        "user": "UV6QJP4J3",
+        "ts": "1592071965.007700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0Y0Jn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "アピールはそれでいきましょう！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

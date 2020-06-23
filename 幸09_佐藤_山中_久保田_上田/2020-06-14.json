@@ -1,0 +1,646 @@
+[
+    {
+        "client_msg_id": "c2b0943c-a526-4a5a-b11e-89ff62de0d92",
+        "type": "message",
+        "text": "ゲームURL\n<https:\/\/17.gigafile.nu\/0714-d9831c5527ebb2691316844332d773855>",
+        "user": "U0107ULV1E1",
+        "ts": "1592119145.008000",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "GigaFile（ギガファイル）便",
+                "title_link": "https:\/\/17.gigafile.nu\/0714-d9831c5527ebb2691316844332d773855",
+                "text": "無料大容量ファイル転送サービスGigaFile（ギガファイル）便！「１週間～６０日」選べる５種類のファイルの保持期限に加え、１ファイル200Gまでアップロード、共有可能！もちろん容量無制限でアンチウイルス装備。会員登録も不要です。",
+                "fallback": "GigaFile（ギガファイル）便",
+                "thumb_url": "https:\/\/src.gigafile.nu\/images\/og_new_200_60.png",
+                "from_url": "https:\/\/17.gigafile.nu\/0714-d9831c5527ebb2691316844332d773855",
+                "thumb_width": 250,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/17.gigafile.nu\/favicon.ico",
+                "service_name": "17.gigafile.nu",
+                "id": 1,
+                "original_url": "https:\/\/17.gigafile.nu\/0714-d9831c5527ebb2691316844332d773855"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UpFl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ゲームURL\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/17.gigafile.nu\/0714-d9831c5527ebb2691316844332d773855"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "35c0e370-edae-4618-9f90-c71b98bcd498",
+        "type": "message",
+        "text": "動画URL\n<https:\/\/17.gigafile.nu\/0714-ba2f7b87548f6187317e36e5c84d92d72>",
+        "user": "U0107ULV1E1",
+        "ts": "1592119171.008400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "GigaFile（ギガファイル）便",
+                "title_link": "https:\/\/17.gigafile.nu\/0714-ba2f7b87548f6187317e36e5c84d92d72",
+                "text": "無料大容量ファイル転送サービスGigaFile（ギガファイル）便！「１週間～６０日」選べる５種類のファイルの保持期限に加え、１ファイル200Gまでアップロード、共有可能！もちろん容量無制限でアンチウイルス装備。会員登録も不要です。",
+                "fallback": "GigaFile（ギガファイル）便",
+                "thumb_url": "https:\/\/src.gigafile.nu\/images\/og_new_200_60.png",
+                "from_url": "https:\/\/17.gigafile.nu\/0714-ba2f7b87548f6187317e36e5c84d92d72",
+                "thumb_width": 250,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/17.gigafile.nu\/favicon.ico",
+                "service_name": "17.gigafile.nu",
+                "id": 1,
+                "original_url": "https:\/\/17.gigafile.nu\/0714-ba2f7b87548f6187317e36e5c84d92d72"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iK+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "動画URL\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/17.gigafile.nu\/0714-ba2f7b87548f6187317e36e5c84d92d72"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "24333f43-a323-42ce-b3cb-154ea000c7cb",
+        "type": "message",
+        "text": "提出証拠スクショ",
+        "user": "U0107ULV1E1",
+        "ts": "1592119215.008700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hHULd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "提出証拠スクショ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F014Y5BKTT9",
+                "created": 1592119220,
+                "timestamp": 1592119220,
+                "name": "マスターアップ.png",
+                "title": "マスターアップ.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U0107ULV1E1",
+                "editable": false,
+                "size": 293779,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F014Y5BKTT9\/_____________________.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F014Y5BKTT9\/download\/_____________________.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________64.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________80.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________360.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_360_w": 360,
+                "thumb_360_h": 203,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________480.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_480_w": 480,
+                "thumb_480_h": 270,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________160.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________720.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_720_w": 720,
+                "thumb_720_h": 405,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________800.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_800_w": 800,
+                "thumb_800_h": 450,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________960.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_960_w": 960,
+                "thumb_960_h": 540,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F014Y5BKTT9-6d4ab58236\/______________________1024.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 576,
+                "original_w": 1920,
+                "original_h": 1080,
+                "thumb_tiny": "AwAbADC7cS+SqkLuJOMZxUP2p\/8AniPzP+FS3IyYf+ugqbNPQWpU+0v\/AM8R\/wB9f\/WpPtbf88f1P+FXMmjNF12Cz7lP7W3\/ADw\/U\/4VPA4mj3ldvJGM1IQc7l696htP9Q3+8386AFujgRnB4cZwOlIJwMfNx7qamY8UKeBQMiNwMccn6Gk+08jAGO\/X\/Cp6KQEJuF3LhuO42mktc+Q2QRlm6\/WpqXoKYH\/\/2Q==",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F014Y5BKTT9\/_____________________.png",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F014Y5BKTT9-7a9e75756f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": false,
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1592119224.008800"
+    },
+    {
+        "client_msg_id": "fc704dba-42ed-4dbb-b12a-266d0412270b",
+        "type": "message",
+        "text": "クラスルームにも提出しておきました",
+        "user": "U0107ULV1E1",
+        "ts": "1592119876.009500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SzENw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "クラスルームにも提出しておきました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b546fac0-aa52-4a1f-a98a-2608f45e2dc8",
+        "type": "message",
+        "text": "いい意気込みのサインやな！",
+        "user": "UV6QJP4J3",
+        "ts": "1592125897.009800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "81Q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いい意気込みのサインやな！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "muscle",
+                "users": [
+                    "U0107ULV1E1"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c0c064a6-064d-4d19-a3b3-ff2e871a234c",
+        "type": "message",
+        "text": "URLも確認した！おつかれさん！",
+        "user": "UV6QJP4J3",
+        "ts": "1592126177.011300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Uxht",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "URLも確認した！おつかれさん！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "602f2178-c720-4155-9f48-e7df0cf8446d",
+        "type": "message",
+        "text": "もっと成長したいと思える制作でしたｗ",
+        "user": "U0107ULV1E1",
+        "ts": "1592126265.012300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Kv\/uM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もっと成長したいと思える制作でしたｗ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8add251b-abe2-4eb4-8b4e-4563db3e7dc2",
+        "type": "message",
+        "text": "確認ありがとうございます\nお疲れ様でした！",
+        "user": "U0107ULV1E1",
+        "ts": "1592126309.013100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9wzy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "確認ありがとうございます\nお疲れ様でした！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "UV6QJP4J3",
+                    "U010E4QPX5E",
+                    "U010G54RNHL"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "92e48b45-a2f0-42de-a326-3f2970a977c2",
+        "type": "message",
+        "text": "色々ありましたが、失敗を生かそうと思えた制作でした。\nプランナーさんや、他のプログラマーさんに感謝してもしきれません。\n先生も数か月間色々お世話になりました、本当にありがとうございます。そしてお疲れ様でした。",
+        "user": "U010E4QPX5E",
+        "ts": "1592127570.015800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sj+m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色々ありましたが、失敗を生かそうと思えた制作でした。\nプランナーさんや、他のプログラマーさんに感謝してもしきれません。\n先生も数か月間色々お世話になりました、本当にありがとうございます。そしてお疲れ様でした。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "ゲーミングインコ",
+                "users": [
+                    "U0107ULV1E1",
+                    "U010G54RNHL"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "87b83b3c-e0d5-4b79-93ea-9cb9fa19bd7a",
+        "type": "message",
+        "text": "いえいえ、なにかを得たなら良かったです。ものづくりは絶対に作るという強い推進力が大事なんで、そこは養っていってくださいね。",
+        "user": "UV6QJP4J3",
+        "ts": "1592127703.017400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "C4IMb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いえいえ、なにかを得たなら良かったです。ものづくりは絶対に作るという強い推進力が大事なんで、そこは養っていってくださいね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "ゲーミングインコ",
+                "users": [
+                    "U010E4QPX5E",
+                    "U0107ULV1E1"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "C61B5DD5-540C-4581-858B-5EBF6ED2D5A2",
+        "type": "message",
+        "text": "@今回の制作であまり目立った仕事や実装してボツになったものやミスが多く、今までの制作と違い作る上での自分にかかる責任や仕事の速さと丁寧さが必要かがわかった制作でした。他のメンバーには迷惑をたくさんかけたと思いますが今回の制作は必ず自分の糧になる制作だと思いました。数ヶ月ありがとうございました。助かりました、(何か機会があれば)次もよろしく。",
+        "user": "UV94GN334",
+        "ts": "1592128225.024500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "7b53b6fd4acf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-06-14\/1168237044151_7b53b6fd4acfad1767b6_72.png",
+            "first_name": "久保田将崇",
+            "real_name": "久保田将崇",
+            "display_name": "LE3A_12_久保田将崇_ｸﾎﾞﾀﾏｻﾀｶ",
+            "team": "TV4F5TS92",
+            "name": "masa.fromphone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cPu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@今回の制作であまり目立った仕事や実装してボツになったものやミスが多く、今までの制作と違い作る上での自分にかかる責任や仕事の速さと丁寧さが必要かがわかった制作でした。他のメンバーには迷惑をたくさんかけたと思いますが今回の制作は必ず自分の糧になる制作だと思いました。数ヶ月ありがとうございました。助かりました、(何か機会があれば)次もよろしく。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "ゲーミングインコ",
+                "users": [
+                    "U0107ULV1E1",
+                    "U010E4QPX5E",
+                    "U010G54RNHL"
+                ],
+                "count": 3
+            },
+            {
+                "name": "ぎっちょ",
+                "users": [
+                    "UV6QJP4J3",
+                    "U0107ULV1E1"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2c6abd91-3ca2-430e-ac95-5502b42e8ace",
+        "type": "message",
+        "text": "今回の制作で特に特に山中君とルイに仕事が片寄ってたくさん苦労させてしまったと思いました。少しでも二人に負担が増えすぎないよう自分の作業速度をもっと上げてカバー出来るようになりたいと思う事と、振り替えってみるとプログラムに似たような処理が多くクラス化しておけば作業速度をもっと上げれたのではと思う制作でした。この数ヵ月間皆さん本当にお疲れ様でした。そして、幸田先生方にはたくさんあるチームを日夜対応していただきありがとうございました。",
+        "user": "U010G54RNHL",
+        "ts": "1592129357.042400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "11115588f94b",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-15\/1149765861680_11115588f94bb436d026_72.jpg",
+            "first_name": "上田涼太",
+            "real_name": "上田涼太",
+            "display_name": "LE3A_36_上田涼太_ｳｴﾀﾞ ﾘｮｳﾀ",
+            "team": "TV4F5TS92",
+            "name": "mr.335186",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8o6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今回の制作で特に特に山中君とルイに仕事が片寄ってたくさん苦労させてしまったと思いました。少しでも二人に負担が増えすぎないよう自分の作業速度をもっと上げてカバー出来るようになりたいと思う事と、振り替えってみるとプログラムに似たような処理が多くクラス化しておけば作業速度をもっと上げれたのではと思う制作でした。この数ヵ月間皆さん本当にお疲れ様でした。そして、幸田先生方にはたくさんあるチームを日夜対応していただきありがとうございました。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "ゲーミングインコ",
+                "users": [
+                    "U0107ULV1E1",
+                    "U010E4QPX5E",
+                    "UV94GN334"
+                ],
+                "count": 3
+            },
+            {
+                "name": "ぎっちょ",
+                "users": [
+                    "UV6QJP4J3",
+                    "U0107ULV1E1",
+                    "UV94GN334"
+                ],
+                "count": 3
+            },
+            {
+                "name": "+1",
+                "users": [
+                    "UV6QJP4J3",
+                    "U0107ULV1E1",
+                    "UV94GN334"
+                ],
+                "count": 3
+            }
+        ]
+    }
+]

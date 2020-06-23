@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F01330CHRPG",
+                "created": 1588920679,
+                "timestamp": 1588920679,
+                "name": "0508進捗報告",
+                "title": "0508進捗報告",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0107ULV1E1",
+                "editable": true,
+                "size": 553,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F01330CHRPG\/0508____________?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F01330CHRPG\/download\/0508____________?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F01330CHRPG\/0508____________",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F01330CHRPG-0cccf453cd",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F01330CHRPG\/0508____________\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1588920680.012000",
+        "client_msg_id": "0f48e235-456c-4f97-84e7-0216b21fa484"
+    }
+]

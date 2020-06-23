@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F013H0506UV",
+                "created": 1589344752,
+                "timestamp": 1589344752,
+                "name": "0513進捗会議",
+                "title": "0513進捗会議",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0107ULV1E1",
+                "editable": true,
+                "size": 760,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013H0506UV\/0513____________?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013H0506UV\/download\/0513____________?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013H0506UV\/0513____________",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F013H0506UV-95fb91bd80",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013H0506UV\/0513____________\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1589344753.003500",
+        "client_msg_id": "9a36c534-0f00-4ffb-8ed8-27b35d87356a"
+    }
+]

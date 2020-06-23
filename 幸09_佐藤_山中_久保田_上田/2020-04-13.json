@@ -1,0 +1,428 @@
+[
+    {
+        "client_msg_id": "02ec394f-4c60-4d2d-b02d-28ef18a9162d",
+        "type": "message",
+        "text": "さて、そろそろ１週間程度の進捗をアップしましょう",
+        "user": "UV6QJP4J3",
+        "ts": "1586773568.000400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "64J9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "さて、そろそろ１週間程度の進捗をアップしましょう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8b1d85b7-f532-48b4-b771-08f8e81c8bae",
+        "type": "message",
+        "text": "<@U0107ULV1E1> チームのスケジュールをスプレッドシートにアップしてみてください",
+        "user": "UV6QJP4J3",
+        "ts": "1586773792.000900",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wvl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0107ULV1E1"
+                            },
+                            {
+                                "type": "text",
+                                "text": " チームのスケジュールをスプレッドシートにアップしてみてください"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8170cc59-2af0-4f1a-ba1c-b9d20ecb8555",
+        "type": "message",
+        "text": "この一週間、前回の企画を改善できないかと班員間で相談していたのですが、楽しんでほしい場面とゲームの目的や手段が中々一致せずこれ以上この企画を広げることができないという理由で一旦見送って、来週までに違う企画を考えるという結論になったのですが、よろしいでしょうか。",
+        "user": "U0107ULV1E1",
+        "ts": "1586775564.001500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OSWeZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "この一週間、前回の企画を改善できないかと班員間で相談していたのですが、楽しんでほしい場面とゲームの目的や手段が中々一致せずこれ以上この企画を広げることができないという理由で一旦見送って、来週までに違う企画を考えるという結論になったのですが、よろしいでしょうか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6f113e46-ee45-44e0-8815-70a424629f74",
+        "type": "message",
+        "text": "プログラマーさん達には「雨」という企画のモチーフは決まっているので自分が企画を考えているのと並行してUnityで背景の雨の描画や蒸気のジュワッとした演出などを勉強しようと今はなっています。",
+        "user": "U0107ULV1E1",
+        "ts": "1586775589.001700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NL7B",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "プログラマーさん達には「雨」という企画のモチーフは決まっているので自分が企画を考えているのと並行してUnityで背景の雨の描画や蒸気のジュワッとした演出などを勉強しようと今はなっています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "832b9c68-5462-4bf2-bdf4-19ef5e54c27c",
+        "type": "message",
+        "text": "まじか。それを報告無しで進めてるのはダメすぎるぞ。この後最速でZOOM会議やろうか。夜なら出来るか？例えば11時とか。",
+        "user": "UV6QJP4J3",
+        "ts": "1586779758.003500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kkhQL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まじか。それを報告無しで進めてるのはダメすぎるぞ。この後最速でZOOM会議やろうか。夜なら出来るか？例えば11時とか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "adf3b561-3cc2-4900-a636-8a4b1d5dd027",
+        "type": "message",
+        "text": "すいませんでした\n自分は何時からでも大丈夫です",
+        "user": "U0107ULV1E1",
+        "ts": "1586779866.004000",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XMC5k",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すいませんでした\n自分は何時からでも大丈夫です"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "637c1c45-0584-4f21-823e-5e0e1cee9e93",
+        "type": "message",
+        "text": "そっちのSlackで時間を調整して、結果をここにポストしてくれ。よろしく！",
+        "user": "UV6QJP4J3",
+        "ts": "1586779931.004600",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1jNi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そっちのSlackで時間を調整して、結果をここにポストしてくれ。よろしく！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "27e9c51a-0001-4739-bbf9-afa5aedd388a",
+        "type": "message",
+        "text": "了解です",
+        "user": "U0107ULV1E1",
+        "ts": "1586779947.004800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e=o",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "了解です"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "40dd887d-fe5c-4455-856e-e8cf11662cc3",
+        "type": "message",
+        "text": "班員全員が集まれるのが明後日(4\/15)になってしまうのですが、よろしいでしょうか",
+        "user": "U0107ULV1E1",
+        "ts": "1586781972.006100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U0107ULV1E1",
+            "ts": "1586784607.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vH\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "班員全員が集まれるのが明後日(4\/15)になってしまうのですが、よろしいでしょうか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d59dabac-a8a2-46a2-9812-2010aad65ade",
+        "type": "message",
+        "text": "ちなみに夜も集まれないのはどうして？\n11時から行いますので、参加できるだけ参加してください。参加しない場合は、決定した事項に従うこと。",
+        "user": "UV6QJP4J3",
+        "ts": "1586785144.007600",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "D8gFi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに夜も集まれないのはどうして？\n11時から行いますので、参加できるだけ参加してください。参加しない場合は、決定した事項に従うこと。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4a1792e7-997b-4d45-9c9f-137038d71c7c",
+        "type": "message",
+        "text": "<https:\/\/zoom.us\/j\/95948128287?pwd=ZUVLbi9xbzBadWZ4RDAvNlhuN3dIdz09>",
+        "user": "UV6QJP4J3",
+        "ts": "1586785176.007800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2s5jK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/zoom.us\/j\/95948128287?pwd=ZUVLbi9xbzBadWZ4RDAvNlhuN3dIdz09"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

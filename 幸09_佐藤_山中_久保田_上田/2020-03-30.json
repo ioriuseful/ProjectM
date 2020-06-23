@@ -1,0 +1,154 @@
+[
+    {
+        "client_msg_id": "b816341d-044e-48b5-9e5f-ef1047f6c5c0",
+        "type": "message",
+        "text": "このシステムで、どんな面白シーンを想定してます？\nそのシーンがプログラマに共有されないと、面白いプロト作れないよ。ただ機能が実装されたものが作られる。",
+        "user": "UV6QJP4J3",
+        "ts": "1585557411.001500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fJnr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "このシステムで、どんな面白シーンを想定してます？\nそのシーンがプログラマに共有されないと、面白いプロト作れないよ。ただ機能が実装されたものが作られる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6a3eaabf-a539-46a1-95eb-c69f1419161f",
+        "type": "message",
+        "text": "とはいえ、面白さが言葉にできないなら、一度プロトを作ってみよう。Aクラスが3人もいてるから大丈夫でしょう。",
+        "user": "UV6QJP4J3",
+        "ts": "1585557458.002300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MgR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とはいえ、面白さが言葉にできないなら、一度プロトを作ってみよう。Aクラスが3人もいてるから大丈夫でしょう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ED2C1F7B-EEC3-43FA-A101-900438C1A588",
+        "type": "message",
+        "text": "雨を取りに行くか、敵を避けて先へ進むかのジレンマと大雨を降らせた時のジレンマから解放されて一気に昇る時を楽しんで欲しいシーンと考えています。",
+        "user": "U0107ULV1E1",
+        "ts": "1585606728.005100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fL2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "雨を取りに行くか、敵を避けて先へ進むかのジレンマと大雨を降らせた時のジレンマから解放されて一気に昇る時を楽しんで欲しいシーンと考えています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0c2fb40c-64b8-4f7b-81dc-2713b9af6fe6",
+        "type": "message",
+        "text": "ジレンマの根拠は？\n達成感、緊張感、試行錯誤、ジレンマ、といった言葉は便利のようで、実は何も決まってないとも判断できる。これは去年も話したよな。プレイヤーのつもりになって、ジレンマの根拠を具体的に示さないといけない。とはいえ、これ以上は話が進展しなさそうだし、まずは作ってみて。",
+        "user": "UV6QJP4J3",
+        "ts": "1585614236.009200",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZR+I2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ジレンマの根拠は？\n達成感、緊張感、試行錯誤、ジレンマ、といった言葉は便利のようで、実は何も決まってないとも判断できる。これは去年も話したよな。プレイヤーのつもりになって、ジレンマの根拠を具体的に示さないといけない。とはいえ、これ以上は話が進展しなさそうだし、まずは作ってみて。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

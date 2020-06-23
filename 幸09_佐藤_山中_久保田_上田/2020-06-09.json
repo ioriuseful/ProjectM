@@ -1,0 +1,321 @@
+[
+    {
+        "client_msg_id": "f0d54913-b305-4e57-b2f1-801252f4194b",
+        "type": "message",
+        "text": "最初のチュートリアル、ジャンプ押しても無反応が駄目。そこは飛べないみたいなリアクションが必要。",
+        "user": "UV6QJP4J3",
+        "ts": "1591752162.000200",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ww6Xw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最初のチュートリアル、ジャンプ押しても無反応が駄目。そこは飛べないみたいなリアクションが必要。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1591752162.000200",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1591752394.000300",
+        "reply_users": [
+            "U0107ULV1E1"
+        ],
+        "replies": [
+            {
+                "user": "U0107ULV1E1",
+                "ts": "1591752394.000300"
+            }
+        ],
+        "subscribed": true,
+        "last_read": "1591752394.000300"
+    },
+    {
+        "client_msg_id": "553ae491-037c-49fc-91d3-1e1eca8df6ba",
+        "type": "message",
+        "text": "了解です。\nありがとうございます！",
+        "user": "U0107ULV1E1",
+        "ts": "1591752394.000300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "95uhI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "了解です。\nありがとうございます！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1591752162.000200",
+        "parent_user_id": "UV6QJP4J3"
+    },
+    {
+        "client_msg_id": "a0c469e8-0104-43c8-8bb6-74de299b265e",
+        "type": "message",
+        "text": "ゲームとしては、かなりまとまってきたな。",
+        "user": "UV6QJP4J3",
+        "ts": "1591753047.000900",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0gd7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ゲームとしては、かなりまとまってきたな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f1ac16d2-b223-4a46-bc4a-17370696570c",
+        "type": "message",
+        "text": "ありがとうございます！\nプログラマーさんがたくさん協力してくれたおかげです",
+        "user": "U0107ULV1E1",
+        "ts": "1591753149.001700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o9vX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます！\nプログラマーさんがたくさん協力してくれたおかげです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "24e49fc4-d365-461e-991d-be76ca04215e",
+        "type": "message",
+        "text": "注※\nプランナーさんの熱意のおかげです。",
+        "user": "U010E4QPX5E",
+        "ts": "1591753224.002400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x=e60",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "注※\nプランナーさんの熱意のおかげです。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "man-bowing",
+                "users": [
+                    "U0107ULV1E1"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "887d21e3-9489-46e3-9aed-26550d1c0dad",
+        "type": "message",
+        "text": "褒め合い大事やでｗ\nちゃぶだい系チームでは一番成果でてる。気を抜かずに完成させなさい。まだまだ精度は荒いよ！",
+        "user": "UV6QJP4J3",
+        "ts": "1591753431.003200",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DvG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "褒め合い大事やでｗ\nちゃぶだい系チームでは一番成果でてる。気を抜かずに完成させなさい。まだまだ精度は荒いよ！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U0107ULV1E1"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fc46ba85-2ff4-48c8-b3c7-a93b80a62c7e",
+        "type": "message",
+        "text": "あと五日間悔いのないようメンバーで走り抜けます",
+        "user": "U010E4QPX5E",
+        "ts": "1591753488.004000",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xIZX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと五日間悔いのないようメンバーで走り抜けます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "ぎ",
+                "users": [
+                    "UV6QJP4J3",
+                    "U0107ULV1E1"
+                ],
+                "count": 2
+            },
+            {
+                "name": "+1",
+                "users": [
+                    "UV6QJP4J3",
+                    "U0107ULV1E1"
+                ],
+                "count": 2
+            }
+        ]
+    }
+]

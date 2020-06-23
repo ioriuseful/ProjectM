@@ -1,0 +1,193 @@
+[
+    {
+        "client_msg_id": "3fd73ffe-73c4-482d-8901-3a42ef6680b1",
+        "type": "message",
+        "text": "２４時間経過　全員確認",
+        "user": "UV6QJP4J3",
+        "ts": "1584788735.001000",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=8WPL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "２４時間経過　全員確認"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "お疲れ様です。遅くなってすみません。\n\n現在9班は、ゲームのコンセプトとそれに基づいたゲームシステムの方向性が決まっており、後はテーマ消化も兼ねプレイヤーがもっと気持ちよくなれる敵の倒し方をどのような形でゲームシステムとして落とし込むかで話し合っています。\nまた、ゲーム自体も現在決定している範囲内だけですが並行して制作し始めています。",
+        "files": [
+            {
+                "id": "F010KEUMZQW",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZKezQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お疲れ様です。遅くなってすみません。\n\n現在9班は、ゲームのコンセプトとそれに基づいたゲームシステムの方向性が決まっており、後はテーマ消化も兼ねプレイヤーがもっと気持ちよくなれる敵の倒し方をどのような形でゲームシステムとして落とし込むかで話し合っています。\nまた、ゲーム自体も現在決定している範囲内だけですが並行して制作し始めています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1584849909.000400",
+        "client_msg_id": "891df59f-59ce-4430-b840-113013d7d12c"
+    },
+    {
+        "client_msg_id": "fb830a90-c540-49da-9abf-baaedb8887ee",
+        "type": "message",
+        "text": "読んだ限り、プレイヤースキルに依存するシンプルなゲームと見えるが、このタイプが一番コンテストで通らないよ。鬼グラフィックならともかく。\nコンセプトが悪いので、「瞬間の判断」意外で考えてみてください。",
+        "user": "UV6QJP4J3",
+        "ts": "1584857103.002300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+CU+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "読んだ限り、プレイヤースキルに依存するシンプルなゲームと見えるが、このタイプが一番コンテストで通らないよ。鬼グラフィックならともかく。\nコンセプトが悪いので、「瞬間の判断」意外で考えてみてください。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5D6D2F0A-2FA2-4BDB-9EA2-D5F6E5851D0C",
+        "type": "message",
+        "text": "わかりました\nありがとうございます",
+        "user": "U0107ULV1E1",
+        "ts": "1584858063.002700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Qqh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "わかりました\nありがとうございます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6985cf66-cc0d-419e-9fa6-7adf1bbb6dfa",
+        "type": "message",
+        "text": "「◯◯が〇〇を考えながら〇〇するゲーム」ね。去年の企画書の授業を思い出して。",
+        "user": "UV6QJP4J3",
+        "ts": "1584858373.003600",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N7X",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "「◯◯が〇〇を考えながら〇〇するゲーム」ね。去年の企画書の授業を思い出して。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584858716.003800",
+        "user": "UUUSLNQ2V",
+        "text": "<@UUUSLNQ2V>さんがチャンネルに参加しました"
+    }
+]

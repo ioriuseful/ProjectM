@@ -1,0 +1,17 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584518518.000200",
+        "user": "UV6QJP4J3",
+        "text": "<@UV6QJP4J3>さんがチャンネルに参加しました"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_purpose",
+        "ts": "1584518519.000300",
+        "user": "UV6QJP4J3",
+        "text": "<@UV6QJP4J3>さんがチャンネルの目的を設定しました : A山中_A久保田_A三宅_D佐藤",
+        "purpose": "A山中_A久保田_A三宅_D佐藤"
+    }
+]

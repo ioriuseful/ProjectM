@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F013BNKSD2R",
+                "created": 1589172101,
+                "timestamp": 1589172101,
+                "name": "0511____________.txt",
+                "title": "0511進捗会議",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0107ULV1E1",
+                "editable": true,
+                "size": 960,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013BNKSD2R\/0511____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013BNKSD2R\/download\/0511____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013BNKSD2R\/0511____________.txt",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F013BNKSD2R-c96aebdd89",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013BNKSD2R\/0511____________.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1589172103.001700",
+        "client_msg_id": "561a081a-8706-472c-b4de-b5b9aebe2390"
+    },
+    {
+        "client_msg_id": "1579740d-3bb5-4143-a45e-31730963ca15",
+        "type": "message",
+        "text": "返信遅れてすいません。修正箇所の件了解しました。ありがとうございます。\n\n班の動きとしては、マウス操作の撤廃や操作説明の作成など、すぐに修正できるものをプレイ会までに完成させ、Playerの挙動や壁の当たり判定など時間がかかりそうなものは17日までを目安に修正していこうと思います。",
+        "user": "U0107ULV1E1",
+        "ts": "1589172176.002500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=IUoD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "返信遅れてすいません。修正箇所の件了解しました。ありがとうございます。\n\n班の動きとしては、マウス操作の撤廃や操作説明の作成など、すぐに修正できるものをプレイ会までに完成させ、Playerの挙動や壁の当たり判定など時間がかかりそうなものは17日までを目安に修正していこうと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

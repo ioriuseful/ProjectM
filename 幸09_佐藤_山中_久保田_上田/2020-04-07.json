@@ -1,0 +1,300 @@
+[
+    {
+        "client_msg_id": "98643b64-5e53-49aa-b2b4-e24074289b74",
+        "type": "message",
+        "text": "やってみたけど、チームの手応えはどんな感じ？\nいまんところ、上下しながら上を目指すゲームでいいかな？",
+        "user": "UV6QJP4J3",
+        "ts": "1586254626.016000",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DMo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "やってみたけど、チームの手応えはどんな感じ？\nいまんところ、上下しながら上を目指すゲームでいいかな？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "176b75ae-b5bd-422b-8bce-926d09ab5141",
+        "type": "message",
+        "text": "企画としては、幸田先生に指摘された通りジレンマがジレンマとして成立しておらず避ける楽しさ(敵にぶつかる！けどあの場所まで行きたい！)が全然表現できていないゲームという感じでした",
+        "user": "U0107ULV1E1",
+        "ts": "1586254986.023300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Fov",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "企画としては、幸田先生に指摘された通りジレンマがジレンマとして成立しておらず避ける楽しさ(敵にぶつかる！けどあの場所まで行きたい！)が全然表現できていないゲームという感じでした"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "00ea764f-7584-4626-99f9-30a51c6854ac",
+        "type": "message",
+        "text": "ゲームの目的は上へ目指すで合っています",
+        "user": "U0107ULV1E1",
+        "ts": "1586255001.023900",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hhsQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ゲームの目的は上へ目指すで合っています"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "11C92FFE-6708-4677-BF36-915B1C3B6A78",
+        "type": "message",
+        "text": "そうですね、システム的には簡単なんですけど作ってみて細かな挙動が気になったりします。\n面白さ的には今一歩たりてない感じがするので、僕らプログラマーも何か追加できないか引き継ぎプランナーさんにアイデアを出していきたいなとおもっています。",
+        "user": "U010E4QPX5E",
+        "ts": "1586255223.028100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PSQQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そうですね、システム的には簡単なんですけど作ってみて細かな挙動が気になったりします。\n面白さ的には今一歩たりてない感じがするので、僕らプログラマーも何か追加できないか引き継ぎプランナーさんにアイデアを出していきたいなとおもっています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "もう必要ないかもしれませんが、Rキーリセットを実装したプロトタイプをアップしておきます。よろしくお願いします。",
+        "files": [
+            {
+                "id": "F011GAAH1C5",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dAkh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もう必要ないかもしれませんが、Rキーリセットを実装したプロトタイプをアップしておきます。よろしくお願いします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1586255301.028200",
+        "client_msg_id": "9da0854c-56a0-4e49-8382-d4d49afeb6ec"
+    },
+    {
+        "client_msg_id": "9c5cc42b-198f-4002-b7ee-bc69c8f4e616",
+        "type": "message",
+        "text": "Rキーは助かるｗ",
+        "user": "UV6QJP4J3",
+        "ts": "1586256473.028700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Udg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Rキーは助かるｗ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d5bdaf1e-f86b-4652-b8b7-87f5c5bee610",
+        "type": "message",
+        "text": "技術面　慣性に頼りすぎて面白くない。システムにあったチューニングしないとあかんで。要はパラメータが雑。\n\nゲームデザイン面　ただルールが用意されていて、こういう遊びをして欲しい！ここにチャレンジして欲しい！がさっぱりわからん。\nこのままだと、プランナー力ゼロのゲームになるで。コンセプトを明確にしていこう。さて、何を考えるゲームですか？",
+        "user": "UV6QJP4J3",
+        "ts": "1586256674.031700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rA0X5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "技術面　慣性に頼りすぎて面白くない。システムにあったチューニングしないとあかんで。要はパラメータが雑。\n\nゲームデザイン面　ただルールが用意されていて、こういう遊びをして欲しい！ここにチャレンジして欲しい！がさっぱりわからん。\nこのままだと、プランナー力ゼロのゲームになるで。コンセプトを明確にしていこう。さて、何を考えるゲームですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ABEF3BD9-1C7C-43F6-B7A7-625585E51717",
+        "type": "message",
+        "text": "貴重なご意見ありがとうございます。技術面の方ですが、このゲームにあった調整を納得いくまでしっかりとやっていきたいと思います。\n\n技術のせいでつまらないゲームになっているなどと思われないよう、プランナーさんにも意見を聞きつつ進めていきたいと思います。",
+        "user": "U010E4QPX5E",
+        "ts": "1586260638.034800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jRP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "貴重なご意見ありがとうございます。技術面の方ですが、このゲームにあった調整を納得いくまでしっかりとやっていきたいと思います。\n\n技術のせいでつまらないゲームになっているなどと思われないよう、プランナーさんにも意見を聞きつつ進めていきたいと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

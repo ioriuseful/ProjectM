@@ -1,0 +1,125 @@
+[
+    {
+        "client_msg_id": "41aa865f-c96d-4547-8339-75205fdb9e2e",
+        "type": "message",
+        "text": "Zipの投稿が既読状態になってしまってた！すまん！えっと、やや古いんだろうけどプレイしたので修正点を\n・キーボードのゲームなのにマウス入力があるのがかなり最悪\n・アクションゲームなら挙動がお粗末。操作感悪い。Unity独自のコンポーネントに頼りすぎている。任天堂の挙動を目指しなさい。\n・当たり判定がバグってるがこれはUnityを使ってもこうなる？独自実装？\n\n全体的に気遣いが足りなさすぎる。もっと人に優しい設計をすること！\nコンテストレースを諦めてこのクオリティだと恥ずかしいよ！",
+        "user": "UV6QJP4J3",
+        "ts": "1589004867.016200",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xmH8a",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Zipの投稿が既読状態になってしまってた！すまん！えっと、やや古いんだろうけどプレイしたので修正点を\n・キーボードのゲームなのにマウス入力があるのがかなり最悪\n・アクションゲームなら挙動がお粗末。操作感悪い。Unity独自のコンポーネントに頼りすぎている。任天堂の挙動を目指しなさい。\n・当たり判定がバグってるがこれはUnityを使ってもこうなる？独自実装？\n\n全体的に気遣いが足りなさすぎる。もっと人に優しい設計をすること！\nコンテストレースを諦めてこのクオリティだと恥ずかしいよ！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "man-bowing",
+                "users": [
+                    "U0107ULV1E1"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9a725247-c217-4d4b-bed1-3fee791cd770",
+        "type": "message",
+        "text": "当たり判定がバグっているのは全体的にですか？それともオブジェクトの一部ですか？",
+        "user": "U0107ULV1E1",
+        "ts": "1589005546.018100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mM5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "当たり判定がバグっているのは全体的にですか？それともオブジェクトの一部ですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cf39666f-18f0-4aae-85ef-aecb40174c90",
+        "type": "message",
+        "text": "・全体的に。変な方向に急加速するのは仕様ではないはず。壁で速度下がりがち。\n・WASDだけでなくアローにも対応する。\n・操作方法を画面に表示する\n\nこんなとこかな",
+        "user": "UV6QJP4J3",
+        "ts": "1589005814.019700",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bysKH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "・全体的に。変な方向に急加速するのは仕様ではないはず。壁で速度下がりがち。\n・WASDだけでなくアローにも対応する。\n・操作方法を画面に表示する\n\nこんなとこかな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

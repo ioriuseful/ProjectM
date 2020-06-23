@@ -1,0 +1,133 @@
+[
+    {
+        "client_msg_id": "b6efefba-eb28-48c3-9291-82700fcc74e0",
+        "type": "message",
+        "text": "うむ。５月と６月も結合して、タスク洗い出しをしよう。ガッとやれば数時間で終わるぞ！",
+        "user": "UV6QJP4J3",
+        "ts": "1587129379.010300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GS8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "うむ。５月と６月も結合して、タスク洗い出しをしよう。ガッとやれば数時間で終わるぞ！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "muscle",
+                "users": [
+                    "U0107ULV1E1"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "80bb2477-8a87-44c7-95ea-8acecfbe44de",
+        "type": "message",
+        "text": "夜遅くに失礼します\n現状大雑把ですが、５・６月分のタスクを洗い出しました。洗い出したタスクをベースに18日の13時から班員と会議して、ほぼ確定版タスク表を作成します",
+        "user": "U0107ULV1E1",
+        "ts": "1587149026.012400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ysE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "夜遅くに失礼します\n現状大雑把ですが、５・６月分のタスクを洗い出しました。洗い出したタスクをベースに18日の13時から班員と会議して、ほぼ確定版タスク表を作成します"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "37cc7f84-cc12-468f-9ded-3aef3b97af5f",
+        "type": "message",
+        "text": "了解。今後、班員はこのスケジュールを死守してください。<@U0107ULV1E1> はPMとして鬼の監視すること。スケジュールが破綻すると幸田が注意します。これが大人の仕事ね。大人を楽しんで。",
+        "user": "UV6QJP4J3",
+        "ts": "1587161185.015500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "W=bGv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "了解。今後、班員はこのスケジュールを死守してください。"
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U0107ULV1E1"
+                            },
+                            {
+                                "type": "text",
+                                "text": " はPMとして鬼の監視すること。スケジュールが破綻すると幸田が注意します。これが大人の仕事ね。大人を楽しんで。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

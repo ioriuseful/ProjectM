@@ -1,0 +1,88 @@
+[
+    {
+        "type": "message",
+        "text": "<https:\/\/docs.google.com\/spreadsheets\/d\/18iEcGzZeCTsv6Ehn5T6Si_RY3IO0b8jr_-kAzOEzti4\/edit#gid=1703662275>\n遅れてすいません。スケジュール表です。\nよろしくお願いします。",
+        "files": [
+            {
+                "id": "F012D7M4XJM",
+                "created": 1587097268,
+                "timestamp": 1587097268,
+                "name": "09班スケジュール表",
+                "title": "09班スケジュール表",
+                "mimetype": "application\/vnd.google-apps.spreadsheet",
+                "filetype": "gsheet",
+                "pretty_type": "G Suite Spreadsheet",
+                "user": "U0107ULV1E1",
+                "editable": false,
+                "size": 106089,
+                "mode": "external",
+                "is_external": true,
+                "external_type": "gdrive",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/docs.google.com\/spreadsheets\/d\/18iEcGzZeCTsv6Ehn5T6Si_RY3IO0b8jr_-kAzOEzti4\/edit#gid=1703662275",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________64.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________80.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________360.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_360_w": 254,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________480.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_480_w": 339,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________160.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________720.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_720_w": 509,
+                "thumb_720_h": 720,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________800.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_800_w": 800,
+                "thumb_800_h": 1132,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________960.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_960_w": 678,
+                "thumb_960_h": 960,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/TV4F5TS92-F012D7M4XJM-f8a1206535\/09_________________________1024.png?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "thumb_1024_w": 724,
+                "thumb_1024_h": 1024,
+                "image_exif_rotation": 1,
+                "original_w": 1024,
+                "original_h": 1449,
+                "thumb_tiny": "AwAwACG+7srYAyMU0Ssf4ae\/Wm0AHmN6UquSwGKSlX7woAkooooAMA9qTA9BS0UAJgegpcD0oooAKKKKACiiigAooooAKKKKAP\/Z",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F012D7M4XJM\/09________________________",
+                "is_starred": false,
+                "external_id": "18iEcGzZeCTsv6Ehn5T6Si_RY3IO0b8jr_-kAzOEzti4",
+                "external_url": "https:\/\/docs.google.com\/spreadsheets\/d\/18iEcGzZeCTsv6Ehn5T6Si_RY3IO0b8jr_-kAzOEzti4\/edit#gid=1703662275",
+                "has_rich_preview": true
+            }
+        ],
+        "upload": false,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RLaXb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/docs.google.com\/spreadsheets\/d\/18iEcGzZeCTsv6Ehn5T6Si_RY3IO0b8jr_-kAzOEzti4\/edit#gid=1703662275"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n遅れてすいません。スケジュール表です。\nよろしくお願いします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "x_files": [
+            "F012D7M4XJM"
+        ],
+        "ts": "1587097252.008900",
+        "client_msg_id": "4e56b101-5c87-44a1-afe4-be239d3c44b4"
+    }
+]

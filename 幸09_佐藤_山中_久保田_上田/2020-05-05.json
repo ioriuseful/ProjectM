@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "F013U6XT6V6",
+                "created": 1588747171,
+                "timestamp": 1588747171,
+                "name": "5\/6進捗報告",
+                "title": "5\/6進捗報告",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0107ULV1E1",
+                "editable": true,
+                "size": 646,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013U6XT6V6\/5_6____________?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F013U6XT6V6\/download\/5_6____________?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013U6XT6V6\/5_6____________",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F013U6XT6V6-b7bc29a05c",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U0107ULV1E1\/F013U6XT6V6\/5_6____________\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1588747172.011300",
+        "client_msg_id": "29fdbae6-5432-411d-9a01-409e3ab92587"
+    },
+    {
+        "type": "message",
+        "text": "ステージを追加した最新版です。\n出現するステージはひとまず連続ヒップドロップで進むをコンセプトに制作しました。\n操作方法はファイル内のReadmeに記載してあります。よろしくお願いします。",
+        "files": [
+            {
+                "id": "F012XKMPBCN",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FJuU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ステージを追加した最新版です。\n出現するステージはひとまず連続ヒップドロップで進むをコンセプトに制作しました。\n操作方法はファイル内のReadmeに記載してあります。よろしくお願いします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1588747266.011600",
+        "client_msg_id": "819f367e-1130-41fd-b1cf-48e08e7988e6"
+    }
+]

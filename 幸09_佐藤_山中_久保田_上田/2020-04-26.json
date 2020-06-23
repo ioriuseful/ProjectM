@@ -1,0 +1,148 @@
+[
+    {
+        "type": "message",
+        "text": "改善企画案です\n\n前回の企画に色という要素を追加してみました。",
+        "files": [
+            {
+                "id": "F012HAEQH5K",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N9pPt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "改善企画案です\n\n前回の企画に色という要素を追加してみました。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1587895535.038900",
+        "client_msg_id": "A5BBEE71-91B9-4B02-8A2A-0573FC230475"
+    },
+    {
+        "client_msg_id": "F5DB77DA-D0D6-4A43-BA1D-68E72C1624B4",
+        "type": "message",
+        "text": "前回アドバイスいただいたヒップドロップのリカバリー案ですが、失敗したら死ではなく、色のリセットにしようかと考えています。",
+        "user": "U0107ULV1E1",
+        "ts": "1587896020.042800",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "H=JB6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "前回アドバイスいただいたヒップドロップのリカバリー案ですが、失敗したら死ではなく、色のリセットにしようかと考えています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b39dad95-61a4-4dce-9e68-d68bca0d077d",
+        "type": "message",
+        "text": "おけ、よくなった。システムはユーザーにとって良いことを追加するイメージで考えると面白くなるで。逆はだいたいダメ。覚えとき。",
+        "user": "UV6QJP4J3",
+        "ts": "1587896219.044000",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Anp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おけ、よくなった。システムはユーザーにとって良いことを追加するイメージで考えると面白くなるで。逆はだいたいダメ。覚えとき。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cf71db0b-114a-44f2-9201-5bda28932b06",
+        "type": "message",
+        "text": "わかりました。気を付けます！\n次からは、もっともっとユーザー目線に立って企画やシステムを考えていこうと思います",
+        "user": "U0107ULV1E1",
+        "ts": "1587896802.045600",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4+Ez",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "わかりました。気を付けます！\n次からは、もっともっとユーザー目線に立って企画やシステムを考えていこうと思います"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

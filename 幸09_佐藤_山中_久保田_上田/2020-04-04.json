@@ -1,0 +1,40 @@
+[
+    {
+        "client_msg_id": "d03cd419-d140-4e4d-bc5e-2f21fa0cbb60",
+        "type": "message",
+        "text": "さて、そろそろ次の報告が欲しいところ。動けていますか？",
+        "user": "UV6QJP4J3",
+        "ts": "1586026917.000500",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iV8J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "さて、そろそろ次の報告が欲しいところ。動けていますか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

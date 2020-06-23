@@ -1,0 +1,34 @@
+[
+    {
+        "type": "message",
+        "text": "おはようございます\nルールやシステムは前回の企画に追加する形で考えてみました。\nよろしくお願いします。",
+        "files": [
+            {
+                "id": "F010E969BGA",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VUe4R",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おはようございます\nルールやシステムは前回の企画に追加する形で考えてみました。\nよろしくお願いします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0107ULV1E1",
+        "display_as_bot": false,
+        "ts": "1585177243.003100",
+        "client_msg_id": "30c9a7ca-28b0-4a05-a081-6fd686756478"
+    }
+]

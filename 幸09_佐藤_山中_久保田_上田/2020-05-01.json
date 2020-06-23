@@ -1,0 +1,145 @@
+[
+    {
+        "client_msg_id": "9581AA10-7278-4784-95CF-542F502C60AE",
+        "type": "message",
+        "text": "了解です\n遅くても明日の13時までには投稿できると思います",
+        "user": "U0107ULV1E1",
+        "ts": "1588329810.018400",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "c7fdc8630d14",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-12\/1116548942085_c7fdc8630d148b61ff7c_72.jpg",
+            "first_name": "佐藤",
+            "real_name": "佐藤 児緯",
+            "display_name": "LD3A_11_佐藤児緯_ ｻﾄｳﾙｲ",
+            "team": "TV4F5TS92",
+            "name": "satourui7802",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c=mp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "了解です\n遅くても明日の13時までには投稿できると思います"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "UV6QJP4J3"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "現状報告です。遅れて申し訳ございません。",
+        "files": [
+            {
+                "id": "F012R4U78K0",
+                "created": 1588385609,
+                "timestamp": 1588385609,
+                "name": "0502進捗会議.txt",
+                "title": "0502進捗会議.txt",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U010E4QPX5E",
+                "editable": true,
+                "size": 1096,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F012R4U78K0\/0502____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/TV4F5TS92-F012R4U78K0\/download\/0502____________.txt?t=xoxe-990515944308-1192986843429-1206989489329-2df505c72492779a38e9242e996dd0f8",
+                "permalink": "https:\/\/l412gamecreator.slack.com\/files\/U010E4QPX5E\/F012R4U78K0\/0502____________.txt",
+                "permalink_public": "https:\/\/slack-files.com\/TV4F5TS92-F012R4U78K0-e7eb8dce1a",
+                "edit_link": "https:\/\/l412gamecreator.slack.com\/files\/U010E4QPX5E\/F012R4U78K0\/0502____________.txt\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            },
+            {
+                "id": "F013MML6XMW",
+                "mode": "hidden_by_limit"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "47D0J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "現状報告です。遅れて申し訳ございません。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U010E4QPX5E",
+        "ts": "1588385613.000200",
+        "client_msg_id": "13cd65b9-a6e1-40d9-bccd-87127c083f13"
+    },
+    {
+        "client_msg_id": "9c9963b1-1459-4548-b230-ceec482b6854",
+        "type": "message",
+        "text": "今後は定例会議毎に報告させていただきます。",
+        "user": "U010E4QPX5E",
+        "ts": "1588385660.001300",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "894b944cbe81",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-27\/1159691453409_894b944cbe81bae7fecb_72.jpg",
+            "first_name": "山中嘉槻",
+            "real_name": "山中嘉槻",
+            "display_name": "LE3A_39_山中嘉槻_ﾔﾏﾅｶｶﾂﾞｷ",
+            "team": "TV4F5TS92",
+            "name": "yama696615",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RFh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今後は定例会議毎に報告させていただきます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

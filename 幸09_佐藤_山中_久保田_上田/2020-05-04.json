@@ -1,0 +1,40 @@
+[
+    {
+        "client_msg_id": "a2a5336b-58f8-41ff-a3c7-796d97edf2fe",
+        "type": "message",
+        "text": "いえいえ、幸田にあやまるというよりは、この長期間プロジェクトを終えたときにこの作品は武器になるのか？\nを意識してほしいのよ。正直これUnityやりはじめて1周間程度のクオリティだからさ。自分の人生、勝つ為に必要なことをしようぜ。",
+        "user": "UV6QJP4J3",
+        "ts": "1588584276.011100",
+        "team": "TV4F5TS92",
+        "user_team": "TV4F5TS92",
+        "source_team": "TV4F5TS92",
+        "user_profile": {
+            "avatar_hash": "3ad5a8606f94",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-05-17\/1113965167735_3ad5a8606f9426da186d_72.jpg",
+            "first_name": "幸田健志",
+            "real_name": "幸田健志",
+            "display_name": "教員_幸田健志",
+            "team": "TV4F5TS92",
+            "name": "syaians",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ejfk3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いえいえ、幸田にあやまるというよりは、この長期間プロジェクトを終えたときにこの作品は武器になるのか？\nを意識してほしいのよ。正直これUnityやりはじめて1周間程度のクオリティだからさ。自分の人生、勝つ為に必要なことをしようぜ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
